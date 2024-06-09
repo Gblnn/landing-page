@@ -19,7 +19,7 @@ export default function OnBoarding(){
             
             <div style={{width:"100%", height:"100svh", display:"flex", alignItems:"center", justifyContent:"center", flexFlow:"column", gap:"1rem"}}>
 
-                <video style={{opacity:0.25, objectFit:"cover", border:"", minHeight:"100%", minWidth:"100%"}} autoPlay muted loop controlsList="nofullscreen">
+                <video style={{opacity:0.25, objectFit:"cover", border:"", minHeight:"100%", minWidth:"100%"}} autoPlay muted loop controlsList="nofullscreen" playsInline>
 
                     <source src="/engineering_stock_video.mp4" type="video/mp4" />
 
