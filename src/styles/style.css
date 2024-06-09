@@ -17,7 +17,10 @@
 }
 
 .nav-bar {
-  background: var(--nav-color);
+  background: #a0a0a015;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  z-index: 10;
 }
 
 p {
