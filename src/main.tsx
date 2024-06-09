@@ -8,7 +8,7 @@ import '../app/globals.css'
 ReactDOM.createRoot(document.getElementById('root')!).render(
 
   
-    <ThemeProvider defaultTheme='light'>
+    <ThemeProvider defaultTheme='system'>
       <App />
     </ThemeProvider>
     
