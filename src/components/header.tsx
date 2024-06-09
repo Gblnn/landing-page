@@ -25,7 +25,7 @@ export default function Header(){
 
 
         </div>
-        <div className="mobile-nav navbar" style={{ width:"100%", position:"fixed", bottom:0, justifyContent:"center", zIndex:10, backdropFilter:"blur(12px)",background:"rgba(50 50 50/ 10%)", fontSize:"1rem", height:"4rem", alignItems:"center", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
+        <div className="mobile-nav nav-bar" style={{ width:"100%", position:"fixed", bottom:0, justifyContent:"center", zIndex:10, fontSize:"1rem", height:"4rem", alignItems:"center", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
             <MobileNav/>
         </div>
         </>
