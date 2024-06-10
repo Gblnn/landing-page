@@ -1,17 +1,16 @@
 import NewsBox from "@/components/news-box";
-import Project from "@/components/project";
 import ServiceBox from "@/components/service-box";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'framer-motion';
-import { BellElectric, Car, ChevronDown, ChevronRight, DraftingCompass, Factory, Globe, Laptop2, PanelTopDashed, Pin, TreeDeciduous, UserCheck, Users, Wrench } from "lucide-react";
+import { BellElectric, Car, ChevronDown, DraftingCompass, Factory, Globe, Laptop2, PanelTopDashed, Pin, TreeDeciduous, UserCheck, Users, Wrench } from "lucide-react";
 import CountUp from 'react-countup';
-import { useNavigate } from "react-router-dom";
-import Autoplay from 'embla-carousel-autoplay'
+
 
 export default function OnBoarding(){
 
-    const usenavigate = useNavigate()
+    
 
     return(
         <>
@@ -56,6 +55,34 @@ export default function OnBoarding(){
                 </div>
                 
             </div> */}
+
+<div id="news-and-updates" className="page" style={{border:"", height:"auto", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)", paddingBottom:"4rem"}}>
+
+<div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
+
+    <h1 style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.5rem", alignItems:'center', marginLeft:"1rem"}}>
+        Latest News <strong style={{color:"crimson", fontWeight:"500"}}>&</strong> Updates
+    </h1>
+
+    <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", gap:"2rem", flexWrap:"wrap"}}>
+    <NewsBox img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="News & Update 1" desc="Brief description of update in very few words"/>
+    <NewsBox img="/pxfuel.jpg" title="News & Update 2" desc="Brief description of update in very few words"/>
+    <NewsBox img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg" title="News & Update 3" desc="Brief description of update in very few words"/>
+    <NewsBox img="https://motionarray.imgix.net/motion-array-1096692-auDdGLclkD-high_0009.jpg?w=660&q=60&fit=max&auto=format" title="News & Update 4" desc="Brief description of update in very few words"/>
+    </div>
+
+    
+    
+    {/* <br/><br/>
+    <div style={{display:"flex", width:"100%", justifyContent:"center"}}>
+    <Button onClick={()=>usenavigate("/projects")} variant={"ghost"} style={{width:"32ch", display:"flex", gap:"0.5rem", alignItems:"center", alignSelf:"center", background:"rgba(100 100 100/ 10%)", boxShadow:"1px 1px 10px rgba(0 0 0/ 10%)"}}>See more Projects <ChevronRight width={"1rem"} color="crimson"/></Button>
+    </div> */}
+    
+    <br/>
+
+</div>
+
+</div>
 
 <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.25}}>
 
@@ -144,6 +171,48 @@ export default function OnBoarding(){
         
         </div>
 
+        <div style={{border:"", display:'flex', justifyContent:"center", alignItems:"center", height:"12rem", gap:"1.25rem", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
+
+            <div style={{display:"flex", flexFlow:"column", width:"6rem", border:"",alignItems:"center", justifyContent:"center"}}>
+
+                <UserCheck color="crimson"/>
+        
+                <div style={{display:"flex", alignItems:'center', gap:"0.25rem"}}>
+                    <CountUp duration={1} enableScrollSpy start={0} end={750} onEnd={()=>{}} useEasing={false} style={{fontSize:"2rem", fontWeight:600}}/>
+                    <p style={{fontSize:"1.5rem"}}>+</p>
+                    
+                </div>
+                
+                <p style={{opacity:"0.75", textAlign:"center"}}>Clients</p>
+            </div>
+
+            <div style={{display:"flex", flexFlow:"column", width:"6rem", border:"",alignItems:"center", justifyContent:"center"}}>
+
+                <Factory color="crimson"/>
+                
+                <div style={{display:"flex", alignItems:'center', gap:"0.25rem"}}>
+                    <CountUp duration={1} enableScrollSpy start={0} end={850} useEasing={false} style={{fontSize:"2rem", fontWeight:600}}/>
+                    <p style={{fontSize:"1.5rem"}}>+</p>
+                    
+                </div>
+                
+                <p style={{opacity:0.75, textAlign:"center"}}>Projects</p>
+            </div>
+
+            <div style={{display:"flex", flexFlow:"column", width:"6rem", border:"",alignItems:"center"}}>
+
+                <Users color="crimson"/>
+                
+                <div style={{display:"flex", alignItems:'center', gap:"0.25rem"}}>
+                <CountUp duration={1} enableScrollSpy start={0} end={1100} useEasing={false} style={{fontSize:"2rem", fontWeight:600}}/>
+                <p style={{fontSize:"1.5rem"}}>+</p>
+                </div>
+                
+                <p style={{opacity:0.75, textAlign:"center"}}>Workers</p>
+            </div>
+            
+        </div>
+
         {/* <a href="#page" className="arrow" style={{marginTop:""}}>
                         <button >
                             <ChevronDown color="crimson" width={"2.5rem"} height={"2.5rem"}/>
@@ -222,9 +291,9 @@ export default function OnBoarding(){
                         </button>
                     </a> */}
 
-                    <a href="#projects" style={{width:"fit-content"}}>
+                    {/* <a href="#projects" style={{width:"fit-content"}}>
                         <Button style={{background:"crimson", color:"white"}}>View Our Projects <ChevronDown width={"1rem"}/></Button>
-                    </a>
+                    </a> */}
 
 
                 </div>
@@ -243,50 +312,10 @@ export default function OnBoarding(){
             
         </div>
 
-        <div style={{border:"", display:'flex', justifyContent:"center", alignItems:"center", height:"12rem", gap:"1.25rem", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
-
-            <div style={{display:"flex", flexFlow:"column", width:"6rem", border:"",alignItems:"center", justifyContent:"center"}}>
-
-                <UserCheck color="crimson"/>
         
-                <div style={{display:"flex", alignItems:'center', gap:"0.25rem"}}>
-                    <CountUp duration={1} enableScrollSpy start={0} end={750} onEnd={()=>{}} useEasing={false} style={{fontSize:"2rem", fontWeight:600}}/>
-                    <p style={{fontSize:"1.5rem"}}>+</p>
-                    
-                </div>
-                
-                <p style={{opacity:"0.75", textAlign:"center"}}>Clients</p>
-            </div>
-
-            <div style={{display:"flex", flexFlow:"column", width:"6rem", border:"",alignItems:"center", justifyContent:"center"}}>
-
-                <Factory color="crimson"/>
-                
-                <div style={{display:"flex", alignItems:'center', gap:"0.25rem"}}>
-                    <CountUp duration={1} enableScrollSpy start={0} end={850} useEasing={false} style={{fontSize:"2rem", fontWeight:600}}/>
-                    <p style={{fontSize:"1.5rem"}}>+</p>
-                    
-                </div>
-                
-                <p style={{opacity:0.75, textAlign:"center"}}>Projects</p>
-            </div>
-
-            <div style={{display:"flex", flexFlow:"column", width:"6rem", border:"",alignItems:"center"}}>
-
-                <Users color="crimson"/>
-                
-                <div style={{display:"flex", alignItems:'center', gap:"0.25rem"}}>
-                <CountUp duration={1} enableScrollSpy start={0} end={1100} useEasing={false} style={{fontSize:"2rem", fontWeight:600}}/>
-                <p style={{fontSize:"1.5rem"}}>+</p>
-                </div>
-                
-                <p style={{opacity:0.75, textAlign:"center"}}>Workers</p>
-            </div>
-            
-        </div>
 
 
-        <div id="projects" className="page" style={{border:"", height:"auto", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)", paddingBottom:""}}>
+        {/* <div id="projects" className="page" style={{border:"", height:"auto", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)", paddingBottom:""}}>
 
             <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
 
@@ -319,39 +348,13 @@ export default function OnBoarding(){
             
         </div>
 
-        <hr/>
+        <hr/> */}
         
 
         
 
 
-        <div id="news-and-updates" className="page" style={{border:"", height:"auto", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)", paddingBottom:"4rem"}}>
-
-            <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
-
-                <h1 style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.5rem", alignItems:'center', marginLeft:"1rem"}}>
-                    Latest News <strong style={{color:"crimson", fontWeight:"500"}}>&</strong> Updates
-                </h1>
-
-                <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", gap:"2rem", flexWrap:"wrap"}}>
-                <NewsBox img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="News & Update 1" desc="Brief description of update in very few words"/>
-                <NewsBox img="/pxfuel.jpg" title="News & Update 2" desc="Brief description of update in very few words"/>
-                <NewsBox img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg" title="News & Update 3" desc="Brief description of update in very few words"/>
-                <NewsBox img="https://motionarray.imgix.net/motion-array-1096692-auDdGLclkD-high_0009.jpg?w=660&q=60&fit=max&auto=format" title="News & Update 4" desc="Brief description of update in very few words"/>
-                </div>
-
-                
-                
-                {/* <br/><br/>
-                <div style={{display:"flex", width:"100%", justifyContent:"center"}}>
-                <Button onClick={()=>usenavigate("/projects")} variant={"ghost"} style={{width:"32ch", display:"flex", gap:"0.5rem", alignItems:"center", alignSelf:"center", background:"rgba(100 100 100/ 10%)", boxShadow:"1px 1px 10px rgba(0 0 0/ 10%)"}}>See more Projects <ChevronRight width={"1rem"} color="crimson"/></Button>
-                </div> */}
-                
-                <br/>
-
-            </div>
-            
-        </div>
+        
 
         <div className="page" style={{display:"flex", justifyContent:"center", paddingTop:"", height:"15rem",border:'', background:"rgba(100 100 100/ 2%)", alignItems:"center", flexFlow:"column", gap:'1.5rem', boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
             <h1 style={{textAlign:'center', color:""}}>OUR<br/> <strong style={{fontWeight:600}}>CLIENTS</strong></h1>
