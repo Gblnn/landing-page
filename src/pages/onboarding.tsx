@@ -37,7 +37,7 @@ export default function OnBoarding(){
                     <p style={{opacity:"0.75", wordSpacing:"0.25rem"}}>Plan | Produce | Deliver</p>
                     <br style={{height:"2rem"}}/>
                 
-                    <a href="#services" className="arrow" style={{position:"absolute", marginTop:"20rem"}}>
+                    <a href="#news-and-updates" className="arrow" style={{position:"absolute", marginTop:"20rem"}}>
                         <button >
                             <ChevronDown color="crimson" width={"2.5rem"} height={"2.5rem"}/>
                         </button>
@@ -171,7 +171,32 @@ export default function OnBoarding(){
         
         </div>
 
-        <div style={{border:"", display:'flex', justifyContent:"center", alignItems:"center", height:"12rem", gap:"1.25rem", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
+        
+
+        {/* <a href="#page" className="arrow" style={{marginTop:""}}>
+                        <button >
+                            <ChevronDown color="crimson" width={"2.5rem"} height={"2.5rem"}/>
+                        </button>
+                    </a> */} 
+
+        
+        
+        {/* <br/><br/>
+        <div style={{display:"flex", width:"100%", justifyContent:"center"}}>
+        <Button onClick={()=>usenavigate("/projects")} variant={"ghost"} style={{width:"32ch", display:"flex", gap:"0.5rem", alignItems:"center", alignSelf:"center", background:"rgba(100 100 100/ 10%)", boxShadow:"1px 1px 10px rgba(0 0 0/ 10%)"}}>See more Projects <ChevronRight width={"1rem"} color="crimson"/></Button>
+        </div>
+        
+        <br/><br/> */}
+
+        
+
+    </div>
+    
+</div>
+</motion.div>
+
+
+<div style={{border:"", display:'flex', justifyContent:"center", alignItems:"center", height:"12rem", gap:"1.25rem", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
 
             <div style={{display:"flex", flexFlow:"column", width:"6rem", border:"",alignItems:"center", justifyContent:"center"}}>
 
@@ -212,28 +237,6 @@ export default function OnBoarding(){
             </div>
             
         </div>
-
-        {/* <a href="#page" className="arrow" style={{marginTop:""}}>
-                        <button >
-                            <ChevronDown color="crimson" width={"2.5rem"} height={"2.5rem"}/>
-                        </button>
-                    </a> */} 
-
-        
-        
-        {/* <br/><br/>
-        <div style={{display:"flex", width:"100%", justifyContent:"center"}}>
-        <Button onClick={()=>usenavigate("/projects")} variant={"ghost"} style={{width:"32ch", display:"flex", gap:"0.5rem", alignItems:"center", alignSelf:"center", background:"rgba(100 100 100/ 10%)", boxShadow:"1px 1px 10px rgba(0 0 0/ 10%)"}}>See more Projects <ChevronRight width={"1rem"} color="crimson"/></Button>
-        </div>
-        
-        <br/><br/> */}
-
-        
-
-    </div>
-    
-</div>
-</motion.div>
 
             <div className="page" id="page" style={{display:"flex" , alignItems:"center"}}>
 
