@@ -11,7 +11,7 @@ export default function Footer(){
 
                 <p style={{fontSize:"1rem", fontWeight:600}}>QUICK LINKS</p>
                 <br/>
-                <div style={{display:"flex", gap:"2.5rem"}}>
+                <div style={{display:"flex", gap:"2.5rem", fontSize:"0.9rem"}}>
                     <div style={{display:"flex", flexFlow:"column", gap:"0.5rem"}}>
                         <Link to="">Our Team</Link>
                         <Link to="">Our Mission</Link>
