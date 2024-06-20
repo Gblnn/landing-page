@@ -19,6 +19,8 @@ export default function NewsBox(props:Props){
                 
             </div> */}
 
+            {/* <div style={{border:"", background:"linear-gradient(red, red, red)", width:"0.15rem"}}></div> */}
+
             <div className='project-label' style={{border:"", borderBottomRightRadius:"1rem", borderTopRightRadius:"1rem", color:"white", background:"", height:"", width:"100%"}}>
             <div id="body" style={{margin:"1.5rem", display:"flex", flexFlow:"column", gap:"0.5rem"}}>
                 <p style={{fontSize:"1.1rem", fontWeight:"500", display:"flex", gap:"0.5rem"}}>{props.title}</p>

@@ -133,7 +133,7 @@ p {
 
 @media (width<700px) {
   .project {
-    width: 35ch;
+    width: 36ch;
   }
   .project-img {
     height: 16ch;

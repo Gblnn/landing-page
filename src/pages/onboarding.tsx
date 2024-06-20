@@ -56,7 +56,7 @@ export default function OnBoarding(){
                 
             </div> */}
 
-<div id="news-and-updates" className="page" style={{background:"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThuiFYF2hRmybasc_cBe02bAXDvc_eaOK2mw&s)", border:"", height:"auto", paddingTop:"3rem", paddingBottom:"4rem",  backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+<div id="news-and-updates" className="page" style={{background:"url(https://i.pinimg.com/736x/92/70/c1/9270c19eb7d37366c20da05e28844248.jpg)", border:"", height:"auto", paddingTop:"3rem", paddingBottom:"4rem",  backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
 
 <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
 

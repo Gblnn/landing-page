@@ -1,3 +1,4 @@
+import TeamMember from '@/components/team-member';
 import { motion } from 'framer-motion';
 import { ChevronRight } from "lucide-react";
 
@@ -8,7 +9,7 @@ export default function OurTeam(){
     return(
         <motion.div initial={{opacity:0}} whileInView={{opacity:1}}>
 
-        <div id="projects" className="page" style={{border:"", height:"", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)"}}>
+        <div id="projects" className="page" style={{border:"", height:"fit-content", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)"}}>
 
             <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
 
@@ -17,6 +18,11 @@ export default function OurTeam(){
                 </h1>
 
                 <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem"}}>
+
+                    <TeamMember/>
+                    <TeamMember/>
+                    <TeamMember/>
+                    <TeamMember/>
 
                 {/* <Project img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="Project 1" desc="Brief description of project 1"/>
 
