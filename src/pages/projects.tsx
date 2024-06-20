@@ -20,17 +20,17 @@ export default function Projects(){
                     
                     
                     <Select defaultValue='civil-projects'>
-                        <SelectTrigger style={{background:"rgba(100 100 100/ 10%)", border:"none", fontSize:"1.25rem", outline:"none"}} className="w-[180px]">
+                        <SelectTrigger style={{background:"rgba(100 100 100/ 10%)", border:"none", fontSize:"1.25rem", outline:"none", padding:"1rem"}} className="w-[200px]">
                             <SelectValue defaultValue={"civil-projects"}/>
                         </SelectTrigger>
                         <SelectContent>
                             <SelectGroup>
                             
-                            <SelectItem defaultChecked value="civil-projects">Civil Projects</SelectItem>
-                            <SelectItem value="mep-projects">MEP Projects</SelectItem>
-                            <SelectItem value="blueberry">Manufacturing</SelectItem>
-                            <SelectItem value="grapes">Landscaping</SelectItem>
-                            <SelectItem value="pineapple">Road & Earth Work</SelectItem>
+                            <SelectItem style={{fontSize:"1rem"}} defaultChecked value="civil-projects">Civil Projects</SelectItem>
+                            <SelectItem style={{fontSize:"1rem"}} value="mep-projects">MEP Projects</SelectItem>
+                            <SelectItem style={{fontSize:"1rem"}} value="manufacturing">Manufacturing</SelectItem>
+                            <SelectItem style={{fontSize:"1rem"}} value="landscaping">Landscaping</SelectItem>
+                            <SelectItem style={{fontSize:"1rem"}} value="road-and-earthworks">Road & Earthwork</SelectItem>
                             </SelectGroup>
                         </SelectContent>
                         </Select>

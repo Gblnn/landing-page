@@ -21,7 +21,7 @@ export default function OurTeam(){
                     Our Team <ChevronRight color="crimson"/>
                 </h1>
 
-                <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem"}}>
+                <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem", paddingBottom:"6rem"}}>
 
                     <TeamMember/>
                     <TeamMember/>
