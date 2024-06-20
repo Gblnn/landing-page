@@ -56,7 +56,7 @@ export default function OnBoarding(){
                 
             </div> */}
 
-<div id="news-and-updates" className="page" style={{border:"", height:"auto", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)", paddingBottom:"4rem"}}>
+<div id="news-and-updates" className="page" style={{border:"", height:"auto", paddingTop:"3rem", background:"rgba(100 100 100/ 10%)", paddingBottom:"4rem"}}>
 
 <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
 
@@ -86,7 +86,8 @@ export default function OnBoarding(){
 
 <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.25}}>
 
-<div id="services" className="" style={{display:"flex", height:"", paddingTop:"4rem", background:"linear-gradient(rgba(100 100 100/ 20%), rgba(100 100 100/ 5%))", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
+<div id="services" className="" style={{display:"flex", height:"fit-content", paddingTop:"4rem", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)",background:"url(https://img.freepik.com/free-vector/gradient-dark-dynamic-lines-background_23-2148995950.jpg)", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+
 
 
     <div style={{margin:"1.5rem", marginTop:"5rem",marginBottom:"8rem", border:"", width:"100%"}}>
@@ -240,7 +241,7 @@ export default function OnBoarding(){
 
             <div className="page" id="page" style={{display:"flex" , alignItems:"center"}}>
 
-                <img src="https://www.shutterstock.com/image-photo/black-white-picture-looking-bridge-600nw-1817892632.jpg" style={{position:"absolute", zIndex:-1, width:"100%", height:"100svh", objectFit:"cover", opacity:0.04}}/>
+                <img src="/blue-bg.jpg" style={{position:"absolute", zIndex:-1, width:"100%", height:"100svh", objectFit:"cover"}}/>
 
 
         <motion.div
@@ -263,7 +264,7 @@ export default function OnBoarding(){
                 
 
                 <div className="flexer" style={{ flex:1, justifyContent:"center", left:""}}>
-                    <img src="/constr.jpg" style={{borderRadius:"50%", objectFit:"cover", width:"26ch", height:"25ch"}}/>
+                    <img src="/constr.jpg" style={{borderRadius:"50%", objectFit:"cover", width:"28ch", height:"28ch", border:"0.5rem solid crimson"}}/>
 
                     {/* <div style={{position:"absolute", width:"85%",left:"5%", height:"42ch", border:"2px solid rgba(100 100 100/ 20%)", transform:"translateY(-3.5rem)", background:"#002244",borderRadius:"3rem", zIndex:-1, backdropFilter:""}}></div> */}
 
@@ -277,7 +278,7 @@ export default function OnBoarding(){
                 
             
 
-                    <h1 style={{fontSize:"1.75rem", fontWeight:600, textShadow:"1px 1px 10px rgba(255 255 255/ 50%)", lineHeight:"2rem"}}>Why Choose Us?</h1>
+                    <h1 style={{fontSize:"1.75rem", fontWeight:600, textShadow:"1px 1px 10px rgba(255 255 255/ 50%)", lineHeight:"2rem", textDecoration:"underline", textDecorationColor:"crimson"}}>Why Choose Us?</h1>
 
                     
 
