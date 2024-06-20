@@ -4,13 +4,20 @@ import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'framer-motion';
-import { BellElectric, Car, ChevronDown, DraftingCompass, Factory, Globe, Laptop2, PanelTopDashed, Pin, TreeDeciduous, UserCheck, Users, Wrench } from "lucide-react";
+import { BellElectric, Car, ChevronDown, ChevronUp, DraftingCompass, Factory, Globe, Laptop2, PanelTopDashed, Pin, TreeDeciduous, UserCheck, Users, Wrench } from "lucide-react";
+import { useEffect, useState } from "react";
 import CountUp from 'react-countup';
 
 
 export default function OnBoarding(){
 
-    
+    const [expand, setExpand] = useState(false)
+
+    useEffect(()=>{
+        setMounted(true)
+    },[])
+
+    const [mounted, setMounted] = useState(false)
 
     return(
         <>
@@ -171,13 +178,43 @@ export default function OnBoarding(){
 
         <ServiceBox title="Automobile" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<Car width={"2.5rem"} height={"2.5rem"}/>}/>
 
-        {/* <ServiceBox title="Landscaping" desc="Our experts deliver world class landscaping, horticulture & irrigation works" icon={<TreeDeciduous width={"2.5rem"} height={"2.5rem"}/>}/> */}
+        {
+            expand?
+
+            <>
+            
+            <ServiceBox title="Landscaping" desc="Our experts deliver world class landscaping, horticulture & irrigation works" icon={<TreeDeciduous width={"2.5rem"} height={"2.5rem"}/>}/>
+
+            <ServiceBox title="IT Division" desc="We are equipped with highly experienced professionals who provide reliable IT solutions" icon={<Laptop2 width={"2.5rem"} height={"2.5rem"}/>}/>
+
+            <ServiceBox title="MEP Division" desc="We ensure that all Mechanical, electrical, and plumbing aspects are properly installed and commisioned" icon={<BellElectric width={"2.5rem"} height={"2.5rem"}/>}/>
+
+            <ServiceBox title="Road & Earthworks" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<PanelTopDashed width={"2.5rem"} height={"2.5rem"}/>}/>
+
+            <ServiceBox title="Manufacturing" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<Factory width={"2.5rem"} height={"2.5rem"}/>}/>
+
+            </>
+
+            :null
+        }
+
+        
 
         </div>
 
         <div className="sm-services" style={{ width:"100%", justifyContent:"center"}}>
-
-                <Button variant={"ghost"} style={{width:"32ch", display:"flex", gap:"0.5rem", alignItems:"center", alignSelf:"center", background:"rgba(100 100 100/ 10%)", boxShadow:"1px 1px 10px rgba(0 0 0/ 10%)"}}>Expand <ChevronDown width={"1rem"} color="crimson"/></Button>
+                <Button onClick={()=>{setExpand(!expand)}} variant={"ghost"} style={{width:"32ch", display:"flex", gap:"0.5rem", alignItems:"center", alignSelf:"center", background:"rgba(100 100 100/ 10%)", boxShadow:"1px 1px 10px rgba(0 0 0/ 10%)"}}>{expand?
+                <>
+                Collapse
+                <ChevronUp width={"1rem"} color="crimson"/>
+                </>
+                
+                :
+                <>
+                Show More
+                <ChevronDown width={"1rem"} color="crimson"/>
+                </>
+                }</Button>
         </div>
         
 
@@ -211,7 +248,12 @@ export default function OnBoarding(){
 </motion.div>
 
 
+
+
 <div style={{border:"", display:'flex', justifyContent:"center", alignItems:"center", height:"12rem", gap:"1.25rem", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
+
+
+            
 
             <div style={{display:"flex", flexFlow:"column", width:"6rem", border:"",alignItems:"center", justifyContent:"center"}}>
 
@@ -253,12 +295,14 @@ export default function OnBoarding(){
             
         </div>
 
+        {
+            mounted?
             <div className="page" id="page" style={{display:"flex" , alignItems:"center"}}>
 
                 <img src="/blue-bg.jpg" style={{position:"absolute", zIndex:-1, width:"100%", height:"100svh", objectFit:"cover"}}/>
 
 
-        <motion.div
+            <motion.div
         variants={{
             hidden:{opacity:0, y:35},
             visible:{opacity:1, y:0},
@@ -273,7 +317,7 @@ export default function OnBoarding(){
 
         
   
-            <div className="" style={{border:"", margin:"2.75rem", display:"flex"}}>
+            <div className="items-container" style={{border:"", margin:"2.75rem", display:"flex"}}>
 
                 
 
@@ -329,6 +373,10 @@ export default function OnBoarding(){
             
             
         </div>
+:null
+        }
+
+            
 
         
 
@@ -416,14 +464,14 @@ export default function OnBoarding(){
             </Carousel>
         </div>
 
-        <div className="page" style={{height:"25rem", display:"flex", alignItems:"center", background:"rgba(100 100 100/ 20%)"}}>
+        {/* <div className="page" style={{height:"25rem", display:"flex", alignItems:"center", background:"rgba(100 100 100/ 20%)"}}>
             <div style={{display:"flex", border:"", height:"fit-content", marginLeft:"2rem", fontSize:"1.5rem", flexFlow:"column", gap:"0.5rem"}}>
 
                 <img src="/sohar_star_logo.png" style={{width:"4rem"}}/>
                 <h1 style={{ fontFamily:"Tanker"}}>Sohar Star United <strong style={{fontWeight:400, fontSize:"1.5rem", letterSpacing:"0.1rem"}}>LLC</strong> </h1>
                 <p style={{fontSize:"0.8rem", opacity:0.75}}>P.O. Box: 153, PC: 322, Falaj Al-Qabail, Sultanate of Oman, CR No.:1079500</p>
             </div>
-        </div>
+        </div> */}
         </motion.div>
         </>
         

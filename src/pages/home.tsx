@@ -6,6 +6,7 @@ import OnBoarding from "./onboarding";
 import OurTeam from "./our-team";
 import Projects from "./projects";
 import ContactUs from "./contact-us";
+import Footer from "@/components/footer";
 
 
 export default function Home(){
@@ -35,7 +36,7 @@ export default function Home(){
             <Route path="/contact-us" element={<ContactUs/>}/>
         </Routes>
 
-        {/* <Footer/> */}
+        <Footer/>
 
         </>
     )

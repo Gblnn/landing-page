@@ -1,11 +1,13 @@
 import TeamMember from '@/components/team-member';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { motion } from 'framer-motion';
-import { ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function OurTeam(){
 
-    // const usenavigate = useNavigate()
+    const usenavigate = useNavigate()
     useEffect(()=>{
         
     },[])
@@ -17,9 +19,31 @@ export default function OurTeam(){
 
             <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
 
+            <div style={{display:"flex"}}>
+            <button className='btn' onClick={()=>usenavigate(-1)}><ChevronLeft/></button>
                 <h1 style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.5rem", alignItems:'center', marginLeft:"1rem"}}>
                     Our Team <ChevronRight color="crimson"/>
                 </h1>
+            </div>
+                
+
+                <br/><br/>
+
+                <Select defaultValue='management-team'>
+                        <SelectTrigger style={{background:"rgba(100 100 100/ 10%)", border:"none", fontSize:"1.25rem", outline:"none", paddingLeft:"1.25rem",paddingRight:"1rem", height:"3rem"}} className="w-[250px]">
+                            <SelectValue defaultValue={"management-team"}/>
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectGroup>
+                            
+                            <SelectItem style={{fontSize:"1rem"}} defaultChecked value="management-team">Management Team</SelectItem>
+                            <SelectItem style={{fontSize:"1rem"}} value="production-team">Production Team</SelectItem>
+                            <SelectItem style={{fontSize:"1rem"}} value="manufacturing">Manufacturing</SelectItem>
+                            <SelectItem style={{fontSize:"1rem"}} value="landscaping">Landscaping</SelectItem>
+                            <SelectItem style={{fontSize:"1rem"}} value="road-and-earthworks">Road & Earthwork</SelectItem>
+                            </SelectGroup>
+                        </SelectContent>
+                        </Select>
 
                 <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem", paddingBottom:"6rem"}}>
 

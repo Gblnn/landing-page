@@ -77,7 +77,7 @@ interface Props{
       
       </DropdownMenuItem>
       <DropdownMenuSeparator/>
-                  <Link to="/our-team" onClick={()=>{document.body.scrollTo(0, 0)}}>
+                  <Link to="/our-team">
                   <DropdownMenuItem>
                     <Users color="dodgerblue" className="mr-2 h-4 w-4" />
                     <span>Our Team</span>
