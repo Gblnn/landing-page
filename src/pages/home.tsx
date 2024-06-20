@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/header";
 import Careers from "./careers";
 import OnBoarding from "./onboarding";
@@ -14,9 +14,16 @@ export default function Home(){
 
     useEffect(()=>{
         usenavigate("/onboarding")
-    },[])    
+    },[])   
+    
+    const {pathname} = useLocation()
+
+    useEffect(()=>{
+        window.scrollTo(0, 0)
+    },[pathname])
 
     return(
+        
         <>
         <Header/>
         

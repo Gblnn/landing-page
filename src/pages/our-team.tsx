@@ -1,10 +1,14 @@
 import TeamMember from '@/components/team-member';
 import { motion } from 'framer-motion';
 import { ChevronRight } from "lucide-react";
+import { useEffect } from 'react';
 
 export default function OurTeam(){
 
     // const usenavigate = useNavigate()
+    useEffect(()=>{
+        
+    },[])
 
     return(
         <motion.div initial={{opacity:0}} whileInView={{opacity:1}}>

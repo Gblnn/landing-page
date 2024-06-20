@@ -56,15 +56,16 @@ export default function OnBoarding(){
                 
             </div> */}
 
-<div id="news-and-updates" className="page" style={{background:"url(https://i.pinimg.com/736x/92/70/c1/9270c19eb7d37366c20da05e28844248.jpg)", border:"", height:"auto", paddingTop:"3rem", paddingBottom:"4rem",  backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+<div id="news-and-updates" className="page" style={{background:"url(https://i.pinimg.com/736x/92/70/c1/9270c19eb7d37366c20da05e28844248.jpg)", border:"", height:"auto", paddingTop:"3rem", paddingBottom:"4rem",  backgroundRepeat:"no-repeat", backgroundSize:"cover", display:"flex", justifyContent:'center'}}>
 
-<div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
+<div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"fit-content"}}>
 
     <h1 style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.5rem", alignItems:'center', marginLeft:"1rem"}}>
         Latest News <strong style={{color:"crimson", fontWeight:"500"}}>&</strong> Updates
     </h1>
 
-    <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", gap:"2rem", flexWrap:"wrap"}}>
+    <div className="items-container" style={{border:"", display:"flex", marginTop:"2rem", justifyContent:"center", gap:"2rem", flexWrap:"wrap"}}>
+
     <NewsBox img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="News & Update 1" desc="Brief description of update in very few words"/>
     <NewsBox img="/pxfuel.jpg" title="News & Update 2" desc="Brief description of update in very few words"/>
     <NewsBox img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg" title="News & Update 3" desc="Brief description of update in very few words"/>
@@ -102,7 +103,14 @@ export default function OnBoarding(){
         <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem"}}>
 
 
-        <Carousel className="carousel" style={{border:"", padding:"", width:"105ch"}}>
+        <Carousel
+        plugins={[
+            Autoplay({
+                delay:3000
+            })
+            
+         ]}
+         className="carousel" style={{border:"", padding:"", width:"105ch"}}>
             <CarouselPrevious style={{}}/>
         <CarouselContent style={{gap:"0rem", width:"auto", border:"", padding:"1rem"}}>
 
@@ -145,9 +153,15 @@ export default function OnBoarding(){
 
         </CarouselContent>
         <CarouselNext/>
+        {/* <div style={{border:"", display:'flex', justifyContent:"center", padding:"1.5rem"}}>
+        <p style={{display:'flex', alignItems:'center', fontSize:"0.85rem", gap:"0.5rem"}}>
+            Scroll to see more <ChevronRight width={"1.25rem"} color="crimson"/>
+        </p>
+        </div> */}
+        
         </Carousel>
 
-        <div className="sm-services" style={{border:"", width:"75%", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem"}}>
+        <div className="sm-services" style={{border:"", width:"", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem"}}>
 
         <ServiceBox title="Civil Engineering" desc="We translate the architectural concepts from our clients into concrete realities" icon={<DraftingCompass width={"2.5rem"} height={"2.5rem"}/>}/>
 

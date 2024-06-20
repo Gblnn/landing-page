@@ -3,12 +3,18 @@ import Home from "./pages/home"
 
 function App() {
 
+  
+
   return (
+    <>
     <BrowserRouter>
       <Routes>
         <Route path="/*" index element={<Home/>}/>
       </Routes>
     </BrowserRouter>
+    
+    </>
+    
   )
 }
 

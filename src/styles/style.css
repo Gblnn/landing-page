@@ -85,7 +85,7 @@ p {
 
 .project {
   cursor: pointer;
-  width: 60ch;
+  width: 55ch;
   transition: 0.3s;
   outline: none;
 }
@@ -129,6 +129,16 @@ p {
 
 .clients {
   width: 21rem;
+}
+
+.items-container {
+  width: 100%;
+}
+
+@media (width>1280px) {
+  .items-container {
+    width: 1280px;
+  }
 }
 
 @media (width<700px) {
