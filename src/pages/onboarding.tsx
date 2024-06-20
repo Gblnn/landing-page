@@ -56,7 +56,7 @@ export default function OnBoarding(){
                 
             </div> */}
 
-<div id="news-and-updates" className="page" style={{border:"", height:"auto", paddingTop:"3rem", background:"rgba(100 100 100/ 10%)", paddingBottom:"4rem"}}>
+<div id="news-and-updates" className="page" style={{background:"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThuiFYF2hRmybasc_cBe02bAXDvc_eaOK2mw&s)", border:"", height:"auto", paddingTop:"3rem", paddingBottom:"4rem",  backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
 
 <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
 
@@ -278,7 +278,7 @@ export default function OnBoarding(){
                 
             
 
-                    <h1 style={{fontSize:"1.75rem", fontWeight:600, textShadow:"1px 1px 10px rgba(255 255 255/ 50%)", lineHeight:"2rem", textDecoration:"underline", textDecorationColor:"crimson"}}>Why Choose Us?</h1>
+                    <h1 style={{fontSize:"1.75rem", fontWeight:600, textShadow:"1px 1px 10px rgba(255 255 255/ 50%)", lineHeight:"2rem", textDecoration:"underline",textUnderlineOffset:"0.25rem", textDecorationColor:"crimson"}}>Why Choose Us?</h1>
 
                     
 
