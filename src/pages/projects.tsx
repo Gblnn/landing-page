@@ -11,11 +11,13 @@ export default function Projects(){
     return(
         <motion.div initial={{opacity:0}} whileInView={{opacity:1}}>
 
-        <div id="projects-page" className="page" style={{border:"", height:"auto", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)"}}>
+        <div id="projects-page" className="page" style={{border:"", height:"auto", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)", display:"flex", justifyContent:"flex-start", flexFlow:"column"}}>
 
-            <div style={{margin:"1.25rem", marginTop:"6rem", border:"", width:"100%"}}>
+       
 
-                <h1 style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.75rem", alignItems:'center', marginLeft:"1rem"}}>
+            <div style={{margin:"1.25rem", marginTop:"6rem", border:"", width:"", display:"flex", flexFlow:"column", alignItems:"center"}}>
+
+                <h1 className='items-container' style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.75rem", alignItems:'center', marginLeft:"1rem", border:""}}>
                     <button className='btn' onClick={()=>usenavigate(-1)}><ChevronLeft/></button>
                     
                     
@@ -36,7 +38,7 @@ export default function Projects(){
                         </Select>
                 </h1>
 
-                <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem"}}>
+                <div className='items-container' style={{border:"", display:"flex", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem"}}>
                 <Project img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="Project 1" desc="Brief description of project 1"/>
 
                 <Project img="/pxfuel.jpg" title="Project 2" desc="Brief description of project 2"/>

@@ -17,7 +17,7 @@
 }
 
 .nav-bar {
-  background: #a0a0a015;
+  background: rgba(50 50 50/ 70%);
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   z-index: 10;
@@ -26,6 +26,15 @@
 p {
   word-spacing: 0.05rem;
   letter-spacing: 0.025rem;
+}
+
+.link {
+  transition: 0.3s;
+  font-weight: 400;
+}
+
+.link:hover {
+  color: crimson;
 }
 
 .button {
@@ -43,6 +52,19 @@ p {
 .button:hover {
   box-shadow: 1px 1px 20px crimson;
   transform: translateY(-4px);
+}
+
+.skewed-button {
+  background-color: crimson;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px crimson;
+  display: flex;
+  gap: 0.5rem;
+  transition: 0.3s;
+  transform: skew(20deg);
 }
 
 .bg {
@@ -101,7 +123,7 @@ p {
 }
 
 .project:hover {
-  transform: scale(1.025);
+  transform: scale(1.02);
 }
 
 .hoverable {
@@ -133,6 +155,10 @@ p {
 
 .items-container {
   width: 100%;
+}
+
+.nav-bar {
+  justify-content: space-between;
 }
 
 @media (width>1280px) {
@@ -174,6 +200,12 @@ p {
   }
   .heading {
     width: 75%;
+  }
+  .footer {
+    margin-bottom: 4.5rem;
+  }
+  .nav-bar {
+    justify-content: center;
   }
 }
 

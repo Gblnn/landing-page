@@ -22,7 +22,7 @@ export default function OurTeam(){
             <div style={{display:"flex"}}>
             <button className='btn' onClick={()=>usenavigate(-1)}><ChevronLeft/></button>
                 <h1 style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.5rem", alignItems:'center', marginLeft:"1rem"}}>
-                    Our Team <ChevronRight color="crimson"/>
+                    Our People <ChevronRight color="crimson"/>
                 </h1>
             </div>
                 
@@ -49,8 +49,7 @@ export default function OurTeam(){
 
                     <TeamMember/>
                     <TeamMember/>
-                    <TeamMember/>
-                    <TeamMember/>
+                    
 
                 {/* <Project img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="Project 1" desc="Brief description of project 1"/>
 

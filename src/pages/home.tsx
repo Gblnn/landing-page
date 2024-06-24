@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/header";
 import Careers from "./careers";
@@ -12,9 +12,11 @@ import Footer from "@/components/footer";
 export default function Home(){
 
     const usenavigate = useNavigate()
+    const [mounted, setMounted] = useState(false)
 
     useEffect(()=>{
         usenavigate("/onboarding")
+        setMounted(true)
     },[])   
     
     const {pathname} = useLocation()
@@ -36,7 +38,11 @@ export default function Home(){
             <Route path="/contact-us" element={<ContactUs/>}/>
         </Routes>
 
-        <Footer/>
+        {
+            mounted&&
+            <Footer/>
+        }
+        
 
         </>
     )
