@@ -17,10 +17,10 @@ export default function Footer(){
 
                     <div style={{display:'flex', flexFlow:"column", gap:"0.5rem", letterSpacing:"0.05rem"}}>
 
-                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center", letterSpacing:"0.05rem"}} to=""><Smartphone color="crimson" width={"1rem"}/>92822305, 99440272</Link>
-                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center"}} to=""><Phone color="crimson" width={"1rem"}/>26842701, Fax : 26844289</Link>
-                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center"}} to=""><Mails color="crimson" width={"1rem"}/>soharstar2010@gmail.com</Link>
-                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center"}} to=""><Mail color="crimson" width={"1rem"}/>info@soharstar.com</Link>
+                        <div style={{display:"flex", gap:"0.5rem", alignItems:"center", letterSpacing:"0.05rem"}}><Smartphone color="crimson" width={"1rem"}/><a href="tel:92822305" className="ghost">92822305</a><a href="tel:99440272" className="ghost">99440272</a></div>
+                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center"}} to=""><Phone color="crimson" width={"1rem"}/><p className="ghost">26842701</p> Fax : <p className="ghost">26844289</p></Link>
+                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center"}} to=""><Mails color="crimson" width={"1rem"}/><a href="mailto:soharstar2010@gmail.com" className="ghost" style={{width:"12rem"}}>soharstar2010@gmail.com</a></Link>
+                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center"}} to=""><Mail color="crimson" width={"1rem"}/><a href="mailto:info@soharstar.com" style={{width:"9rem"}} className="ghost">info@soharstar.com</a></Link>
 
                     </div>
                     </div>
@@ -31,16 +31,17 @@ export default function Footer(){
                     <p style={{fontSize:"1rem", fontWeight:600, display:"flex", gap:"0.5rem"}}>QUICK LINKS <Link2/></p>
                     <br/>
                     <div style={{display:"flex", gap:"2.5rem", fontSize:"0.9rem"}}>
-                        <div style={{display:"flex", flexFlow:"column", gap:"0.5rem"}}>
+                        <div style={{display:"flex", flexFlow:"column", gap:"0.7rem"}}>
                             <Link className="link" to="">Our Team</Link>
                             <Link className="link" to="">Our Mission</Link>
                             <Link className="link" to="">Values & Culture</Link>
                             <Link className="link" to="">Quality Certifications</Link>
                         </div>
-                        <div style={{display:"flex", flexFlow:"column",gap:"0.5rem"}}>
-                            <Link to="">Projects</Link>
-                            <Link to="">Careers</Link>
-                            <Link to="">Contact Us</Link>
+                        <div style={{display:"flex", flexFlow:"column",gap:"0.7rem"}}>
+                            <Link className="link" to="">About Us</Link>
+                            <Link className="link" to="">Projects</Link>
+                            <Link className="link" to="">Careers</Link>
+                            <Link className="link" to="">Contact Us</Link>
                         </div>
                     </div>
 

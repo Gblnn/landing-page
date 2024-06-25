@@ -10,7 +10,7 @@ interface Props{
 export default function LandingSection(props:Props){
     return(
         <>
-        <div style={{width:"100%", height:"100svh", display:"flex", alignItems:"center", justifyContent:"center", flexFlow:"column", gap:"1rem"}}>
+        <div style={{width:"100%", height:"100svh", display:"flex", alignItems:"center", justifyContent:"center", flexFlow:"column", gap:"1rem", boxShadow:"1px 1px 20xp rgba(0 0 0/ 70%)"}}>
 
             <video style={{opacity:0.25, objectFit:"cover", border:"", minHeight:"100%", minWidth:"100%"}} autoPlay muted loop controlsList="nofullscreen" playsInline>
 

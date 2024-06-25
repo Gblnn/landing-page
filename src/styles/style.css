@@ -17,7 +17,7 @@
 }
 
 .nav-bar {
-  background: rgba(50 50 50/ 70%);
+  background: rgba(60 60 60/ 60%);
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   z-index: 10;
@@ -132,6 +132,14 @@ p {
   border-radius: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.ghost {
+  background: rgba(100 100 100/ 20%);
+  padding: 0.2rem;
+  width: 5rem;
+  text-align: center;
+  border-radius: 0.5rem;
 }
 
 .hoverable:hover {

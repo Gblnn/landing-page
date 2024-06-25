@@ -1,6 +1,5 @@
 import NewsBox from "@/components/news-box";
 
-
 export default function NewsAndUpdatesSection(){
     return(
         <>
