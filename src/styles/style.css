@@ -60,11 +60,14 @@ p {
   padding-left: 1rem;
   padding-right: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 5px crimson;
   display: flex;
   gap: 0.5rem;
   transition: 0.3s;
   transform: skew(20deg);
+}
+
+.title {
+  margin-left: 1rem;
 }
 
 .bg {
@@ -140,6 +143,7 @@ p {
   width: 5rem;
   text-align: center;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .hoverable:hover {
@@ -214,6 +218,9 @@ p {
   }
   .nav-bar {
     justify-content: center;
+  }
+  .title {
+    margin-left: 0rem;
   }
 }
 

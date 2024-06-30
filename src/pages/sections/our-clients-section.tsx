@@ -4,7 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 export default function OurClientsSection(){
     return(
         <>
-        <div className="page" style={{display:"flex", justifyContent:"center", paddingTop:"", height:"15rem",border:'', background:"#1a1a1a", alignItems:"center", flexFlow:"column", gap:'1.5rem', boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
+        <div className="page" style={{display:"flex", justifyContent:"center", paddingTop:"", height:"15rem",border:'', alignItems:"center", flexFlow:"column", gap:'1.5rem', boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)"}}>
             <h1 style={{textAlign:'center', color:""}}>OUR<br/> <strong style={{fontWeight:600}}>CLIENTS</strong></h1>
             <Carousel
             

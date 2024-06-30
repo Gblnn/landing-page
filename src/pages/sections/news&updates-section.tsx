@@ -3,7 +3,7 @@ import NewsBox from "@/components/news-box";
 export default function NewsAndUpdatesSection(){
     return(
         <>
-        <div id="news-and-updates" className="page" style={{background:"url(https://i.pinimg.com/736x/92/70/c1/9270c19eb7d37366c20da05e28844248.jpg)", border:"", height:"auto", paddingTop:"3rem", paddingBottom:"4rem",  backgroundRepeat:"no-repeat", backgroundSize:"cover", display:"flex", justifyContent:'center'}}>
+        <div id="news-and-updates" className="page" style={{background:"url(https://cdn.svgator.com/images/2022/06/use-svg-as-background-image-particle-strokes.svg)", border:"", height:"auto", paddingTop:"3rem", paddingBottom:"4rem",  backgroundRepeat:"no-repeat", backgroundSize:"cover", display:"flex", justifyContent:'center'}}>
 
             <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"fit-content"}}>
 

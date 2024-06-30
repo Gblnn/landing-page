@@ -19,7 +19,7 @@ export default function MobileNav(){
             </Link>
 
             <Link style={{border:"", width:"5rem", textAlign:"center"}} to="/contact-us">
-                Contact
+                Contact Us
             </Link>
         </div>
         </>

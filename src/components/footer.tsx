@@ -1,6 +1,6 @@
-import { Link2, Mail, Mails, Phone, Smartphone } from "lucide-react";
+import { LinkIcon, Mail, Mails, Phone, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import moment from 'moment'
 
 export default function Footer(){
     return(
@@ -18,9 +18,11 @@ export default function Footer(){
                     <div style={{display:'flex', flexFlow:"column", gap:"0.5rem", letterSpacing:"0.05rem"}}>
 
                         <div style={{display:"flex", gap:"0.5rem", alignItems:"center", letterSpacing:"0.05rem"}}><Smartphone color="crimson" width={"1rem"}/><a href="tel:92822305" className="ghost">92822305</a><a href="tel:99440272" className="ghost">99440272</a></div>
-                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center"}} to=""><Phone color="crimson" width={"1rem"}/><p className="ghost">26842701</p> Fax : <p className="ghost">26844289</p></Link>
-                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center"}} to=""><Mails color="crimson" width={"1rem"}/><a href="mailto:soharstar2010@gmail.com" className="ghost" style={{width:"12rem"}}>soharstar2010@gmail.com</a></Link>
-                        <Link style={{display:"flex", gap:"0.5rem", alignItems:"center"}} to=""><Mail color="crimson" width={"1rem"}/><a href="mailto:info@soharstar.com" style={{width:"9rem"}} className="ghost">info@soharstar.com</a></Link>
+                        <div style={{display:"flex", gap:"0.5rem", alignItems:"center"}}><Phone color="crimson" width={"1rem"}/><a href="tel:26842701" className="ghost">26842701</a> Fax : <a className="ghost" >{"26844289"}</a></div>
+
+                        <div style={{display:"flex", gap:"0.5rem", alignItems:"center"}} ><Mails color="crimson" width={"1rem"}/><a href="mailto:soharstar2010@gmail.com" className="ghost" style={{width:"12rem"}}>soharstar2010@gmail.com</a></div>
+
+                        <div style={{display:"flex", gap:"0.5rem", alignItems:"center"}} ><Mail color="crimson" width={"1rem"}/><a href="mailto:info@soharstar.com" style={{width:"9rem"}} className="ghost">info@soharstar.com</a></div>
 
                     </div>
                     </div>
@@ -28,11 +30,11 @@ export default function Footer(){
                     {/* Quick Links */}
                     <div style={{border:"", display:"flex", flexFlow:"column"}}>
 
-                    <p style={{fontSize:"1rem", fontWeight:600, display:"flex", gap:"0.5rem"}}>QUICK LINKS <Link2/></p>
+                    <p style={{fontSize:"1rem", fontWeight:600, display:"flex", gap:"0.5rem"}}><LinkIcon width={"1rem"}/>QUICK LINKS </p>
                     <br/>
                     <div style={{display:"flex", gap:"2.5rem", fontSize:"0.9rem"}}>
                         <div style={{display:"flex", flexFlow:"column", gap:"0.7rem"}}>
-                            <Link className="link" to="">Our Team</Link>
+                            <Link className="link" to="/our-team">Our Team</Link>
                             <Link className="link" to="">Our Mission</Link>
                             <Link className="link" to="">Values & Culture</Link>
                             <Link className="link" to="">Quality Certifications</Link>
@@ -86,7 +88,7 @@ export default function Footer(){
 
             <div style={{display:"flex",margin:"", wordSpacing:"0.1rem", border:"", padding:"1rem", background:"#1a1a1a", width:"100%", justifyContent:"center"}}>
                 <div className="items-container" style={{display:"flex", border:"", justifyContent:"center"}}>
-                <p>Copyrights Reserved 2024 &copy; <strong style={{fontWeight:500}}> SOHAR STAR UNITED LLC </strong></p>
+                <p>Copyrights Reserved {String(moment().year())} &copy; <strong style={{fontWeight:500}}> SOHAR STAR UNITED LLC </strong></p>
                 </div>
                 
                 </div>

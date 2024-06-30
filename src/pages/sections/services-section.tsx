@@ -14,7 +14,7 @@ export default function ServicesSection(){
         <>
         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.25}}>
 
-            <div id="services" className="" style={{display:"flex", height:"fit-content", paddingTop:"4rem", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)",background:"url(https://img.freepik.com/free-vector/gradient-dark-dynamic-lines-background_23-2148995950.jpg)", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+            <div id="services" className="" style={{display:"flex", height:"fit-content", paddingTop:"4rem", boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)",background:"url(https://ftp.sjtu.edu.cn/scientific/graphics/latest/backgrounds/Edge.of.Space/atomshine-16-9.svg)", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
 
 
 

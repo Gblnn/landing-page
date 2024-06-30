@@ -11,7 +11,7 @@ export default function Header(){
         <>
         <div className="nav-bar" style={{display:"flex", height:"6rem", alignItems:"center", position:"fixed", width:"100%", zIndex:15, boxShadow:"1px 1px 20px rgba(0 0 0/ 50%)", border:""}}>
 
-            <div style={{display:"flex", alignItems:"center", gap:"0.25rem", zIndex:10, background:"rgba(100 100 100/ 10%)", borderRadius:"0.5rem", padding:"0.25rem", paddingRight:"1rem", paddingLeft:"0.75rem", cursor:"pointer"}} onClick={()=>usenavigate("/onboarding")}>
+            <div className="title" style={{display:"flex", alignItems:"center", gap:"0.25rem", zIndex:10, background:"rgba(100 100 100/ 10%)", borderRadius:"0.5rem", padding:"0.25rem", paddingRight:"1rem", paddingLeft:"0.75rem", cursor:"pointer"}} onClick={()=>usenavigate("/onboarding")}>
 
                 <img src="/sohar_star_logo.png" width="40rem" height="40rem"/>
 

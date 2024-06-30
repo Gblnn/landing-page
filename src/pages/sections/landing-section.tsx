@@ -31,8 +31,8 @@ export default function LandingSection(props:Props){
                 <p style={{opacity:"0.75", wordSpacing:"0.25rem"}}>{props.subtitle}</p>
                 <br style={{height:"2rem"}}/>
 
-                <a href="#services" className="arrow" style={{position:"absolute", marginTop:"20rem"}}>
-                    <button >
+                <a href="#services" className="arrow animate-bounce" style={{position:"absolute", marginTop:"20rem"}}>
+                    <button>
                         <ChevronDown color="crimson" width={"2.5rem"} height={"2.5rem"}/>
                     </button>
                 </a>

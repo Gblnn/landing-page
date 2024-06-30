@@ -1,3 +1,4 @@
+import Back from '@/components/back';
 import { motion } from 'framer-motion';
 import { ChevronRight } from "lucide-react";
 
@@ -12,7 +13,10 @@ export default function Careers(){
 
             <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
 
-                <h1 style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.5rem", alignItems:'center', marginLeft:"1rem"}}>
+                
+
+                <h1 style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.75rem", alignItems:'center', }}>
+                <Back/>
                     Careers <ChevronRight color="crimson"/>
                 </h1>
 

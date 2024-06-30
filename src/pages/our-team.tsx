@@ -27,7 +27,7 @@ export default function OurTeam(){
             </div>
                 
 
-                <br/><br/>
+                <br/>
 
                 <Select defaultValue='management-team'>
                         <SelectTrigger style={{background:"rgba(100 100 100/ 10%)", border:"none", fontSize:"1.25rem", outline:"none", paddingLeft:"1.25rem",paddingRight:"1rem", height:"3rem"}} className="w-[250px]">
@@ -43,12 +43,20 @@ export default function OurTeam(){
                             <SelectItem style={{fontSize:"1rem"}} value="road-and-earthworks">Road & Earthwork</SelectItem>
                             </SelectGroup>
                         </SelectContent>
-                        </Select>
+                </Select>
 
-                <div style={{border:"", width:"100%", display:"flex", marginTop:"2rem", justifyContent:"center", flexWrap:"wrap", gap:"2rem", paddingBottom:"6rem"}}>
+                <br/>
 
+                <div className='' style={{border:"", width:"100%", alignItems:"center", justifyContent:"center", display:"flex"}} >
+
+                <div className='items-container' style={{border:"", display:"flex", marginTop:"", justifyContent:"center", flexWrap:"wrap", gap:"2rem", paddingBottom:"1rem"}}>
                     <TeamMember/>
                     <TeamMember/>
+                    <TeamMember/>
+                    <TeamMember/>
+                </div>
+
+                    
                     
 
                 {/* <Project img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="Project 1" desc="Brief description of project 1"/>
