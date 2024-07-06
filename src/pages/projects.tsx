@@ -1,3 +1,4 @@
+import Back from '@/components/back';
 import Project from '@/components/project';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { motion } from 'framer-motion';
@@ -18,7 +19,7 @@ export default function Projects(){
             <div style={{margin:"1.25rem", marginTop:"6rem", border:"", width:"", display:"flex", flexFlow:"column", alignItems:"center"}}>
 
                 <h1 className='items-container' style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.75rem", alignItems:'center', marginLeft:"1rem", border:""}}>
-                    <button className='btn' onClick={()=>usenavigate(-1)}><ChevronLeft/></button>
+                    <Back/>
                     
                     
                     <Select defaultValue='civil-projects'>

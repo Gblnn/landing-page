@@ -1,9 +1,9 @@
 import ServiceBox from '@/components/service-box'
 import { Button } from '@/components/ui/button'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import { motion } from 'framer-motion'
-import { BellElectric, Car, ChevronDown, ChevronUp, DraftingCompass, Factory, Globe, Laptop2, PanelTopDashed, Pin, TreeDeciduous, Wrench } from 'lucide-react'
 import Autoplay from 'embla-carousel-autoplay'
+import { motion } from 'framer-motion'
+import { BellElectric, Car, ChevronDown, ChevronUp, DraftingCompass, Globe, Laptop2, PanelTopDashed, Pin, TreeDeciduous, Wrench } from 'lucide-react'
 import { useState } from 'react'
 
 export default function ServicesSection(){
@@ -74,9 +74,9 @@ export default function ServicesSection(){
                                     <ServiceBox title="Road & Earthworks" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<PanelTopDashed width={"2.5rem"} height={"2.5rem"}/>}/>
                                 </CarouselItem>
 
-                                <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
+                                {/* <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                                     <ServiceBox title="Manufacturing" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<Factory width={"2.5rem"} height={"2.5rem"}/>}/>
-                                </CarouselItem>
+                                </CarouselItem> */}
                             </CarouselContent>
                             <CarouselNext/>
 
@@ -112,7 +112,7 @@ export default function ServicesSection(){
 
                             <ServiceBox title="Road & Earthworks" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<PanelTopDashed width={"2.5rem"} height={"2.5rem"}/>}/>
 
-                            <ServiceBox title="Manufacturing" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<Factory width={"2.5rem"} height={"2.5rem"}/>}/>
+                            {/* <ServiceBox title="Manufacturing" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<Factory width={"2.5rem"} height={"2.5rem"}/>}/> */}
 
                             </>
 
