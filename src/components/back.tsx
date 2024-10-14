@@ -7,7 +7,7 @@ export default function Back(){
 
     return(
         <>
-        <button className='btn' onClick={()=>usenavigate(-1)}><ChevronLeft color="dodgerblue"/></button>
+        <button className='btn' onClick={()=>usenavigate(-1)}><ChevronLeft /></button>
         </>
     )
 }
