@@ -6,18 +6,20 @@
 }
 
 :root {
-  --nav-color: rgba(50 50 50/ 10%);
+  --nav-color: rgba(50 50 50/50%);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light;
-    --nav-color: rgba(0 0 0/ 5%);
+  }
+  body {
+    --nav-color: rgba(255 255 255/ 85%);
   }
 }
 
 .nav-bar {
-  background: rgba(60 60 60/ 60%);
+  background-color: var(--nav-color);
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   z-index: 10;
@@ -138,7 +140,7 @@ p {
 }
 
 .ghost {
-  background: rgba(100 100 100/ 20%);
+  background: rgba(100 100 100/ 10%);
   padding: 0.2rem;
   width: 5rem;
   text-align: center;
@@ -171,6 +173,13 @@ p {
 
 .nav-bar {
   justify-content: space-between;
+}
+
+.team-member {
+  cursor: pointer;
+  width: 30ch;
+  transition: 0.3s;
+  outline: none;
 }
 
 @media (width>1280px) {

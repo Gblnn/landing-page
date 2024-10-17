@@ -81,6 +81,7 @@ export default function ProfileSection() {
                       flexFlow: "column",
                       flex: 1.5,
                       gap: "2.25rem",
+                      color: "white",
                     }}
                   >
                     <h1

@@ -7,7 +7,7 @@ import "../app/globals.css";
 import "./WEB/css/clash-grotesk.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <ThemeProvider defaultTheme="dark">
+  <ThemeProvider defaultTheme="system">
     <App />
   </ThemeProvider>
 );

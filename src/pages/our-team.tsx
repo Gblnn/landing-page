@@ -1,85 +1,146 @@
-import TeamMember from '@/components/team-member';
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { motion } from 'framer-motion';
+import TeamMember from "@/components/team-member";
+import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function OurTeam(){
+export default function OurTeam() {
+  const usenavigate = useNavigate();
+  useEffect(() => {}, []);
 
-    const usenavigate = useNavigate()
-    useEffect(()=>{
-        
-    },[])
+  return (
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+      <div
+        id="projects"
+        className="page"
+        style={{
+          border: "",
+          height: "fit-content",
+          paddingTop: "1.5rem",
+          background: "rgba(100 100 100/ 10%)",
+        }}
+      >
+        <div
+          style={{
+            margin: "1.5rem",
+            marginTop: "6rem",
+            border: "",
+            width: "100%",
+          }}
+        >
+          <div style={{ display: "flex" }}>
+            <button className="btn" onClick={() => usenavigate(-1)}>
+              <ChevronLeft />
+            </button>
+            <h1
+              style={{
+                fontSize: "1.5rem",
+                fontWeight: 500,
+                display: "flex",
+                gap: "0.5rem",
+                alignItems: "center",
+                marginLeft: "1rem",
+              }}
+            >
+              Our People <ChevronRight color="crimson" />
+            </h1>
+          </div>
 
-    return(
-        <motion.div initial={{opacity:0}} whileInView={{opacity:1}}>
+          <br />
+          {/* 
+          <Select defaultValue="management-team">
+            <SelectTrigger
+              style={{
+                background: "rgba(100 100 100/ 10%)",
+                border: "none",
+                fontSize: "1.25rem",
+                outline: "none",
+                paddingLeft: "1.25rem",
+                paddingRight: "1rem",
+                height: "3rem",
+              }}
+              className="w-[250px]"
+            >
+              <SelectValue defaultValue={"management-team"} />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem
+                  style={{ fontSize: "1rem" }}
+                  defaultChecked
+                  value="management-team"
+                >
+                  Management Team
+                </SelectItem>
+                <SelectItem
+                  style={{ fontSize: "1rem" }}
+                  value="production-team"
+                >
+                  Production Team
+                </SelectItem>
+                <SelectItem style={{ fontSize: "1rem" }} value="manufacturing">
+                  Manufacturing
+                </SelectItem>
+                <SelectItem style={{ fontSize: "1rem" }} value="landscaping">
+                  Landscaping
+                </SelectItem>
+                <SelectItem
+                  style={{ fontSize: "1rem" }}
+                  value="road-and-earthworks"
+                >
+                  Road & Earthwork
+                </SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
 
-        <div id="projects" className="page" style={{border:"", height:"fit-content", paddingTop:"1.5rem", background:"rgba(100 100 100/ 10%)"}}>
+          <br /> */}
 
-            <div style={{margin:"1.5rem", marginTop:"6rem", border:"", width:"100%"}}>
-
-            <div style={{display:"flex"}}>
-            <button className='btn' onClick={()=>usenavigate(-1)}><ChevronLeft/></button>
-                <h1 style={{fontSize:"1.5rem", fontWeight:500, display:'flex', gap:"0.5rem", alignItems:'center', marginLeft:"1rem"}}>
-                    Our People <ChevronRight color="crimson"/>
-                </h1>
+          <div
+            className=""
+            style={{
+              border: "",
+              width: "100%",
+              alignItems: "center",
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
+            <div
+              className="items-container"
+              style={{
+                border: "",
+                display: "flex",
+                marginTop: "",
+                justifyContent: "center",
+                flexWrap: "wrap",
+                gap: "2rem",
+                paddingBottom: "1rem",
+              }}
+            >
+              <TeamMember src="" />
+              <TeamMember />
+              <TeamMember />
+              <TeamMember />
             </div>
-                
 
-                <br/>
-
-                <Select defaultValue='management-team'>
-                        <SelectTrigger style={{background:"rgba(100 100 100/ 10%)", border:"none", fontSize:"1.25rem", outline:"none", paddingLeft:"1.25rem",paddingRight:"1rem", height:"3rem"}} className="w-[250px]">
-                            <SelectValue defaultValue={"management-team"}/>
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectGroup>
-                            
-                            <SelectItem style={{fontSize:"1rem"}} defaultChecked value="management-team">Management Team</SelectItem>
-                            <SelectItem style={{fontSize:"1rem"}} value="production-team">Production Team</SelectItem>
-                            <SelectItem style={{fontSize:"1rem"}} value="manufacturing">Manufacturing</SelectItem>
-                            <SelectItem style={{fontSize:"1rem"}} value="landscaping">Landscaping</SelectItem>
-                            <SelectItem style={{fontSize:"1rem"}} value="road-and-earthworks">Road & Earthwork</SelectItem>
-                            </SelectGroup>
-                        </SelectContent>
-                </Select>
-
-                <br/>
-
-                <div className='' style={{border:"", width:"100%", alignItems:"center", justifyContent:"center", display:"flex"}} >
-
-                <div className='items-container' style={{border:"", display:"flex", marginTop:"", justifyContent:"center", flexWrap:"wrap", gap:"2rem", paddingBottom:"1rem"}}>
-                    <TeamMember/>
-                    <TeamMember/>
-                    <TeamMember/>
-                    <TeamMember/>
-                </div>
-
-                    
-                    
-
-                {/* <Project img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="Project 1" desc="Brief description of project 1"/>
+            {/* <Project img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="Project 1" desc="Brief description of project 1"/>
 
                 <Project img="/pxfuel.jpg" title="Project 2" desc="Brief description of project 2"/>
 
                 <Project img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg" title="Project 3" desc="Brief description of project 3"/>
 
                 <Project img="https://motionarray.imgix.net/motion-array-1096692-auDdGLclkD-high_0009.jpg?w=660&q=60&fit=max&auto=format" title="Project 4" desc="Brief description of project 4"/> */}
-                </div>
+          </div>
 
-                
-                
-                {/* <br/><br/>
+          {/* <br/><br/>
                 <div style={{display:"flex", width:"100%", justifyContent:"center"}}>
                 <Button onClick={()=>usenavigate("/projects")} variant={"ghost"} style={{width:"32ch", display:"flex", gap:"0.5rem", alignItems:"center", alignSelf:"center", background:"rgba(100 100 100/ 10%)", boxShadow:"1px 1px 10px rgba(0 0 0/ 10%)"}}>See more Projects <ChevronRight width={"1rem"} color="crimson"/></Button>
                 </div>
                 
                 <br/><br/> */}
-
-            </div>
-            
         </div>
-        </motion.div>
-    )
+      </div>
+    </motion.div>
+  );
 }

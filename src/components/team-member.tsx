@@ -1,39 +1,51 @@
-export default function TeamMember() {
+interface Props {
+  src?: string;
+}
+
+export default function TeamMember(props: Props) {
   return (
     <div
-      className="project"
+      className="team-member"
       style={{
-        // background: "rgba(100 100 100/ 20%)",
+        background: "rgba(100 100 100/ 20%)",
         width: "",
-        height: "12ch",
-        borderRadius: "1.5rem",
+        height: "32ch",
+        borderRadius: "0.75rem",
         display: "flex",
         alignItems: "center",
+        flexFlow: "column",
       }}
     >
-      <div
+      <img
         style={{
-          border: "5px solid crimson",
-          height: "100%",
+          background: "midnightblue",
+          height: "22ch",
+          borderTopLeftRadius: "1rem",
+          borderTopRightRadius: "1rem",
           display: "flex",
-          width: "",
+          width: "100%",
           justifyContent: "center",
           alignItems: "center",
+          objectFit: "cover",
         }}
-      >
-        {/* <img src="sohar_star_logo.png" style={{width:"6rem", height:"6rem", objectFit:"cover", borderRadius:"50%", border:""}}/> */}
-      </div>
+      />
+      {/* <img src="sohar_star_logo.png" style={{width:"6rem", height:"6rem", objectFit:"cover", borderRadius:"50%", border:""}}/> */}
+
       <div
         style={{
           height: "100%",
           flex: 1,
-          border: "solid #4a4a4a",
+          border: "",
           borderLeft: "none",
           display: "flex",
           justifyContent: "center",
           flexFlow: "column",
           paddingRight: "1rem",
           paddingLeft: "1.5rem",
+          width: "100%",
+          padding: "1rem",
+          borderBottomLeftRadius: "1rem",
+          borderBottomRightRadius: "1rem",
         }}
       >
         <p>Name</p>
