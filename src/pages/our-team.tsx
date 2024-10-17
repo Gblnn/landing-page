@@ -118,7 +118,7 @@ export default function OurTeam() {
                 paddingBottom: "1rem",
               }}
             >
-              <TeamMember src="" />
+              <TeamMember />
               <TeamMember />
               <TeamMember />
               <TeamMember />

@@ -1,8 +1,8 @@
-interface Props {
-  src?: string;
-}
+// interface Props {
+//   src?: string;
+// }
 
-export default function TeamMember(props: Props) {
+export default function TeamMember() {
   return (
     <div
       className="team-member"
