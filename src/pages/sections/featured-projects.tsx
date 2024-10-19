@@ -1,13 +1,4 @@
-import Back from "@/components/back";
 import Project from "@/components/project";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 
