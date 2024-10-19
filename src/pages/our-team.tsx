@@ -17,7 +17,7 @@ export default function OurTeam() {
           border: "",
           height: "fit-content",
           paddingTop: "1.5rem",
-          background: "rgba(100 100 100/ 10%)",
+          background: "rgba(100 100 100/ 5%)",
         }}
       >
         <div
@@ -118,8 +118,13 @@ export default function OurTeam() {
                 paddingBottom: "1rem",
               }}
             >
-              <TeamMember />
-              <TeamMember />
+              <TeamMember name="Suresh Babu" designation="Managing Director" />
+              <TeamMember name="Aravind Unni" designation="Chairman" />
+              <TeamMember
+                name="Madhavan Pillai Gopakumaran Nair"
+                designation="General Manager/ Projects Manager"
+              />
+              <TeamMember name="Rajesh" designation="Head of Operations" />
               <TeamMember />
               <TeamMember />
             </div>

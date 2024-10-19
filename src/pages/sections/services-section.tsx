@@ -41,11 +41,9 @@ export default function ServicesSection() {
             display: "flex",
             height: "",
             paddingTop: "4rem",
-            boxShadow: "1px 1px 20px rgba(0 0 0/ 50%)",
+            boxShadow: "",
             background:
               "no-repeat center/100% center fixed url(https://wallpaperset.com/w/full/c/7/9/60274.jpg)",
-            backgroundRepeat: "",
-            backgroundSize: "",
           }}
         >
           <div

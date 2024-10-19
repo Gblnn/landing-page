@@ -178,6 +178,7 @@ p {
 .team-member {
   cursor: pointer;
   width: 30ch;
+  height: 30ch;
   transition: 0.3s;
   outline: none;
 }
@@ -185,6 +186,10 @@ p {
 @media (width>1280px) {
   .items-container {
     width: 1280px;
+  }
+  .team-member {
+    width: 38ch;
+    height: 30ch;
   }
 }
 

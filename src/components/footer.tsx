@@ -128,7 +128,7 @@ export default function Footer() {
                 <Link className="link" to="/our-team">
                   Our Team
                 </Link>
-                <Link className="link" to="">
+                <Link className="link" to="/our-mission">
                   Our Mission
                 </Link>
                 <Link className="link" to="">
