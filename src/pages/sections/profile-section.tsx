@@ -99,17 +99,17 @@ export default function ProfileSection() {
                     </h1>
 
                     <p className="desc" style={{ opacity: 0.75, border: "" }}>
-                      Sohar Star offers the highest quality products and best in
-                      class service and support. Our customer centered approach
-                      begins at the initial point of purchase and extends
-                      throughout installation, set up and any ongoing
-                      maintainence. Our staff is professional, trained and
-                      skilled. We understand the value of time and provide all
-                      the right tools and assistance to get the job done quickly
-                      and effectively. Rest assured you can be sure that you are
-                      getting superior quality products at the most reasonable
-                      rates. We assure client satisfaction and free lifetime
-                      technical services.
+                      Sohar Star is committed to offering top-quality products
+                      and exceptional service and support. Our customer-focused
+                      approach starts from the moment of purchase and extends
+                      through installation, setup, and ongoing maintenance. Our
+                      professional team is highly trained and skilled, ensuring
+                      efficient and effective service. We value your time and
+                      provide the right tools and assistance to complete the job
+                      quickly. With Sohar Star, you can trust that you’re
+                      receiving premium products at competitive prices. We
+                      guarantee customer satisfaction and offer free lifetime
+                      technical support.
                       {/* <a style={{color:"crimson", fontWeight:600, textDecoration:"underline"}}> Read More</a> */}
                     </p>
 

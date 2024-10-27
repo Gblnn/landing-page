@@ -57,9 +57,9 @@ export default function FeaturedProjects() {
             }}
           >
             <Project
-              img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg"
-              title="Project 1"
-              desc="Brief description of project 1"
+              img="/mak.png"
+              title="MAK Sohar Chemical Industries"
+              desc="Complete Construction of Warehouse facility for MAK SOHAR"
             />
 
             <Project

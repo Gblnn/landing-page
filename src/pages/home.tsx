@@ -8,6 +8,7 @@ import Projects from "./projects";
 import ContactUs from "./contact-us";
 import Footer from "@/components/footer";
 import Mission from "./mission";
+import CivilEngineering from "./what we do/civil-engineering";
 
 export default function Home() {
   const usenavigate = useNavigate();
@@ -35,6 +36,7 @@ export default function Home() {
         <Route path="/our-team" element={<OurTeam />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/our-mission" element={<Mission />} />
+        <Route path="/civil-engineering" element={<CivilEngineering />} />
       </Routes>
 
       {mounted && <Footer />}

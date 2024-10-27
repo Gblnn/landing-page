@@ -15,17 +15,17 @@ import {
   ChevronDown,
   ChevronUp,
   DraftingCompass,
-  Globe,
-  Laptop2,
-  PanelTopDashed,
   Pin,
   TreeDeciduous,
+  Truck,
   Wrench,
 } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ServicesSection() {
   const [expand, setExpand] = useState(false);
+  const usenavigate = useNavigate();
 
   return (
     <>
@@ -101,6 +101,7 @@ export default function ServicesSection() {
                 >
                   <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
+                      onClick={() => usenavigate("/civil-engineering")}
                       title="Civil Engineering"
                       desc="We translate the architectural concepts from clients into concrete realities"
                       icon={
@@ -114,14 +115,6 @@ export default function ServicesSection() {
                       title="Mechanical"
                       desc="We specialize in works like welding, fitting, fabrication and erection of structures and pipelines"
                       icon={<Wrench width={"2.5rem"} height={"2.5rem"} />}
-                    />
-                  </CarouselItem>
-
-                  <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
-                    <ServiceBox
-                      title="Logistics"
-                      desc="We offer effective and accessible prospective distributors and supply chains at your disposal"
-                      icon={<Globe width={"2.5rem"} height={"2.5rem"} />}
                     />
                   </CarouselItem>
 
@@ -145,14 +138,6 @@ export default function ServicesSection() {
 
                   <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
-                      title="IT Division"
-                      desc="We are equipped with highly experienced professionals who provide reliable IT solutions"
-                      icon={<Laptop2 width={"2.5rem"} height={"2.5rem"} />}
-                    />
-                  </CarouselItem>
-
-                  <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
-                    <ServiceBox
                       title="MEP Division"
                       desc="We ensure that all Mechanical, electrical, and plumbing aspects are properly installed and commisioned"
                       icon={<BellElectric width={"2.5rem"} height={"2.5rem"} />}
@@ -161,11 +146,9 @@ export default function ServicesSection() {
 
                   <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
-                      title="Road & Earthworks"
+                      title="Heavy Machinery"
                       desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment"
-                      icon={
-                        <PanelTopDashed width={"2.5rem"} height={"2.5rem"} />
-                      }
+                      icon={<Truck width={"2.5rem"} height={"2.5rem"} />}
                     />
                   </CarouselItem>
 
@@ -194,6 +177,7 @@ export default function ServicesSection() {
                 }}
               >
                 <ServiceBox
+                  onClick={() => usenavigate("/civil-engineering")}
                   title="Civil Engineering"
                   desc="We translate the architectural concepts from our clients into concrete realities"
                   icon={<DraftingCompass width={"2.5rem"} height={"2.5rem"} />}
@@ -203,12 +187,6 @@ export default function ServicesSection() {
                   title="Mechanical"
                   desc="We specialize in works like welding, fitting, fabrication and erection of structures and pipelines"
                   icon={<Wrench width={"2.5rem"} height={"2.5rem"} />}
-                />
-
-                <ServiceBox
-                  title="Logistics"
-                  desc="We offer effective and accessible prospective distributors and supply chains at your disposal"
-                  icon={<Globe width={"2.5rem"} height={"2.5rem"} />}
                 />
 
                 <ServiceBox
@@ -228,23 +206,15 @@ export default function ServicesSection() {
                     />
 
                     <ServiceBox
-                      title="IT Division"
-                      desc="We are equipped with highly experienced professionals who provide reliable IT solutions"
-                      icon={<Laptop2 width={"2.5rem"} height={"2.5rem"} />}
-                    />
-
-                    <ServiceBox
                       title="MEP Division"
                       desc="We ensure that all Mechanical, electrical, and plumbing aspects are properly installed and commisioned"
                       icon={<BellElectric width={"2.5rem"} height={"2.5rem"} />}
                     />
 
                     <ServiceBox
-                      title="Road & Earthworks"
+                      title="Heavy Machinery"
                       desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment"
-                      icon={
-                        <PanelTopDashed width={"2.5rem"} height={"2.5rem"} />
-                      }
+                      icon={<Truck width={"2.5rem"} height={"2.5rem"} />}
                     />
 
                     {/* <ServiceBox title="Manufacturing" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<Factory width={"2.5rem"} height={"2.5rem"}/>}/> */}

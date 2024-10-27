@@ -1,13 +1,22 @@
-import { ChevronLeft } from "lucide-react"
-import { useNavigate } from "react-router-dom"
+import { ChevronLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-export default function Back(){
+interface Props {
+  absolute?: boolean;
+}
 
-    const usenavigate = useNavigate()
+export default function Back(props: Props) {
+  const usenavigate = useNavigate();
 
-    return(
-        <>
-        <button className='btn' onClick={()=>usenavigate(-1)}><ChevronLeft /></button>
-        </>
-    )
+  return (
+    <>
+      <button
+        style={{ position: props.absolute ? "absolute" : "inherit" }}
+        className="btn"
+        onClick={() => usenavigate(-1)}
+      >
+        <ChevronLeft />
+      </button>
+    </>
+  );
 }
