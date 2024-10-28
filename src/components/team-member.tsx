@@ -13,7 +13,7 @@ export default function TeamMember(props: Props) {
         background: "rgba(100 100 100/ 1%)",
         width: "",
         padding: "0.35rem",
-        borderRadius: "1rem",
+        borderRadius: "1.15rem",
         display: "flex",
         alignItems: "center",
         flexFlow: "column",
@@ -62,7 +62,7 @@ export default function TeamMember(props: Props) {
           borderBottomLeftRadius: "0.75rem",
           borderBottomRightRadius: "0.75rem",
           background: "linear-gradient(90deg, darkblue, midnightblue )",
-          boxShadow: "1px 1px 30px rgba(0 0 0/ 75%)",
+          boxShadow: "1px 1px 30px rgba(0 0 0/ 100%)",
         }}
       >
         <p>{props.name}</p>

@@ -97,9 +97,12 @@ export function Nav(props: Props) {
                 </ListItem>
               </Link>
 
-              <ListItem title="Our Mission">
-                Learn more about our mission.
-              </ListItem>
+              <Link to="our-mission">
+                <ListItem title="Our Mission">
+                  Learn more about our mission.
+                </ListItem>
+              </Link>
+
               <ListItem
                 href="/docs/primitives/typography"
                 title="Our Values & Culture"

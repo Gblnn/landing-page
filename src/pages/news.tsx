@@ -1,8 +1,8 @@
+import Back from "@/components/back";
 import NewsBox from "@/components/news-box";
-import { ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-export default function NewsAndUpdatesSection() {
+export default function News() {
   const usenavigate = useNavigate();
   return (
     <>
@@ -37,16 +37,18 @@ export default function NewsAndUpdatesSection() {
               fontSize: "1.5rem",
               fontWeight: 500,
               display: "flex",
-              gap: "0.5rem",
+              gap: "1rem",
               alignItems: "center",
-              marginLeft: "1rem",
+              marginLeft: "0.25rem",
               color: "white",
             }}
           >
+            <Back />
             Latest News{" "}
-            <strong style={{ color: "crimson", fontWeight: "500" }}>&</strong>{" "}
-            Updates
-            <ChevronRight color="crimson" />
+            {/* <strong style={{ color: "crimson", fontWeight: "500" }}>
+              &
+            </strong>{" "}
+            Updates */}
           </div>
 
           <div
