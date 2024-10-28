@@ -36,7 +36,12 @@ export default function Header() {
           }}
           onClick={() => usenavigate("/onboarding")}
         >
-          <img src="/sohar_star_logo.png" width="40rem" height="40rem" />
+          <img
+            src="/sohar_star_logo.png"
+            width="40rem"
+            height="40rem"
+            alt="Logo"
+          />
 
           <h1
             style={{
@@ -53,7 +58,7 @@ export default function Header() {
           </h1>
         </div>
 
-        <div className="nav" style={{ marginRight: "5rem" }}>
+        <div className="nav" style={{ marginRight: "4rem" }}>
           <Nav fontsize="1rem" />
         </div>
       </div>

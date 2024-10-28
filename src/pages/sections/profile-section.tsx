@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ProfileSection() {
   const [mounted, setMounted] = useState(false);
+  const usenavigate = useNavigate();
 
   useEffect(() => {
     setMounted(true);
@@ -99,17 +101,15 @@ export default function ProfileSection() {
                     </h1>
 
                     <p className="desc" style={{ opacity: 0.75, border: "" }}>
-                      Sohar Star is committed to offering top-quality products
-                      and exceptional service and support. Our customer-focused
-                      approach starts from the moment of purchase and extends
-                      through installation, setup, and ongoing maintenance. Our
-                      professional team is highly trained and skilled, ensuring
-                      efficient and effective service. We value your time and
-                      provide the right tools and assistance to complete the job
-                      quickly. With Sohar Star, you can trust that you’re
-                      receiving premium products at competitive prices. We
-                      guarantee customer satisfaction and offer free lifetime
-                      technical support.
+                      Sohar Star is dedicated to providing top-quality products
+                      and exceptional service, backed by reliable support. Our
+                      customer-focused approach begins from the moment you make
+                      a purchase and continues through installation, setup, and
+                      ongoing maintenance. Our highly trained and skilled team
+                      ensures efficient and effective service, respecting your
+                      time and providing the right tools and support to get the
+                      job done swiftly. With Sohar Star, you can trust that you
+                      are receiving premium services at competitive prices.
                       {/* <a style={{color:"crimson", fontWeight:600, textDecoration:"underline"}}> Read More</a> */}
                     </p>
 
@@ -122,7 +122,7 @@ export default function ProfileSection() {
                         </a> */}
 
                     <div
-                      href="#projects"
+                      onClick={() => usenavigate("/our-mission")}
                       style={{
                         width: "fit-content",
                         display: "flex",
@@ -131,14 +131,16 @@ export default function ProfileSection() {
                       }}
                     >
                       <Button
-                        className="skewed-button"
+                        className=" skewed-button"
                         style={{
+                          transition: "0.3s",
                           background: "white",
                           display: "flex",
                           width: "10rem",
                         }}
                       ></Button>
                       <div
+                        className=""
                         style={{
                           display: "flex",
                           position: "absolute",
@@ -148,7 +150,7 @@ export default function ProfileSection() {
                           fontSize: "0.9rem",
                         }}
                       >
-                        <p>Read More</p>
+                        <p style={{ cursor: "pointer" }}>Read More</p>
                       </div>
                     </div>
                   </div>

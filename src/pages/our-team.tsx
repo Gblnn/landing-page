@@ -42,7 +42,7 @@ export default function OurTeam() {
                 marginLeft: "1rem",
               }}
             >
-              Our People <ChevronRight color="crimson" />
+              Our Team <ChevronRight color="crimson" />
             </h1>
           </div>
 
@@ -119,6 +119,7 @@ export default function OurTeam() {
               }}
             >
               <TeamMember
+                src="/test.jpg"
                 name="Suresh Babu"
                 designation="Managing Director"
                 info="Founder of Sohar Star United LLC"

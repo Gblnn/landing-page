@@ -10,31 +10,30 @@ export default function TeamMember(props: Props) {
     <div
       className="team-member"
       style={{
-        background: "rgba(100 100 100/ 5%)",
+        background: "rgba(100 100 100/ 10%)",
         width: "",
-
+        padding: "",
         borderRadius: "0.75rem",
         display: "flex",
         alignItems: "center",
         flexFlow: "column",
         boxShadow: "",
-        border: "2px solid rgba(100 100 100/ 70%)",
+        border: "2px solid rgba(100 100 100/ 50%)",
       }}
     >
       <img
         style={{
-          opacity: "0.25",
           background: "rgba(100 100 100/ 20%)",
           height: "20ch",
-          borderTopLeftRadius: "1rem",
-          borderTopRightRadius: "1rem",
+          borderTopLeftRadius: "0.75rem",
+          borderTopRightRadius: "0.75rem",
           display: "flex",
           width: "100%",
           justifyContent: "center",
           alignItems: "center",
-          objectFit: "contain",
+          objectFit: "cover",
         }}
-        src="sohar_star_logo.png"
+        src={props.src ? props.src : "/sohar_star_logo.png"}
       />
       {/* <img
         src="sohar_star_logo.png"
@@ -62,7 +61,8 @@ export default function TeamMember(props: Props) {
           padding: "1rem",
           borderBottomLeftRadius: "1rem",
           borderBottomRightRadius: "1rem",
-          // boxShadow: "1px 1px 10px rgba(0 0 0/ 20%)",
+
+          boxShadow: "1px 1px 30px rgba(0 0 0/ 75%)",
         }}
       >
         <p>{props.name}</p>

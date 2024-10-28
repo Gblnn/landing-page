@@ -150,7 +150,7 @@ export default function ContactUs() {
                       justifyContent: "center",
                     }}
                   >
-                    <p
+                    {/* <p
                       style={{
                         width: "1.25rem",
                         color: "dodgerblue",
@@ -158,11 +158,11 @@ export default function ContactUs() {
                       }}
                     >
                       Fax
-                    </p>
-                    <p className="ghost">
+                    </p> */}
+                    {/* <p className="ghost">
                       <b style={{ color: "dodgerblue", fontWeight: 500 }}> </b>{" "}
                       26842701
-                    </p>
+                    </p> */}
                   </div>
                 </div>
 

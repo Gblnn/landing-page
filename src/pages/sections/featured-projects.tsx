@@ -1,8 +1,10 @@
 import Project from "@/components/project";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function FeaturedProjects() {
+  const usenavigate = useNavigate();
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <div
@@ -30,6 +32,7 @@ export default function FeaturedProjects() {
           }}
         >
           <h1
+            onClick={() => usenavigate("/projects")}
             className="items-container"
             style={{
               fontSize: "1.5rem",
@@ -41,7 +44,8 @@ export default function FeaturedProjects() {
               border: "",
             }}
           >
-            Featured Projects
+            <p style={{ cursor: "pointer" }}>Featured Projects</p>
+
             <ChevronRight color="crimson" />
           </h1>
 
@@ -57,7 +61,7 @@ export default function FeaturedProjects() {
             }}
           >
             <Project
-              img="/mak.png"
+              img="/view_1.png"
               title="MAK Sohar Chemical Industries"
               desc="Complete Construction of Warehouse facility for MAK SOHAR"
             />

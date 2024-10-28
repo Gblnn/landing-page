@@ -9,17 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
-import {
-  BellElectric,
-  Car,
-  ChevronDown,
-  ChevronUp,
-  DraftingCompass,
-  Pin,
-  TreeDeciduous,
-  Truck,
-  Wrench,
-} from "lucide-react";
+import { ChevronDown, ChevronUp, Pin } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -42,8 +32,7 @@ export default function ServicesSection() {
             height: "",
             paddingTop: "4rem",
             boxShadow: "",
-            background:
-              "no-repeat center/100% center fixed url(https://wallpaperset.com/w/full/c/7/9/60274.jpg)",
+            background: "no-repeat center center/100% url('')",
           }}
         >
           <div
@@ -103,12 +92,13 @@ export default function ServicesSection() {
                     <ServiceBox
                       onClick={() => usenavigate("/civil-engineering")}
                       title="Civil Engineering"
-                      desc="We translate the architectural concepts from clients into concrete realities"
+                      desc="Translating architectural concepts into concrete realities."
                       icon={
                         // <DraftingCompass width={"2.5rem"} height={"2.5rem"} />
                         <img
                           src="/civil_works.png"
                           style={{ height: "80%", objectFit: "cover" }}
+                          alt="Civil works"
                         />
                       }
                     />
@@ -123,6 +113,7 @@ export default function ServicesSection() {
                         <img
                           src="/mechanical_work.png"
                           style={{ objectFit: "cover", height: "80%" }}
+                          alt="Mechanical works"
                         />
                       }
                     />
@@ -131,12 +122,13 @@ export default function ServicesSection() {
                   <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
                       title="Automobile"
-                      desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment"
+                      desc="Our automotive engineers can cater to repair and maintainence of all kinds of automobiles and heavy equipment"
                       icon={
                         // <Car width={"2.5rem"} height={"2.5rem"} />
                         <img
                           src="/automobile_workshop.png"
                           style={{ objectFit: "contain", height: "80%" }}
+                          alt="Automobile works"
                         />
                       }
                     />
@@ -145,12 +137,13 @@ export default function ServicesSection() {
                   <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
                       title="Landscaping"
-                      desc="Our experts deliver world class landscaping, horticulture & irrigation works"
+                      desc="Our experts deliver world class landscaping, horticulture & irrigation solutions"
                       icon={
                         // <TreeDeciduous width={"2.5rem"} height={"2.5rem"} />
                         <img
                           src="/landscaping_works.png"
                           style={{ objectFit: "cover", height: "80%" }}
+                          alt="Landscaping works"
                         />
                       }
                     />
@@ -159,12 +152,13 @@ export default function ServicesSection() {
                   <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
                       title="MEP Division"
-                      desc="We ensure that all Mechanical, electrical, and plumbing aspects are properly installed and commisioned"
+                      desc="We undertake all kinds of Mechanical, Electrical and Plumbing works under a single package."
                       icon={
                         // <BellElectric width={"2.5rem"} height={"2.5rem"} />
                         <img
                           src={"/mep_works.png"}
                           style={{ objectFit: "cover", height: "80%" }}
+                          alt="MEP works"
                         />
                       }
                     />
@@ -173,12 +167,13 @@ export default function ServicesSection() {
                   <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
                       title="Heavy Machinery"
-                      desc="We offer heavy construction equipment and machinery at your disposal at the best market rates."
+                      desc="We offer heavy construction machinery and equipment at the best market rates."
                       icon={
                         // <Truck width={"2.5rem"} height={"2.5rem"} />
                         <img
                           src={"heavy-machinery.png"}
                           style={{ objectFit: "cover", height: "80%" }}
+                          alt="Heavy Machinery"
                         />
                       }
                     />
@@ -217,6 +212,7 @@ export default function ServicesSection() {
                     <img
                       src="/civil_works.png"
                       style={{ height: "80%", objectFit: "cover" }}
+                      alt="Civil works"
                     />
                   }
                 />
@@ -229,6 +225,7 @@ export default function ServicesSection() {
                     <img
                       src="/mechanical_work.png"
                       style={{ objectFit: "cover", height: "80%" }}
+                      alt="Mechanical works"
                     />
                   }
                 />
@@ -241,6 +238,7 @@ export default function ServicesSection() {
                     <img
                       src="/automobile_workshop.png"
                       style={{ objectFit: "contain", height: "80%" }}
+                      alt="Automobile works"
                     />
                   }
                 />
@@ -255,6 +253,7 @@ export default function ServicesSection() {
                         <img
                           src="/landscaping_works.png"
                           style={{ objectFit: "cover", height: "80%" }}
+                          alt="Landscaping works"
                         />
                       }
                     />
@@ -267,6 +266,7 @@ export default function ServicesSection() {
                         <img
                           src={"/mep_works.png"}
                           style={{ objectFit: "cover", height: "80%" }}
+                          alt="MEP Division"
                         />
                       }
                     />
@@ -279,6 +279,7 @@ export default function ServicesSection() {
                         <img
                           src={"heavy-machinery.png"}
                           style={{ objectFit: "cover", height: "80%" }}
+                          alt="Heavy Machinery"
                         />
                       }
                     />
@@ -292,7 +293,7 @@ export default function ServicesSection() {
                 className="sm-services"
                 style={{ width: "100%", justifyContent: "center" }}
               >
-                {/* <Button
+                <Button
                   onClick={() => {
                     setExpand(!expand);
                   }}
@@ -318,7 +319,7 @@ export default function ServicesSection() {
                       <ChevronDown width={"1rem"} color="crimson" />
                     </>
                   )}
-                </Button> */}
+                </Button>
               </div>
             </div>
 

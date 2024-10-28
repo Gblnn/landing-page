@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Handshake } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 export default function WorkWithUs() {
@@ -54,6 +54,7 @@ export default function WorkWithUs() {
             alignItems: "center",
           }}
         >
+          <Handshake width={"1rem"} />
           Get in touch
           <ChevronRight width={"1rem"} />
         </button>
