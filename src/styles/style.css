@@ -19,6 +19,11 @@
   }
 }
 
+.glow:hover {
+  translate: 0 -3px;
+  box-shadow: 1px 1px 20px white;
+}
+
 .nav-bar {
   background-color: var(--nav-color);
   -webkit-backdrop-filter: blur(16px);

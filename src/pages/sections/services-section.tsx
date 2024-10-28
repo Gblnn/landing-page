@@ -24,7 +24,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function ServicesSection() {
-  const [expand, setExpand] = useState(false);
+  const [expand, setExpand] = useState(true);
   const usenavigate = useNavigate();
 
   return (
@@ -84,7 +84,7 @@ export default function ServicesSection() {
               <Carousel
                 plugins={[
                   Autoplay({
-                    delay: 3000,
+                    delay: 4000,
                   }),
                 ]}
                 className="carousel"
@@ -105,7 +105,11 @@ export default function ServicesSection() {
                       title="Civil Engineering"
                       desc="We translate the architectural concepts from clients into concrete realities"
                       icon={
-                        <DraftingCompass width={"2.5rem"} height={"2.5rem"} />
+                        // <DraftingCompass width={"2.5rem"} height={"2.5rem"} />
+                        <img
+                          src="/civil_works.png"
+                          style={{ height: "80%", objectFit: "cover" }}
+                        />
                       }
                     />
                   </CarouselItem>
@@ -114,7 +118,13 @@ export default function ServicesSection() {
                     <ServiceBox
                       title="Mechanical"
                       desc="We specialize in works like welding, fitting, fabrication and erection of structures and pipelines"
-                      icon={<Wrench width={"2.5rem"} height={"2.5rem"} />}
+                      icon={
+                        // <Wrench width={"2.5rem"} height={"2.5rem"} />
+                        <img
+                          src="/mechanical_work.png"
+                          style={{ objectFit: "cover", height: "80%" }}
+                        />
+                      }
                     />
                   </CarouselItem>
 
@@ -122,7 +132,13 @@ export default function ServicesSection() {
                     <ServiceBox
                       title="Automobile"
                       desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment"
-                      icon={<Car width={"2.5rem"} height={"2.5rem"} />}
+                      icon={
+                        // <Car width={"2.5rem"} height={"2.5rem"} />
+                        <img
+                          src="/automobile_workshop.png"
+                          style={{ objectFit: "contain", height: "80%" }}
+                        />
+                      }
                     />
                   </CarouselItem>
 
@@ -131,7 +147,11 @@ export default function ServicesSection() {
                       title="Landscaping"
                       desc="Our experts deliver world class landscaping, horticulture & irrigation works"
                       icon={
-                        <TreeDeciduous width={"2.5rem"} height={"2.5rem"} />
+                        // <TreeDeciduous width={"2.5rem"} height={"2.5rem"} />
+                        <img
+                          src="/landscaping_works.png"
+                          style={{ objectFit: "cover", height: "80%" }}
+                        />
                       }
                     />
                   </CarouselItem>
@@ -140,15 +160,27 @@ export default function ServicesSection() {
                     <ServiceBox
                       title="MEP Division"
                       desc="We ensure that all Mechanical, electrical, and plumbing aspects are properly installed and commisioned"
-                      icon={<BellElectric width={"2.5rem"} height={"2.5rem"} />}
+                      icon={
+                        // <BellElectric width={"2.5rem"} height={"2.5rem"} />
+                        <img
+                          src={"/mep_works.png"}
+                          style={{ objectFit: "cover", height: "80%" }}
+                        />
+                      }
                     />
                   </CarouselItem>
 
                   <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
                       title="Heavy Machinery"
-                      desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment"
-                      icon={<Truck width={"2.5rem"} height={"2.5rem"} />}
+                      desc="We offer heavy construction equipment and machinery at your disposal at the best market rates."
+                      icon={
+                        // <Truck width={"2.5rem"} height={"2.5rem"} />
+                        <img
+                          src={"heavy-machinery.png"}
+                          style={{ objectFit: "cover", height: "80%" }}
+                        />
+                      }
                     />
                   </CarouselItem>
 
@@ -180,19 +212,37 @@ export default function ServicesSection() {
                   onClick={() => usenavigate("/civil-engineering")}
                   title="Civil Engineering"
                   desc="We translate the architectural concepts from our clients into concrete realities"
-                  icon={<DraftingCompass width={"2.5rem"} height={"2.5rem"} />}
+                  icon={
+                    // <DraftingCompass width={"2.5rem"} height={"2.5rem"} />
+                    <img
+                      src="/civil_works.png"
+                      style={{ height: "80%", objectFit: "cover" }}
+                    />
+                  }
                 />
 
                 <ServiceBox
                   title="Mechanical"
                   desc="We specialize in works like welding, fitting, fabrication and erection of structures and pipelines"
-                  icon={<Wrench width={"2.5rem"} height={"2.5rem"} />}
+                  icon={
+                    // <Wrench width={"2.5rem"} height={"2.5rem"} />
+                    <img
+                      src="/mechanical_work.png"
+                      style={{ objectFit: "cover", height: "80%" }}
+                    />
+                  }
                 />
 
                 <ServiceBox
                   title="Automobile"
                   desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment"
-                  icon={<Car width={"2.5rem"} height={"2.5rem"} />}
+                  icon={
+                    // <Car width={"2.5rem"} height={"2.5rem"} />
+                    <img
+                      src="/automobile_workshop.png"
+                      style={{ objectFit: "contain", height: "80%" }}
+                    />
+                  }
                 />
 
                 {expand ? (
@@ -201,20 +251,36 @@ export default function ServicesSection() {
                       title="Landscaping"
                       desc="Our experts deliver world class landscaping, horticulture & irrigation works"
                       icon={
-                        <TreeDeciduous width={"2.5rem"} height={"2.5rem"} />
+                        // <TreeDeciduous width={"2.5rem"} height={"2.5rem"} />
+                        <img
+                          src="/landscaping_works.png"
+                          style={{ objectFit: "cover", height: "80%" }}
+                        />
                       }
                     />
 
                     <ServiceBox
                       title="MEP Division"
                       desc="We ensure that all Mechanical, electrical, and plumbing aspects are properly installed and commisioned"
-                      icon={<BellElectric width={"2.5rem"} height={"2.5rem"} />}
+                      icon={
+                        // <BellElectric width={"2.5rem"} height={"2.5rem"} />
+                        <img
+                          src={"/mep_works.png"}
+                          style={{ objectFit: "cover", height: "80%" }}
+                        />
+                      }
                     />
 
                     <ServiceBox
                       title="Heavy Machinery"
-                      desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment"
-                      icon={<Truck width={"2.5rem"} height={"2.5rem"} />}
+                      desc="We offer heavy construction equipment and machinery at your disposal at the best market rates."
+                      icon={
+                        // <Truck width={"2.5rem"} height={"2.5rem"} />
+                        <img
+                          src={"heavy-machinery.png"}
+                          style={{ objectFit: "cover", height: "80%" }}
+                        />
+                      }
                     />
 
                     {/* <ServiceBox title="Manufacturing" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<Factory width={"2.5rem"} height={"2.5rem"}/>}/> */}
@@ -226,7 +292,7 @@ export default function ServicesSection() {
                 className="sm-services"
                 style={{ width: "100%", justifyContent: "center" }}
               >
-                <Button
+                {/* <Button
                   onClick={() => {
                     setExpand(!expand);
                   }}
@@ -252,7 +318,7 @@ export default function ServicesSection() {
                       <ChevronDown width={"1rem"} color="crimson" />
                     </>
                   )}
-                </Button>
+                </Button> */}
               </div>
             </div>
 

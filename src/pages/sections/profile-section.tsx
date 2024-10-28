@@ -121,7 +121,7 @@ export default function ProfileSection() {
                             </button>
                         </a> */}
 
-                    <a
+                    <div
                       href="#projects"
                       style={{
                         width: "fit-content",
@@ -150,7 +150,7 @@ export default function ProfileSection() {
                       >
                         <p>Read More</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>

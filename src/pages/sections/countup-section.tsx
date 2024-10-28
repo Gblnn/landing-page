@@ -31,7 +31,7 @@ export default function CountupSection() {
             style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}
           >
             <CountUp
-              duration={1}
+              duration={1.5}
               enableScrollSpy
               start={0}
               end={750}
@@ -61,7 +61,7 @@ export default function CountupSection() {
             style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}
           >
             <CountUp
-              duration={1}
+              duration={1.5}
               enableScrollSpy
               start={0}
               end={850}
@@ -89,7 +89,7 @@ export default function CountupSection() {
             style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}
           >
             <CountUp
-              duration={1}
+              duration={1.5}
               enableScrollSpy
               start={0}
               end={1100}

@@ -8,13 +8,16 @@ export default function CivilEngineering() {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.25 }}
     >
-      <Back absolute />
       <div style={{ height: "6rem" }}></div>
+      <div style={{ position: "", margin: "1rem" }}>
+        <Back />
+      </div>
+
       <div
         style={{
           border: "",
           height: "90svh",
-          paddingTop: "",
+          paddingTop: "0",
           display: "flex",
           padding: "1rem",
           paddingBottom: "2rem",

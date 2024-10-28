@@ -118,8 +118,12 @@ export default function OurTeam() {
                 paddingBottom: "1rem",
               }}
             >
-              <TeamMember name="Suresh Babu" designation="Managing Director" />
-              <TeamMember name="Aravind Unni" designation="Chairman" />
+              <TeamMember
+                name="Suresh Babu"
+                designation="Managing Director"
+                info="Founder of Sohar Star United LLC"
+              />
+              <TeamMember name="Aravind Unni" designation="Director" />
               <TeamMember
                 name="Madhavan Pillai Gopakumaran Nair"
                 designation="General Manager/ Projects Manager"

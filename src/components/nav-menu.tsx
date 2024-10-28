@@ -119,10 +119,12 @@ export function NavMenu(props: Props) {
                   marginBottom: "4.65rem",
                 }}
               >
-                <DropdownMenuItem>
-                  <Factory color="dodgerblue" className="mr-2 h-4 w-4" />
-                  <span>Civil</span>
-                </DropdownMenuItem>
+                <Link to="/civil-engineering">
+                  <DropdownMenuItem>
+                    <Factory color="dodgerblue" className="mr-2 h-4 w-4" />
+                    <span>Civil</span>
+                  </DropdownMenuItem>
+                </Link>
 
                 <DropdownMenuItem>
                   <Wrench color="dodgerblue" className="mr-2 h-4 w-4" />
@@ -135,18 +137,18 @@ export function NavMenu(props: Props) {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem>
+                  <TreePine color="dodgerblue" className="mr-2 h-4 w-4" />
+                  <span>Landscaping</span>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem>
                   <PanelTopDashed color="dodgerblue" className="mr-2 h-4 w-4" />
-                  <span>Road & Earth Work</span>
+                  <span>Landscaping</span>
                 </DropdownMenuItem>
 
                 <DropdownMenuItem>
                   <BellElectric color="dodgerblue" className="mr-2 h-4 w-4" />
-                  <span>Electrical</span>
-                </DropdownMenuItem>
-
-                <DropdownMenuItem>
-                  <TreePine color="dodgerblue" className="mr-2 h-4 w-4" />
-                  <span>Landscaping</span>
+                  <span>MEP Works</span>
                 </DropdownMenuItem>
               </DropdownMenuSubContent>
             </DropdownMenuPortal>

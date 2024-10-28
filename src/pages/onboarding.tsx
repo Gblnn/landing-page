@@ -6,6 +6,7 @@ import ProfileSection from "./sections/profile-section";
 import ServicesSection from "./sections/services-section";
 import OurClientsSection from "./sections/our-clients-section";
 import FeaturedProjects from "./sections/featured-projects";
+import WorkWithUs from "./sections/work-with-us";
 
 export default function OnBoarding() {
   return (
@@ -19,7 +20,7 @@ export default function OnBoarding() {
           title="Explore Endless Possibilities."
           subtitle="Plan | Produce | Deliver"
           videoSource="/landing_video.mp4"
-          footerText="Brief Description of the video being played"
+          footerText=""
         />
 
         <ServicesSection />
@@ -29,6 +30,8 @@ export default function OnBoarding() {
         <ProfileSection />
 
         <FeaturedProjects />
+
+        <WorkWithUs />
 
         <NewsAndUpdatesSection />
 

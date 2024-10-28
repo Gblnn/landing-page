@@ -18,10 +18,12 @@ export default function TeamMember(props: Props) {
         alignItems: "center",
         flexFlow: "column",
         boxShadow: "",
+        border: "2px solid rgba(100 100 100/ 70%)",
       }}
     >
       <img
         style={{
+          opacity: "0.25",
           background: "rgba(100 100 100/ 20%)",
           height: "20ch",
           borderTopLeftRadius: "1rem",
