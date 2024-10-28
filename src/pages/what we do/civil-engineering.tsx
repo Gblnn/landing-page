@@ -9,7 +9,7 @@ export default function CivilEngineering() {
       transition={{ delay: 0.25 }}
     >
       <div style={{ height: "6rem" }}></div>
-      <div style={{ position: "", margin: "1rem" }}>
+      <div style={{ margin: "1rem" }}>
         <Back />
       </div>
 
