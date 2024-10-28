@@ -12,8 +12,8 @@ export default function TeamMember(props: Props) {
       style={{
         background: "rgba(100 100 100/ 10%)",
         width: "",
-        padding: "",
-        borderRadius: "0.75rem",
+        padding: "0.35rem",
+        borderRadius: "1rem",
         display: "flex",
         alignItems: "center",
         flexFlow: "column",
@@ -59,9 +59,9 @@ export default function TeamMember(props: Props) {
           paddingLeft: "1.5rem",
           width: "100%",
           padding: "1rem",
-          borderBottomLeftRadius: "1rem",
-          borderBottomRightRadius: "1rem",
-
+          borderBottomLeftRadius: "0.75rem",
+          borderBottomRightRadius: "0.75rem",
+          background: "linear-gradient(90deg, darkblue, midnightblue )",
           boxShadow: "1px 1px 30px rgba(0 0 0/ 75%)",
         }}
       >

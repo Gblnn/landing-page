@@ -119,10 +119,10 @@ export default function OurTeam() {
               }}
             >
               <TeamMember
-                src="/test.jpg"
+                src=""
                 name="Suresh Babu"
                 designation="Managing Director"
-                info="Founder of Sohar Star United LLC"
+                info=""
               />
               <TeamMember name="Aravind Unni" designation="Director" />
               <TeamMember
