@@ -164,7 +164,7 @@ export default function ServicesSection() {
                     />
                   </CarouselItem>
 
-                  <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
+                  {/* <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
                       title="Heavy Machinery"
                       desc="We offer heavy construction machinery and equipment at the best market rates."
@@ -177,7 +177,7 @@ export default function ServicesSection() {
                         />
                       }
                     />
-                  </CarouselItem>
+                  </CarouselItem> */}
 
                   {/* <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                                     <ServiceBox title="Manufacturing" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<Factory width={"2.5rem"} height={"2.5rem"}/>}/>
@@ -206,7 +206,7 @@ export default function ServicesSection() {
                 <ServiceBox
                   onClick={() => usenavigate("/civil-engineering")}
                   title="Civil Engineering"
-                  desc="We translate the architectural concepts from our clients into concrete realities"
+                  desc="Translating architectural concepts into concrete realities."
                   icon={
                     // <DraftingCompass width={"2.5rem"} height={"2.5rem"} />
                     <img
@@ -271,7 +271,7 @@ export default function ServicesSection() {
                       }
                     />
 
-                    <ServiceBox
+                    {/* <ServiceBox
                       title="Heavy Machinery"
                       desc="We offer heavy construction equipment and machinery at your disposal at the best market rates."
                       icon={
@@ -282,7 +282,7 @@ export default function ServicesSection() {
                           alt="Heavy Machinery"
                         />
                       }
-                    />
+                    /> */}
 
                     {/* <ServiceBox title="Manufacturing" desc="Our automotive engineers can cater to repair and maintainence of automobiles and heavy equipment" icon={<Factory width={"2.5rem"} height={"2.5rem"}/>}/> */}
                   </>

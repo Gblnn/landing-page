@@ -53,7 +53,7 @@ export default function OurClientsSection() {
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/majees.png" style={{ width: "6rem" }} />
+              <img src="/majis_.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">

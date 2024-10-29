@@ -33,7 +33,7 @@ export default function TeamMember(props: Props) {
           alignItems: "center",
           objectFit: "cover",
         }}
-        src={props.src ? props.src : "/sohar_star_logo.png"}
+        src={props.src ? props.src : "/log.png"}
       />
       {/* <img
         src="sohar_star_logo.png"
@@ -61,7 +61,7 @@ export default function TeamMember(props: Props) {
           padding: "1rem",
           borderBottomLeftRadius: "0.75rem",
           borderBottomRightRadius: "0.75rem",
-          background: "linear-gradient(90deg, darkblue, midnightblue )",
+          background: "midnightblue",
           boxShadow: "1px 1px 30px rgba(0 0 0/ 100%)",
         }}
       >

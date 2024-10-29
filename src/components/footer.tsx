@@ -158,9 +158,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div style={{ border: "", display: "flex", alignItems: "center" }}>
+        <div
+          style={{
+            border: "",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: "1.5rem",
+          }}
+        >
           {/* <img src="/sohar_star_logo.png" width={"40rem"}/> */}
-          <br />
+          {/* <br /> */}
 
           <div>
             <p style={{ fontSize: "1rem", fontWeight: 600 }}>
@@ -180,6 +189,102 @@ export default function Footer() {
                 No.:1079500
               </p>
             </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "0.75rem",
+              background: "",
+              color: "",
+              fontWeight: "600",
+              padding: "0.5rem",
+              fontSize: "0.8rem",
+            }}
+          >
+            <div
+              style={{
+                border: "",
+                width: "10ch",
+                display: "flex",
+                flexFlow: "column",
+                alignItems: "center",
+                padding: "0.25rem",
+                gap: "0.35rem",
+                justifyContent: "center",
+                textAlign: "center",
+              }}
+            >
+              <img
+                src="/tve_logo-removebg-preview.png"
+                style={{ width: "5rem" }}
+              />
+              <p style={{}}>
+                ISO 9001
+                {/* QMS */}
+              </p>
+            </div>
+
+            <div
+              style={{
+                border: "",
+                display: "flex",
+                width: "10ch",
+                flexFlow: "column",
+                alignItems: "center",
+                padding: "0.25rem",
+                gap: "0.35rem",
+                justifyContent: "center",
+                textAlign: "center",
+              }}
+            >
+              <img
+                src="/tve_logo-removebg-preview.png"
+                style={{ width: "5rem" }}
+              />
+              <p style={{}}>
+                ISO 14001
+                {/* EMS */}
+              </p>
+            </div>
+
+            <div
+              style={{
+                border: "",
+                display: "flex",
+                flexFlow: "column",
+                alignItems: "center",
+                padding: "0.25rem",
+                gap: "0.35rem",
+                justifyContent: "center",
+                textAlign: "center",
+                width: "10ch",
+              }}
+            >
+              <img
+                src="/tve_logo-removebg-preview.png"
+                style={{ width: "5rem" }}
+              />
+              <p style={{}}>
+                ISO 45001
+                {/* OHSMS */}
+              </p>
+            </div>
+
+            {/* <div
+              style={{
+                border: "",
+                display: "flex",
+                flexFlow: "column",
+                alignItems: "center",
+                padding: "0.25rem",
+                gap: "0.35rem",
+                justifyContent: "center",
+              }}
+            >
+              <img src="/iaf_logo-.png" style={{ width: "4rem" }} />
+              
+            </div> */}
           </div>
         </div>
       </div>
