@@ -1,6 +1,6 @@
 import { db } from "@/firebase";
 import { collection, getDocs, query } from "firebase/firestore";
-import { AnimatePresence, easeInOut, motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import CountupSection from "./sections/countup-section";
 import FeaturedProjects from "./sections/featured-projects";
