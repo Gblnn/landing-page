@@ -10,7 +10,7 @@ interface Props {
 export default function LandingSection(props: Props) {
   return (
     <>
-      <div
+      {/* <div
         style={{
           zIndex: "-2",
           position: "absolute",
@@ -19,7 +19,7 @@ export default function LandingSection(props: Props) {
           border: "",
           background: "black",
         }}
-      ></div>
+      ></div> */}
       <div
         style={{
           width: "100%",
@@ -68,7 +68,7 @@ export default function LandingSection(props: Props) {
               border: "",
               lineHeight: "4.25rem",
               padding: "1rem",
-              textShadow: "1px 1px 20px dodgerblue",
+              // textShadow: "1px 1px 20px darkslateblue",
             }}
           >
             {props.title}

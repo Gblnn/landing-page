@@ -32,7 +32,7 @@ export default function ServicesSection() {
             height: "",
             paddingTop: "4rem",
             boxShadow: "",
-            background: "no-repeat center center/100% url('')",
+            background: "",
           }}
         >
           <div
