@@ -12,6 +12,16 @@ export default function LandingSection(props: Props) {
     <>
       <div
         style={{
+          zIndex: "-2",
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          border: "",
+          background: "black",
+        }}
+      ></div>
+      <div
+        style={{
           width: "100%",
           height: "100svh",
           display: "flex",
@@ -20,6 +30,7 @@ export default function LandingSection(props: Props) {
           flexFlow: "column",
           gap: "1rem",
           boxShadow: "1px 1px 20xp rgba(0 0 0/ 70%)",
+          // background: "linear-gradient(black, midnightblue)",
         }}
       >
         <video
@@ -57,6 +68,7 @@ export default function LandingSection(props: Props) {
               border: "",
               lineHeight: "4.25rem",
               padding: "1rem",
+              textShadow: "1px 1px 20px crimson",
             }}
           >
             {props.title}

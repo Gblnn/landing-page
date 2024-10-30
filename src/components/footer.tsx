@@ -220,8 +220,8 @@ export default function Footer() {
                 src="/tve_logo-removebg-preview.png"
                 style={{ width: "5rem" }}
               />
-              <p style={{}}>
-                ISO 9001 - QMS
+              <p style={{ opacity: 0.5 }}>
+                ISO 9001 QMS
                 {/* QMS */}
               </p>
             </div>
@@ -243,8 +243,8 @@ export default function Footer() {
                 src="/tve_logo-removebg-preview.png"
                 style={{ width: "5rem" }}
               />
-              <p style={{}}>
-                ISO 14001 - EMS
+              <p style={{ opacity: 0.5 }}>
+                ISO 14001 EMS
                 {/* EMS */}
               </p>
             </div>
@@ -266,8 +266,8 @@ export default function Footer() {
                 src="/tve_logo-removebg-preview.png"
                 style={{ width: "5rem" }}
               />
-              <p style={{}}>
-                ISO 45001 - OHSMS
+              <p style={{ opacity: 0.5 }}>
+                ISO 45001 OHSMS
                 {/* OHSMS */}
               </p>
             </div>
