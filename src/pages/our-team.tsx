@@ -120,18 +120,27 @@ export default function OurTeam() {
             >
               <TeamMember
                 src=""
-                name="Suresh Babu"
+                name="Suresh Unni"
                 designation="Managing Director"
                 info=""
               />
-              <TeamMember name="Aravind Unni" designation="Director" />
+              <TeamMember
+                name="Aravind Unni"
+                designation="Executive Director"
+              />
               <TeamMember
                 name="Madhavan Pillai Gopakumaran Nair"
                 designation="General Manager/ Projects Manager"
               />
-              <TeamMember name="Rajesh" designation="Head of Operations" />
-              <TeamMember />
-              <TeamMember />
+              <TeamMember name="Rajesh CV" designation="Head of Operations" />
+              <TeamMember
+                name="Avinash Paithankar"
+                designation="QHSE Manager"
+              />
+              <TeamMember
+                name="Sreenath S Charuvil"
+                designation="MED Contracts manager"
+              />
             </div>
 
             {/* <Project img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="Project 1" desc="Brief description of project 1"/>

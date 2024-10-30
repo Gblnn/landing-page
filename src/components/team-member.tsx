@@ -10,6 +10,7 @@ export default function TeamMember(props: Props) {
     <div
       className="team-member"
       style={{
+        height: "",
         background: "rgba(100 100 100/ 1%)",
         width: "",
         padding: "0.35rem",
@@ -48,7 +49,7 @@ export default function TeamMember(props: Props) {
 
       <div
         style={{
-          height: "100%",
+          height: "",
           flex: 1,
           border: "",
           borderLeft: "none",

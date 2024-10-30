@@ -260,7 +260,7 @@ export default function ServicesSection() {
 
                     <ServiceBox
                       title="MEP Division"
-                      desc="We ensure that all Mechanical, electrical, and plumbing aspects are properly installed and commisioned"
+                      desc="We undertake all kinds of Mechanical, Electrical and Plumbing works under a single package."
                       icon={
                         // <BellElectric width={"2.5rem"} height={"2.5rem"} />
                         <img

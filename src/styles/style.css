@@ -186,6 +186,10 @@ p {
   justify-content: space-between;
 }
 
+.cert {
+  width: fit-content;
+}
+
 .team-member {
   cursor: pointer;
   width: 30ch;
@@ -229,6 +233,9 @@ p {
 }
 
 @media (width<1150px) {
+  .cert {
+    width: 100%;
+  }
   .nav {
     display: none;
   }

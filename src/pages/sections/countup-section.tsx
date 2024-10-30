@@ -1,12 +1,7 @@
-import { useInView } from "framer-motion";
 import { Factory, UserCheck, Users } from "lucide-react";
-import { useRef } from "react";
 import CountUp from "react-countup";
 
 export default function CountupSection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-
   return (
     <>
       <div
@@ -33,13 +28,13 @@ export default function CountupSection() {
           <UserCheck color="crimson" />
 
           <div
-            ref={ref}
             style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}
           >
             <CountUp
+              enableScrollSpy
               duration={1.5}
-              start={isInView ? 0 : 0}
-              end={isInView ? 750 : 750}
+              start={0}
+              end={750}
               useEasing={true}
               style={{ fontSize: "2rem", fontWeight: 600 }}
             />
@@ -65,6 +60,7 @@ export default function CountupSection() {
             style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}
           >
             <CountUp
+              enableScrollSpy
               duration={1.5}
               start={0}
               end={850}
@@ -92,6 +88,7 @@ export default function CountupSection() {
             style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}
           >
             <CountUp
+              enableScrollSpy
               duration={1.5}
               start={0}
               end={1100}
