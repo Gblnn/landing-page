@@ -13,6 +13,7 @@ export default function WorkWithUs() {
         alignItems: "center",
         justifyContent: "center",
         color: "white",
+        boxShadow: "1px 1px 20px rgba(0 0 0/ 100%)",
       }}
     >
       <div

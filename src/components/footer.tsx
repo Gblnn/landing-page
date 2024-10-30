@@ -350,7 +350,7 @@ export default function Footer() {
           wordSpacing: "0.1rem",
           border: "",
           padding: "1rem",
-          background: "rgba(100 100 100/ 15%)",
+          background: "rgba(100 100 100/ 10%)",
           width: "100%",
           justifyContent: "center",
         }}
