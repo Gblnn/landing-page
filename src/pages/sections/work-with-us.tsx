@@ -8,7 +8,7 @@ export default function WorkWithUs() {
       style={{
         border: "",
         height: "22ch",
-        background: "linear-gradient(90deg, crimson, darkblue)",
+        background: "linear-gradient(90deg, crimson, midnightblue)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

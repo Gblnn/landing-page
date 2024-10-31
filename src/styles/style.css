@@ -29,6 +29,15 @@
   box-shadow: 1px 1px 20px white;
 }
 
+.red-glow {
+  transition: 0.3s;
+  color: crimson;
+}
+
+.red-glow:hover {
+  color: rgb(235, 73, 106);
+}
+
 .nav-bar {
   background-color: var(--nav-color);
   -webkit-backdrop-filter: blur(16px);

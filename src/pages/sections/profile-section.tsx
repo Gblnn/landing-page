@@ -61,8 +61,9 @@ export default function ProfileSection() {
                     style={{ flex: 1, justifyContent: "center", left: "" }}
                   >
                     <img
-                      src="/constr.jpg"
+                      src="/bd.png"
                       style={{
+                        objectPosition: "10",
                         borderRadius: "50%",
                         objectFit: "cover",
                         width: "28ch",
@@ -101,15 +102,14 @@ export default function ProfileSection() {
                     </h1>
 
                     <p className="desc" style={{ opacity: 0.75, border: "" }}>
-                      Sohar Star is dedicated to providing top-quality products
-                      and exceptional service, backed by reliable support. Our
-                      customer-focused approach begins from the moment you make
-                      a purchase and continues through installation, setup, and
-                      ongoing maintenance. Our highly trained and skilled team
-                      ensures efficient and effective service, respecting your
-                      time and providing the right tools and support to get the
-                      job done swiftly. With Sohar Star, you can trust that you
-                      are receiving premium services at competitive prices.
+                      At Sohar Star United, we bring a unique combination of
+                      expertise, reliability, and client-focused service to
+                      every project. We hold ourselves to the highest standards,
+                      ensuring that every project meets or exceeds industry
+                      benchmarks. Our team is comprised of skilled professionals
+                      with a proven track record in the contracting industry.
+                      From project managers to field specialists, every team
+                      member is dedicated to delivering outstanding outcomes.
                       {/* <a style={{color:"crimson", fontWeight:600, textDecoration:"underline"}}> Read More</a> */}
                     </p>
 

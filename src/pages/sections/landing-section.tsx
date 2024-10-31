@@ -34,6 +34,7 @@ export default function LandingSection(props: Props) {
         }}
       >
         <video
+          poster={"/array.jpg"}
           style={{
             opacity: 0.25,
             objectFit: "cover",
