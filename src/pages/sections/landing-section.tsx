@@ -69,7 +69,7 @@ export default function LandingSection(props: Props) {
               border: "",
               lineHeight: "4.25rem",
               padding: "1rem",
-              // textShadow: "1px 1px 20px darkslateblue",
+              textShadow: "1px 1px 20px darkslateblue",
             }}
           >
             {props.title}
