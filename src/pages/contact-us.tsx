@@ -220,19 +220,19 @@ export default function ContactUs() {
                   </a>
 
                   <a
-                    href="tel:92822305"
+                    href="mailto:rajesh@soharstar.com"
                     className="ghost"
                     style={{
                       display: "flex",
                       gap: "0.5rem",
                       fontSize: "0.8rem",
                       alignItems: "center",
-                      width: "13rem",
+                      width: "10.5rem",
                       justifyContent: "center",
                     }}
                   >
                     <Mail color="dodgerblue" width={"1rem"} />
-                    soharstar2010@gmail.com
+                    rajesh@soharstar.com
                   </a>
                 </div>
               </div>

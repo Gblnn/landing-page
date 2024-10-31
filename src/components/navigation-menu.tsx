@@ -33,12 +33,12 @@ const components: { title: string; href: string; description: string }[] = [
   {
     title: "Automobile",
     href: "/docs/primitives/--",
-    description: "Repair and maintainence of automobile",
+    description: "Repair and maintainence of light and heavy vehicles",
   },
   {
-    title: "Road & Earth Work",
+    title: "MEP",
     href: "/docs/primitives/scroll-area",
-    description: "Construction of Roads, sidewalks, etc.",
+    description: "Mechanical, Electrical and Plumbing works.",
   },
   {
     title: "Electrical",
@@ -48,7 +48,7 @@ const components: { title: string; href: string; description: string }[] = [
   {
     title: "Landscaping",
     href: "/docs/primitives/tooltip",
-    description: "Barren lands to greenery",
+    description: "Transforming Barren lands to beautiful landscapes",
   },
 ];
 
@@ -92,7 +92,7 @@ export function Nav(props: Props) {
                 </NavigationMenuLink>
               </li>
               <Link to="our-team">
-                <ListItem href="/our-team" title="Our People">
+                <ListItem href="/our-team" title="Our Team">
                   A team commited to excellence.
                 </ListItem>
               </Link>

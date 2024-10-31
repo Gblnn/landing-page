@@ -6,10 +6,10 @@ import {
   Factory,
   Handshake,
   Lightbulb,
-  PanelTopDashed,
   TreePine,
   Users,
   Wrench,
+  Zap,
 } from "lucide-react";
 
 import {
@@ -142,8 +142,8 @@ export function NavMenu(props: Props) {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem>
-                  <PanelTopDashed color="dodgerblue" className="mr-2 h-4 w-4" />
-                  <span>Landscaping</span>
+                  <Zap color="dodgerblue" className="mr-2 h-4 w-4" />
+                  <span>Electrical</span>
                 </DropdownMenuItem>
 
                 <DropdownMenuItem>

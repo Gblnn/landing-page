@@ -102,11 +102,11 @@ export default function Footer() {
                 >
                   <Mails color="crimson" width={"1rem"} />
                   <a
-                    href="mailto:soharstar2010@gmail.com"
+                    href="mailto:rajesh@soharstar.com"
                     className="ghost"
-                    style={{ width: "12rem" }}
+                    style={{ width: "10rem" }}
                   >
-                    soharstar2010@gmail.com
+                    rajesh@soharstar.com
                   </a>
                 </div>
 

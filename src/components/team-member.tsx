@@ -55,34 +55,55 @@ export default function TeamMember(props: Props) {
           border: "",
           borderLeft: "none",
           display: "flex",
-          justifyContent: "center",
-          flexFlow: "column",
+          justifyContent: "space-between",
+          flexFlow: "",
           paddingRight: "1rem",
           paddingLeft: "1.5rem",
           width: "100%",
           padding: "1rem",
           borderBottomLeftRadius: "0.75rem",
           borderBottomRightRadius: "0.75rem",
-          background: "midnightblue",
+          background: "linear-gradient(90deg, midnightblue, darkslateblue)",
+          alignItems: "center",
         }}
       >
-        <p>{props.name}</p>
+        <div>
+          <p>{props.name}</p>
 
-        {/* <div style={{display:"flex", flexFlow:"", gap:"0.25rem"}}>
-                <LucideQuote fill="white" stroke="none" width={"1rem"}/>
-                <p>Quote</p>
-                </div> */}
+          {/* <div style={{display:"flex", flexFlow:"", gap:"0.25rem"}}>
+        <LucideQuote fill="white" stroke="none" width={"1rem"}/>
+        <p>Quote</p>
+        </div> */}
 
-        <p
+          <p
+            style={{
+              fontWeight: 600,
+              fontSize: "0.8rem",
+            }}
+          >
+            {props.designation}
+          </p>
+          <p style={{ opacity: "0.5", fontSize: "0.8rem" }}>{props.info}</p>
+        </div>
+        {/* <div
           style={{
-            fontWeight: 600,
-            color: "crimson",
-            fontSize: "0.8rem",
+            display: "flex",
+            border: "",
+            justifyContent: "center",
+            alignItems: "center",
+            marginRight: "1rem",
           }}
         >
-          {props.designation}
-        </p>
-        <p style={{ opacity: "0.5", fontSize: "0.8rem" }}>{props.info}</p>
+          <button
+            style={{
+              background: "rgba(219 20 60/ 20%)",
+              borderRadius: "0.5rem",
+              padding: "0.5rem",
+            }}
+          >
+            <Mails color="crimson" />
+          </button>
+        </div> */}
       </div>
     </div>
   );

@@ -74,6 +74,7 @@ export default function Mission() {
             technology, championing sustainable practices, and empowering our
             team to create lasting value for our clients and communities.
           </p>
+          <br />
         </div>
       </div>
     </motion.div>
