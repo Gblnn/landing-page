@@ -53,6 +53,7 @@ export default function ServicesSection() {
                 alignItems: "center",
                 marginLeft: "",
                 justifyContent: "center",
+                zIndex: 10,
               }}
             >
               <Pin color="crimson" />

@@ -54,9 +54,7 @@ export default function Mission() {
               borderRadius: "1rem",
             }}
           >
-            <h1
-              style={{ color: "white", textShadow: "10px 10px 50px crimson" }}
-            >
+            <h1 style={{ color: "white", textShadow: "1px 1px 50px red" }}>
               We are driven by the vision of a sustainable future.
             </h1>
           </div>

@@ -13,13 +13,13 @@ export default function TeamMember(props: Props) {
         height: "",
         background: "rgba(100 100 100/ 1%)",
         width: "",
-        padding: "0.35rem",
+        padding: "0.45rem",
         borderRadius: "1.15rem",
         display: "flex",
         alignItems: "center",
         flexFlow: "column",
-        boxShadow: "",
         border: "2px solid rgba(100 100 100/ 50%)",
+        boxShadow: "1px 1px 10px rgba(0 0 0/ 30%)",
       }}
     >
       <img
@@ -49,6 +49,7 @@ export default function TeamMember(props: Props) {
 
       <div
         style={{
+          color: "white",
           height: "",
           flex: 1,
           border: "",
@@ -63,7 +64,6 @@ export default function TeamMember(props: Props) {
           borderBottomLeftRadius: "0.75rem",
           borderBottomRightRadius: "0.75rem",
           background: "midnightblue",
-          boxShadow: "1px 1px 30px rgba(0 0 0/ 100%)",
         }}
       >
         <p>{props.name}</p>
