@@ -22,8 +22,9 @@ export default function LandingSection(props: Props) {
       ></div> */}
       <div
         style={{
+          border: "",
           width: "100%",
-          height: "100svh",
+          height: "86svh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -53,12 +54,14 @@ export default function LandingSection(props: Props) {
 
         <div
           style={{
+            border: "",
             position: "absolute",
             justifyContent: "center",
             display: "flex",
             flexFlow: "column",
             alignItems: "center",
-            marginTop: "2rem",
+            marginTop: "",
+            marginBottom: "6rem",
           }}
         >
           <h1

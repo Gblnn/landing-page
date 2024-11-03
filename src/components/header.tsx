@@ -1,3 +1,4 @@
+import { Cog } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import MobileNav from "./mobile-nav";
 import { Nav } from "./navigation-menu";
@@ -8,12 +9,28 @@ export default function Header() {
   return (
     <>
       <div
+        style={{
+          border: "",
+          height: "2rem",
+          background: "midnightblue",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "0.5rem",
+          color: "white",
+        }}
+      >
+        <Cog width={"1rem"} color="crimson" />
+        <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p>
+      </div>
+      <div
         className="nav-bar"
         style={{
           display: "flex",
           height: "6rem",
           alignItems: "center",
-          position: "fixed",
+          position: "sticky",
+          top: 0,
           width: "100%",
           zIndex: 15,
           boxShadow: "1px 1px 20px rgba(0 0 0/ 50%)",
@@ -47,7 +64,7 @@ export default function Header() {
             style={{
               fontWeight: 500,
               fontSize: "1.75rem",
-              fontFamily: "Tanker, sans-serif",
+              fontFamily: "Tanker-Regular, sans-serif",
               letterSpacing: "0.075rem",
             }}
           >

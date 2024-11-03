@@ -10,6 +10,7 @@ import Footer from "@/components/footer";
 import Mission from "./mission";
 import CivilEngineering from "./what we do/civil-engineering";
 import News from "./news";
+import Values from "./values";
 
 export default function Home() {
   const usenavigate = useNavigate();
@@ -39,6 +40,7 @@ export default function Home() {
         <Route path="/our-mission" element={<Mission />} />
         <Route path="/civil-engineering" element={<CivilEngineering />} />
         <Route path="/news" element={<News />} />
+        <Route path="/our-values" element={<Values />} />
       </Routes>
 
       {mounted && <Footer />}

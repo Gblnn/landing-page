@@ -19,7 +19,7 @@ export default function OnBoarding() {
         <LandingSection
           title="Explore Endless Possibilities."
           subtitle="Plan | Produce | Deliver"
-          videoSource="/video.mp4"
+          videoSource="/alt.mp4"
           footerText=""
         />
 

@@ -48,7 +48,7 @@ export default function Careers() {
         <div
           style={{
             margin: "1.5rem",
-            marginTop: "6rem",
+            marginTop: "",
             border: "",
             width: "100%",
           }}

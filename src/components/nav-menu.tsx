@@ -98,10 +98,12 @@ export function NavMenu(props: Props) {
                   </DropdownMenuItem>
                 </Link>
 
-                <DropdownMenuItem>
-                  <Handshake color="dodgerblue" className="mr-2 h-4 w-4" />
-                  <span>Our Values & Culture</span>
-                </DropdownMenuItem>
+                <Link to="/our-values">
+                  <DropdownMenuItem>
+                    <Handshake color="dodgerblue" className="mr-2 h-4 w-4" />
+                    <span>Our Values & Culture</span>
+                  </DropdownMenuItem>
+                </Link>
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
           </DropdownMenuSub>

@@ -103,12 +103,14 @@ export function Nav(props: Props) {
                 </ListItem>
               </Link>
 
-              <ListItem
-                href="/docs/primitives/typography"
-                title="Our Values & Culture"
-              >
-                Learn more about our core values.
-              </ListItem>
+              <Link to="/our-values">
+                <ListItem
+                  href="/docs/primitives/typography"
+                  title="Our Values & Culture"
+                >
+                  Learn more about our core values.
+                </ListItem>
+              </Link>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

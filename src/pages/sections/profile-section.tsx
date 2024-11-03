@@ -131,6 +131,7 @@ export default function ProfileSection() {
                       }}
                     >
                       <Button
+                        name="Read more"
                         className=" skewed-button"
                         style={{
                           transition: "0.3s",

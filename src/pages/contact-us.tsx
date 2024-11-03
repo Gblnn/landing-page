@@ -30,7 +30,7 @@ export default function ContactUs() {
         <div
           style={{
             margin: "1.5rem",
-            marginTop: "6rem",
+            marginTop: "",
             border: "",
             width: "100%",
           }}

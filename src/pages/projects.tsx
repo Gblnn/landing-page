@@ -29,7 +29,7 @@ export default function Projects() {
         <div
           style={{
             margin: "1.25rem",
-            marginTop: "6rem",
+            marginTop: "",
             border: "",
             width: "",
             display: "flex",

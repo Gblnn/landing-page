@@ -19,7 +19,7 @@ export default function Mission() {
           style={{
             margin: "",
             padding: "1.75rem",
-            paddingTop: "6rem",
+            paddingTop: "",
             border: "",
             width: "100%",
           }}
