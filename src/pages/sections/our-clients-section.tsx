@@ -49,6 +49,10 @@ export default function OurClientsSection() {
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
+              <img src="/mak-logo.png" style={{ width: "6rem" }} />
+            </CarouselItem>
+
+            <CarouselItem className="basis-1/3 ">
               <img src="/odc.png" style={{ width: "6rem" }} />
             </CarouselItem>
 

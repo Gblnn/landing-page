@@ -301,7 +301,7 @@ export default function ServicesSection() {
                   variant={"ghost"}
                   style={{
                     width: "32ch",
-                    display: "flex",
+                    display: "none",
                     gap: "0.5rem",
                     alignItems: "center",
                     alignSelf: "center",
