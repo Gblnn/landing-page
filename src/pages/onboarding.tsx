@@ -9,29 +9,6 @@ import ServicesSection from "./sections/services-section";
 import WorkWithUs from "./sections/work-with-us";
 
 export default function OnBoarding() {
-  // const [fetchingData, setfetchingData] = useState(false);
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
-
-  // const fetchData = async () => {
-  //   try {
-  //     setfetchingData(true);
-  //     const RecordCollection = collection(db, "records");
-  //     const recordQuery = query(RecordCollection);
-  //     const querySnapshot = await getDocs(recordQuery);
-  //     const fetchedData: any = [];
-
-  //     querySnapshot.forEach((doc: any) => {
-  //       fetchedData.push({ id: doc.id, ...doc.data() });
-  //     });
-
-  //     setfetchingData(false);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
   return (
     <>
       <motion.div

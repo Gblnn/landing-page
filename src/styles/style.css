@@ -7,7 +7,7 @@
 }
 
 :root {
-  --nav-color: rgba(50 50 50/75%);
+  --nav-color: rgba(50 50 50/65%);
 }
 
 @media (prefers-color-scheme: light) {

@@ -49,6 +49,7 @@ export default function Mission() {
               fontSize: "3rem",
               fontWeight: "500",
               background: "center no-repeat url('array.jpg')",
+              backgroundColor: "black",
               backgroundPosition: "cover",
               lineHeight: "3rem",
               borderRadius: "1rem",
