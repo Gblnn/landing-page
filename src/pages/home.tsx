@@ -1,26 +1,26 @@
-import { useEffect, useState } from "react";
-import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import Footer from "@/components/footer";
+import { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "../components/header";
 import Careers from "./careers";
+import Clients from "./clients";
+import ContactUs from "./contact-us";
+import Mission from "./mission";
+import News from "./news";
 import OnBoarding from "./onboarding";
 import OurTeam from "./our-team";
 import Projects from "./projects";
-import ContactUs from "./contact-us";
-import Footer from "@/components/footer";
-import Mission from "./mission";
-import CivilEngineering from "./what we do/civil-engineering";
-import News from "./news";
 import Values from "./values";
-import Clients from "./clients";
+import CivilEngineering from "./what we do/civil-engineering";
 
 export default function Home() {
-  const usenavigate = useNavigate();
-  const [mounted, setMounted] = useState(false);
+  // const usenavigate = useNavigate();
+  // const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
-    usenavigate("/onboarding");
-    setMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   usenavigate("/landing");
+  //   setMounted(true);
+  // }, []);
 
   const { pathname } = useLocation();
 
@@ -33,7 +33,7 @@ export default function Home() {
       <Header />
 
       <Routes>
-        <Route path="/onboarding" index element={<OnBoarding />} />
+        <Route path="/" index element={<OnBoarding />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/our-team" element={<OurTeam />} />
@@ -45,7 +45,7 @@ export default function Home() {
         <Route path="/clients" element={<Clients />} />
       </Routes>
 
-      {mounted && <Footer />}
+      {<Footer />}
     </>
   );
 }
