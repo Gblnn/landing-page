@@ -40,7 +40,7 @@ export default function Careers() {
         className="page"
         style={{
           border: "",
-          height: "",
+          height: "86svh",
           paddingTop: "1.5rem",
           background: "rgba(100 100 100/ 10%)",
         }}
@@ -91,9 +91,9 @@ export default function Careers() {
           ) : (
             <div
               style={{
-                border: "",
+                border: "solid rgba(100 100 100/ 20%)",
                 display: "flex",
-                height: "35ch",
+                height: "42ch",
                 justifyContent: "center",
                 alignItems: "center",
                 opacity: "0.5",
