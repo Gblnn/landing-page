@@ -25,7 +25,7 @@ export default function News() {
         <div
           style={{
             margin: "1.5rem",
-            marginTop: "6rem",
+            marginTop: "",
             border: "",
             width: "fit-content",
           }}

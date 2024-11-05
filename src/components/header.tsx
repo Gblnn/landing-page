@@ -20,7 +20,7 @@ export default function Header() {
           color: "white",
         }}
       >
-        <Cog width={"1rem"} color="crimson" />
+        <Cog width={"1rem"} color="red" />
         <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p>
       </div>
       <div
