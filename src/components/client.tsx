@@ -7,7 +7,7 @@ export default function Client(props: Props) {
     <>
       <div
         style={{
-          border: "1px solid rgba(100 100 100/ 40%)",
+          //   border: "1px solid rgba(100 100 100/ 40%)",
           background: "rgba(100 100 100/ 10%)",
           display: "flex",
           height: "10ch",
@@ -15,7 +15,7 @@ export default function Client(props: Props) {
           justifyContent: "center",
           borderRadius: "1rem",
           alignItems: "center",
-          boxShadow: "1px 1px 8px rgba(50 50 50/ 30%)",
+          //   boxShadow: "1px 1px 8px rgba(50 50 50/ 30%)",
         }}
       >
         <img

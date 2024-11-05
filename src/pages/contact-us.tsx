@@ -88,7 +88,7 @@ export default function ContactUs() {
                   padding: "1rem",
                   border: "",
                   borderRadius: "0.5rem",
-                  background: "rgba(100 100 100/ 10%)",
+                  background: "rgba(100 100 100/ 5%)",
                   gap: "0.5rem",
                   paddingLeft: "1.25rem",
                 }}

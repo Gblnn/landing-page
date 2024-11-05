@@ -12,7 +12,7 @@ export default function Header() {
         style={{
           border: "",
           height: "2rem",
-          background: "midnightblue",
+          background: "linear-gradient(90deg, midnightblue, darkslateblue)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
