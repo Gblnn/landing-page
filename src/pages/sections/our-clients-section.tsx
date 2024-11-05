@@ -4,13 +4,17 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { useNavigate } from "react-router-dom";
 
 export default function OurClientsSection() {
+  const usenavigate = useNavigate();
   return (
     <>
       <div
+        onClick={() => usenavigate("/clients")}
         className="page"
         style={{
+          cursor: "pointer",
           display: "flex",
           justifyContent: "center",
           paddingTop: "",

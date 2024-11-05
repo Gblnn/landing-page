@@ -68,7 +68,7 @@ export default function Careers() {
 
           <br />
 
-          {fetchingData && (
+          {fetchingData ? (
             <div
               style={{
                 width: "100%",
@@ -86,9 +86,7 @@ export default function Careers() {
                 height={"3rem"}
               />
             </div>
-          )}
-
-          {records.length > 0 ? (
+          ) : records.length > 0 ? (
             <div></div>
           ) : (
             <div
