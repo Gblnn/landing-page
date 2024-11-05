@@ -26,18 +26,32 @@ export default function Project(props: Props) {
           boxShadow: "1px 1px 10px rgba(0 0 0/ 50%)",
         }}
       >
-        <img
-          className="project-img"
-          src={props.img}
-          style={{
-            objectFit: "cover",
-            borderRadius: "1rem",
-            borderBottomRightRadius: 0,
-            borderBottomLeftRadius: 0,
-            border: "",
-            background: "no-repeat center/50% url('/log.png')",
-          }}
-        />
+        {props.img ? (
+          <img
+            className="project-img"
+            src={props.img}
+            style={{
+              objectFit: "cover",
+              borderRadius: "1rem",
+              borderBottomRightRadius: 0,
+              borderBottomLeftRadius: 0,
+              border: "",
+              background: "",
+            }}
+          />
+        ) : (
+          <div
+            className="project-img"
+            style={{
+              objectFit: "cover",
+              borderRadius: "1rem",
+              borderBottomRightRadius: 0,
+              borderBottomLeftRadius: 0,
+              border: "",
+              background: "no-repeat center/50% url('/log.png')",
+            }}
+          ></div>
+        )}
 
         <div
           className="project-label"

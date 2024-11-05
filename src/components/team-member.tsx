@@ -25,7 +25,7 @@ export default function TeamMember(props: Props) {
       {props.src ? (
         <img
           style={{
-            background: "no-repeat center/50% url('/log.png')",
+            background: "",
             height: "20ch",
             borderTopLeftRadius: "0.75rem",
             borderTopRightRadius: "0.75rem",
