@@ -51,7 +51,7 @@ export default function Header() {
             paddingLeft: "0.75rem",
             cursor: "pointer",
           }}
-          onClick={() => usenavigate("/onboarding")}
+          onClick={() => usenavigate("/")}
         >
           <img
             src="/sohar_star_logo.png"
