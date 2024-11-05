@@ -30,7 +30,7 @@ export default function Values() {
           }}
         >
           <Back />
-          <p>Core Values</p>
+          <p>Our Values</p>
           <ChevronRight color="crimson" />
         </div>
       </div>

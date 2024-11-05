@@ -161,7 +161,7 @@ export default function Footer() {
                   <Link className="link" to="/our-mission">
                     Our Mission
                   </Link>
-                  <Link className="link" to="">
+                  <Link className="link" to="/our-values">
                     Values & Culture
                   </Link>
                   {/* <Link className="link" to="">
