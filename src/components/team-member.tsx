@@ -22,20 +22,37 @@ export default function TeamMember(props: Props) {
         boxShadow: "1px 1px 10px rgba(0 0 0/ 30%)",
       }}
     >
-      <img
-        style={{
-          background: "rgba(100 100 100/ 20%)",
-          height: "20ch",
-          borderTopLeftRadius: "0.75rem",
-          borderTopRightRadius: "0.75rem",
-          display: "flex",
-          width: "100%",
-          justifyContent: "center",
-          alignItems: "center",
-          objectFit: "cover",
-        }}
-        src={props.src ? props.src : "/log.png"}
-      />
+      {props.src ? (
+        <img
+          style={{
+            background: "no-repeat center/50% url('/log.png')",
+            height: "20ch",
+            borderTopLeftRadius: "0.75rem",
+            borderTopRightRadius: "0.75rem",
+            display: "flex",
+            width: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+            objectFit: "cover",
+          }}
+          src={props.src}
+        />
+      ) : (
+        <div
+          style={{
+            background: "no-repeat center/50% url('/log.png')",
+            height: "20ch",
+            borderTopLeftRadius: "0.75rem",
+            borderTopRightRadius: "0.75rem",
+            display: "flex",
+            width: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+            objectFit: "cover",
+          }}
+        ></div>
+      )}
+
       {/* <img
         src="sohar_star_logo.png"
         style={{
