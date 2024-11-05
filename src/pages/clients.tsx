@@ -25,7 +25,9 @@ export default function Clients() {
             flexWrap: "wrap",
             gap: "1rem",
             height: "",
+            width: "",
             padding: "",
+            justifyContent: "center",
           }}
         >
           <Client src="/vale.png" />
