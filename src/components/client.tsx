@@ -20,7 +20,7 @@ export default function Client(props: Props) {
         <img
           src={props.src}
           style={{
-            // filter: "grayscale(100%)",
+            filter: "grayscale(100%)",
             width: "8ch",
           }}
         />
