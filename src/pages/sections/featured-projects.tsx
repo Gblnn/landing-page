@@ -61,7 +61,7 @@ export default function FeaturedProjects() {
             }}
           >
             <Project
-              img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg"
+              img=""
               title="Project 1"
               desc="Brief description of project 1"
             />

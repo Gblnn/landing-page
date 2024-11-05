@@ -35,7 +35,7 @@ export default function Project(props: Props) {
             borderBottomRightRadius: 0,
             borderBottomLeftRadius: 0,
             border: "",
-            background: "url('/log.png')",
+            background: "no-repeat center/50% url('/log.png')",
           }}
         />
 
