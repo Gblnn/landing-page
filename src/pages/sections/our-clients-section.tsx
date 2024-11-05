@@ -41,55 +41,63 @@ export default function OurClientsSection() {
         >
           <CarouselContent style={{ display: "flex", alignItems: "center" }}>
             <CarouselItem className="basis-1/3 ">
-              <img src="/vale.png" style={{ width: "6rem" }} />
+              <img alt="vale" src="/vale.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/jindal_logo.png" style={{ width: "6rem" }} />
+              <img
+                alt="jindal"
+                src="/jindal_logo.png"
+                style={{ width: "6rem" }}
+              />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/oarc.png" style={{ width: "6rem" }} />
+              <img alt="oarc" src="/oarc.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/mak-logo.png" style={{ width: "6rem" }} />
+              <img alt="mak" src="/mak-logo.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/odc.png" style={{ width: "6rem" }} />
+              <img alt="odc" src="/odc.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/majis_.png" style={{ width: "6rem" }} />
+              <img alt="majis" src="/majis_.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/sts logo.png" style={{ width: "6rem" }} />
+              <img alt="sts" src="/sts logo.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/bec.png" style={{ width: "6rem" }} />
+              <img alt="bec" src="/bec.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/sanvira.png" style={{ width: "6rem" }} />
+              <img alt="sanvira" src="/sanvira.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/mhd.png" style={{ width: "6rem" }} />
+              <img alt="mhd" src="/mhd.png" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/Toshiba_logo.svg.png" style={{ width: "6rem" }} />
+              <img
+                alt="toshiba"
+                src="/Toshiba_logo.svg.png"
+                style={{ width: "6rem" }}
+              />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/ote.svg" style={{ width: "6rem" }} />
+              <img alt="ote" src="/ote.svg" style={{ width: "6rem" }} />
             </CarouselItem>
 
             <CarouselItem className="basis-1/3 ">
-              <img src="/ap.png" style={{ width: "6rem" }} />
+              <img alt="asian paints" src="/ap.png" style={{ width: "6rem" }} />
             </CarouselItem>
           </CarouselContent>
         </Carousel>

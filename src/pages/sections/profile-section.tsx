@@ -22,6 +22,7 @@ export default function ProfileSection() {
             style={{ display: "flex", alignItems: "center" }}
           >
             <img
+              alt="blue-background"
               src="/blue-bg.jpg"
               style={{
                 position: "absolute",

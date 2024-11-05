@@ -28,6 +28,7 @@ export default function Project(props: Props) {
       >
         {props.img ? (
           <img
+            alt="project"
             className="project-img"
             src={props.img}
             style={{
