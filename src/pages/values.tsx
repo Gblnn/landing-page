@@ -14,7 +14,7 @@ export default function Values() {
           display: "flex",
           border: "",
           width: "100%",
-          marginTop: "6rem",
+          marginTop: "",
           padding: "1.5rem",
         }}
       >

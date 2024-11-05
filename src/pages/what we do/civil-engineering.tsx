@@ -8,7 +8,7 @@ export default function CivilEngineering() {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.25 }}
     >
-      <div style={{ height: "6rem" }}></div>
+      <div style={{ height: "" }}></div>
       <div style={{ margin: "1rem" }}>
         <Back />
       </div>
