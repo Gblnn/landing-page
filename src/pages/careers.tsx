@@ -1,8 +1,10 @@
 import Back from "@/components/back";
+import Work from "@/components/work";
 import { db } from "@/firebase";
 import { collection, getDocs, query } from "firebase/firestore";
 import { motion } from "framer-motion";
 import { ChevronRight, LoaderCircle } from "lucide-react";
+import moment from "moment";
 import { useEffect, useState } from "react";
 // import { Opening } from "@/components/opening";
 
@@ -40,7 +42,7 @@ export default function Careers() {
         className="page"
         style={{
           border: "",
-          height: "86svh",
+          height: "",
           paddingTop: "1.5rem",
           background: "rgba(100 100 100/ 10%)",
         }}
@@ -87,13 +89,32 @@ export default function Careers() {
               />
             </div>
           ) : records.length > 0 ? (
-            <div></div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              style={{
+                display: "flex",
+                border: "",
+                height: "",
+                padding: "",
+                flexWrap: "wrap",
+                gap: "1.25rem",
+                justifyContent: "",
+              }}
+            >
+              <Work
+                date={moment().format("LL")}
+                designation="Project Manager"
+                experience="5"
+              />
+              <Work designation="Finance Manager" />
+            </motion.div>
           ) : (
             <div
               style={{
-                border: "solid rgba(100 100 100/ 20%)",
+                // border: "solid rgba(100 100 100/ 20%)",
                 display: "flex",
-                height: "42ch",
+                height: "36ch",
                 justifyContent: "center",
                 alignItems: "center",
                 opacity: "0.5",
@@ -110,7 +131,7 @@ export default function Careers() {
                 >
                   {/* <Inbox width={"3rem"} height={"3rem"} opacity={"0.5"} /> */}
                   {/* <p>No Openings Found</p> */}
-                  <p>Please check back later</p>
+                  <p>No Openings Found</p>
                   {/* <p style={{ fontSize: "0.6rem" }}>Please check back later</p> */}
                   <p style={{ fontSize: "0.6rem" }}>
                     Feel free to mail us your CV
