@@ -1,4 +1,5 @@
 import Project from "@/components/project";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -135,9 +136,25 @@ export default function FeaturedProjects() {
 
           <br />
           <br />
-          {/* <div style={{display:"flex", width:"100%", justifyContent:"center"}}>
-                <Button onClick={()=>usenavigate("/projects")} variant={"ghost"} style={{width:"32ch", display:"flex", gap:"0.5rem", alignItems:"center", alignSelf:"center", background:"rgba(100 100 100/ 10%)", boxShadow:"1px 1px 10px rgba(0 0 0/ 10%)"}}>See more Projects <ChevronRight width={"1rem"} color="crimson"/></Button>
-                </div> */}
+          <div
+            style={{ display: "flex", width: "100%", justifyContent: "center" }}
+          >
+            <Button
+              onClick={() => usenavigate("/projects")}
+              variant={"ghost"}
+              style={{
+                width: "32ch",
+                display: "flex",
+                gap: "0.5rem",
+                alignItems: "center",
+                alignSelf: "center",
+                background: "rgba(100 100 100/ 10%)",
+                boxShadow: "1px 1px 10px rgba(0 0 0/ 10%)",
+              }}
+            >
+              See All <ChevronRight width={"1rem"} color="crimson" />
+            </Button>
+          </div>
 
           <br />
           <br />
