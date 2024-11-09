@@ -1,4 +1,3 @@
-import { Cog } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import MobileNav from "./mobile-nav";
 import { Nav } from "./navigation-menu";
@@ -8,7 +7,7 @@ export default function Header() {
 
   return (
     <>
-      <div
+      {/* <div
         style={{
           border: "",
           height: "2rem",
@@ -22,7 +21,7 @@ export default function Header() {
       >
         <Cog width={"1rem"} color="red" />
         <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p>
-      </div>
+      </div> */}
       <div
         className="nav-bar"
         style={{
