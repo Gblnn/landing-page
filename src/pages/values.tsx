@@ -63,21 +63,21 @@ export default function Values() {
           <CoreValue
             icon={<HardHat width={"3rem"} height={"3rem"} color="dodgerblue" />}
             title="Safety"
-            desc="The safety of our team and clients is non-negotiable. We are committed to maintaining a safe working environment on every project we undertake. By adhering to the strictest safety protocols and investing in ongoing training, we ensure that every job site is secure and that everyone involved goes home safe at the end of the day."
+            desc="We are committed to maintaining a safe working environment on every project we undertake. By adhering to the strictest safety protocols and investing in ongoing training, we ensure that every job site is secure and that everyone involved goes home safe at the end of the day."
           />
           <CoreValue
             icon={
               <UsersRound width={"3rem"} height={"3rem"} color="dodgerblue" />
             }
             title="Teamwork"
-            desc="Collaboration is the key to success. We foster a culture of teamwork where every member of our team is valued for their unique skills and contributions. By working together with a shared purpose and open communication, we can tackle even the most complex projects and deliver the best possible outcomes for our clients."
+            desc="We foster a culture of teamwork where every member of our team is valued for their unique skills and contributions. By working together with a shared purpose and open communication, we can tackle even the most complex projects and deliver the best possible outcomes for our clients."
           />
           <CoreValue
             icon={
               <Handshake width={"3rem"} height={"3rem"} color="dodgerblue" />
             }
             title="Commitment"
-            desc="We are dedicated to the success of every project and the satisfaction of our clients. Our team goes above and beyond to ensure that every job is completed on time, within budget, and to the highest level of craftsmanship. We remain committed to delivering results that meet—and exceed—expectations."
+            desc="Our team goes above and beyond to ensure that every job is completed on time, within budget, and to the highest level of craftsmanship. We remain committed to delivering results that meet—and exceed—expectations."
           />
         </div>
         <br />
