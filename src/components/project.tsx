@@ -28,6 +28,7 @@ export default function Project(props: Props) {
       >
         {props.img ? (
           <img
+            loading="lazy"
             alt="project"
             className="project-img"
             src={props.img}
@@ -41,6 +42,21 @@ export default function Project(props: Props) {
             }}
           />
         ) : (
+          // <LazyLoadImage
+          //   useIntersectionObserver
+          //   threshold={100}
+          //   effect="blur"
+          //   style={{
+          //     height: "",
+
+          //     borderRadius: "",
+          //     borderBottomRightRadius: 0,
+          //     borderBottomLeftRadius: 0,
+          //     border: "",
+          //     background: "",
+          //   }}
+          //   src={props.img}
+          // />
           <div
             className="project-img"
             style={{

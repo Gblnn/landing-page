@@ -14,7 +14,7 @@ export default function CoreValue(props: Props) {
           alignItems: "center",
           //   border: "1px solid rgba(100 100 100/ 50%)",
           background:
-            " linear-gradient(rgba(0 0 0/ 0%), rgba(100 100 100/ 10%))",
+            " linear-gradient(rgba(0 0 0/ 0%), rgba(100 100 100/ 20%))",
           width: "30ch",
           borderRadius: "2rem",
           padding: "2rem",

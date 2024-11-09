@@ -9,6 +9,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { motion } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 
 export default function Projects() {
   return (
@@ -51,7 +52,11 @@ export default function Projects() {
           >
             <Back />
 
-            <Select defaultValue="civil-projects">
+            <p style={{ fontSize: "1.25rem" }}>All Projects</p>
+
+            <ChevronRight color="crimson" />
+
+            {/* <Select defaultValue="civil-projects">
               <SelectTrigger
                 style={{
                   background: "rgba(100 100 100/ 10%)",
@@ -93,7 +98,7 @@ export default function Projects() {
                   </SelectItem>
                 </SelectGroup>
               </SelectContent>
-            </Select>
+            </Select> */}
           </h1>
 
           <div
@@ -107,29 +112,71 @@ export default function Projects() {
               gap: "2rem",
             }}
           >
+            {/* <Project
+              img="/mak.png"
+              title="MAK Sohar Warehouse facility"
+              desc="Ongoing project "
+            /> */}
+
             <Project
-              img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg"
-              title="Project 1"
-              desc="Brief description of project 1"
+              img="/suh.jpg"
+              title="Suhail Chemicals"
+              desc="Civil, Mechanical and Electrical works for Suhail Chemicals"
             />
 
             <Project
-              img="/pxfuel.jpg"
-              title="Project 2"
-              desc="Brief description of project 2"
+              img="/ramez.jpg"
+              title="Ramez International"
+              desc="Civil, Mechanical and MEP works for Ramez International"
             />
 
             <Project
+              img="/aas.jpg"
+              title="Aviation Academy Suhar"
+              desc="Landscaping works for Suhar Aviation Academy"
+            />
+
+            <Project
+              img="/liwaic.jpg"
+              title="Liwa Innovation Center"
+              desc="Landscaping works and parking facility for Liwa Innovation Center"
+            />
+
+            <Project
+              img="mhdsc.jpg"
+              title="MHD Service Center"
+              desc="Civil, Electrical and MEP works for MHD service center."
+            />
+
+            <Project
+              img="sac.jpg"
+              title="Sohar Advanced Chemicals"
+              desc="Civil, MEP and Mechanical works for Sohar Advanced Chemicals."
+            />
+
+            <Project
+              img="valecsr.jpg"
+              title="Vale CSR - Liwa Muncipality"
+              desc="Landscaping works for Liwa Muncipality."
+            />
+
+            <Project
+              img="odcsm.jpg"
+              title="Oman Dry Dock Company"
+              desc="Ship maintenance works for Oman Dry Dock Company"
+            />
+
+            {/* <Project
               img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg"
               title="Project 3"
               desc="Brief description of project 3"
-            />
+            /> */}
 
-            <Project
+            {/* <Project
               img="https://motionarray.imgix.net/motion-array-1096692-auDdGLclkD-high_0009.jpg?w=660&q=60&fit=max&auto=format"
               title="Project 4"
               desc="Brief description of project 4"
-            />
+            /> */}
           </div>
 
           <br />
