@@ -84,6 +84,7 @@ export function NavMenu(props: Props) {
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
+
                 <Link to="/our-team">
                   <DropdownMenuItem>
                     <Users color="dodgerblue" className="mr-2 h-4 w-4" />

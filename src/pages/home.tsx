@@ -12,6 +12,7 @@ import OurTeam from "./our-team";
 import Projects from "./projects";
 import Values from "./values";
 import CivilEngineering from "./what we do/civil-engineering";
+import MechanicalDept from "./what we do/mechanical-dept";
 
 export default function Home() {
   // const usenavigate = useNavigate();
@@ -40,6 +41,7 @@ export default function Home() {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/our-mission" element={<Mission />} />
         <Route path="/civil-engineering" element={<CivilEngineering />} />
+        <Route path="/mechanical-dept" element={<MechanicalDept />} />
         <Route path="/news" element={<News />} />
         <Route path="/our-values" element={<Values />} />
         <Route path="/clients" element={<Clients />} />

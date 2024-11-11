@@ -71,11 +71,11 @@ export default function Footer() {
                   }}
                 >
                   <Smartphone color="crimson" width={"1rem"} />
-                  <a href="tel:92822305" className="ghost">
-                    92822305
-                  </a>
                   <a href="tel:99440272" className="ghost">
                     99440272
+                  </a>
+                  <a href="tel:92822305" className="ghost">
+                    92822305
                   </a>
                 </div>
 
@@ -107,6 +107,23 @@ export default function Footer() {
                     style={{ width: "10rem" }}
                   >
                     rajesh@soharstar.com
+                  </a>
+                </div>
+
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "0.5rem",
+                    alignItems: "center",
+                  }}
+                >
+                  <Mails color="crimson" width={"1rem"} />
+                  <a
+                    href="mailto:mpgnair@soharstar.com"
+                    className="ghost"
+                    style={{ width: "11rem" }}
+                  >
+                    mpgnair@soharstar.com
                   </a>
                 </div>
 

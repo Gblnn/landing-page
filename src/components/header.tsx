@@ -57,7 +57,7 @@ export default function Header() {
             src="/sohar_star_logo.png"
             width="40rem"
             height="40rem"
-            alt="Logo"
+            alt="Home"
           />
 
           <h1

@@ -22,32 +22,33 @@ interface Props {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Civil",
-    href: "/docs/primitives/alert-dialog",
-    description: "Construction of non-commercial buildings ",
+    href: "/civil-engineering",
+    description: "Construction of non-commercial buildings and structures",
   },
   {
     title: "Mechanical",
-    href: "/docs/primitives/hover-card",
-    description: "Mechanical Division.",
+    href: "/mechanical-dept",
+    description:
+      " High-quality installation, maintenance, and repair of industrial systems,",
   },
   {
     title: "Automobile",
-    href: "/docs/primitives/--",
+    href: "",
     description: "Repair and maintainence of light and heavy vehicles",
   },
   {
     title: "MEP",
-    href: "/docs/primitives/scroll-area",
+    href: "",
     description: "Mechanical, Electrical and Plumbing works.",
   },
   {
     title: "Electrical",
-    href: "/docs/primitives/tabs",
+    href: "",
     description: "Electrical Works dealing with installation and maintainence.",
   },
   {
     title: "Landscaping",
-    href: "/docs/primitives/tooltip",
+    href: "",
     description: "Transforming Barren lands to beautiful landscapes",
   },
 ];
