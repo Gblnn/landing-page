@@ -1,8 +1,11 @@
+import { Mails } from "lucide-react";
+
 interface Props {
   src?: string;
   name?: string;
   designation?: string;
   info?: string;
+  mail?: string;
 }
 
 export default function TeamMember(props: Props) {
@@ -102,7 +105,7 @@ export default function TeamMember(props: Props) {
           </p>
           <p style={{ opacity: "0.5", fontSize: "0.8rem" }}>{props.info}</p>
         </div>
-        {/* <div
+        <div
           style={{
             display: "flex",
             border: "",
@@ -111,16 +114,19 @@ export default function TeamMember(props: Props) {
             marginRight: "1rem",
           }}
         >
-          <button
-            style={{
-              background: "rgba(219 20 60/ 20%)",
-              borderRadius: "0.5rem",
-              padding: "0.5rem",
-            }}
-          >
-            <Mails color="crimson" />
-          </button>
-        </div> */}
+          <a href={"mailto:" + props.mail}>
+            <button
+              style={{
+                boxShadow: "1px 1px 8px rgba(0 0 0/ 75%)",
+                background: "midnightblue",
+                borderRadius: "0.5rem",
+                padding: "0.5rem",
+              }}
+            >
+              <Mails color="crimson" />
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );

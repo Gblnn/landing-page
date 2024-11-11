@@ -122,18 +122,26 @@ export default function OurTeam() {
                 src=""
                 name="Suresh Unni"
                 designation="Managing Director"
+                mail="suresh@soharstar.com"
                 info=""
               />
               <TeamMember
                 name="Aravind Unni"
                 designation="Executive Director"
+                mail="aravind@soharstar.com"
               />
               <TeamMember
-                name="Madhavan Pillai Gopakumaran Nair"
+                mail="mpgnair@soharstar.com"
+                name="M.P.G Nair"
                 designation="General Manager/ Projects Manager"
               />
-              <TeamMember name="Rajesh CV" designation="Head of Operations" />
               <TeamMember
+                mail="rajesh@soharstar.com"
+                name="Rajesh CV"
+                designation="Head of Operations"
+              />
+              <TeamMember
+                mail="avinash@soharstar.com"
                 name="Avinash Paithankar"
                 designation="QHSE Manager"
               />
