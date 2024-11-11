@@ -62,17 +62,17 @@ export default function NewsAndUpdatesSection() {
           >
             <NewsBox
               img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg"
-              title="News & Update 1"
-              desc="Brief description of update in very few words"
+              title="Staff Welfare Commitee - Launch 2024"
+              desc="November 11th 2024"
             />
             <NewsBox
               img="/pxfuel.jpg"
-              title="News & Update 2"
-              desc="Brief description of update in very few words"
+              title="Another Year of Excellence - Management Retreat"
+              desc=""
             />
             <NewsBox
               img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg"
-              title="News & Update 3"
+              title="SSU Accelerates Digital Adoption"
               desc="Brief description of update in very few words"
             />
             <NewsBox
