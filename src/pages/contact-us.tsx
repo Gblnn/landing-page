@@ -234,6 +234,22 @@ export default function ContactUs() {
                     <Mail color="dodgerblue" width={"1rem"} />
                     rajesh@soharstar.com
                   </a>
+
+                  <a
+                    href="mailto:mpgnair@soharstar.com"
+                    className="ghost"
+                    style={{
+                      display: "flex",
+                      gap: "0.5rem",
+                      fontSize: "0.8rem",
+                      alignItems: "center",
+                      width: "11.5rem",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Mail color="dodgerblue" width={"1rem"} />
+                    mpgnair@soharstar.com
+                  </a>
                 </div>
               </div>
             </div>

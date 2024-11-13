@@ -61,7 +61,7 @@ export default function NewsAndUpdatesSection() {
             }}
           >
             <NewsBox
-              img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg"
+              img="/swc.jpg"
               title="Staff Welfare Commitee - Launch 2024"
               desc="A dedicated initiative focused on enhancing the well-being our team. This committee will play a key role in fostering a positive, supportive work environment by addressing the needs, concerns, and aspirations of our employees. "
             />

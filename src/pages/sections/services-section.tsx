@@ -57,7 +57,7 @@ export default function ServicesSection() {
               }}
             >
               <Pin color="crimson" />
-              What we do
+              Our Services
             </h1>
 
             <div

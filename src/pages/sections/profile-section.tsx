@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { CircleCheck } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -102,7 +103,7 @@ export default function ProfileSection() {
                       Why Choose Us
                     </h1>
 
-                    <p className="desc" style={{ opacity: 0.75, border: "" }}>
+                    {/* <p className="desc" style={{ opacity: 0.75, border: "" }}>
                       At Sohar Star United, we bring a unique combination of
                       expertise, reliability, and client-focused service to
                       every project. We hold ourselves to the highest standards,
@@ -111,8 +112,60 @@ export default function ProfileSection() {
                       with a proven track record in the contracting industry.
                       From project managers to field specialists, every team
                       member is dedicated to delivering outstanding outcomes.
-                      {/* <a style={{color:"crimson", fontWeight:600, textDecoration:"underline"}}> Read More</a> */}
-                    </p>
+                    </p> */}
+
+                    <div
+                      style={{
+                        display: "flex",
+                        flexFlow: "column",
+                        gap: "1rem",
+                        opacity: 0.75,
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          gap: "0.75rem",
+                          border: "",
+                        }}
+                      >
+                        <CircleCheck color="dodgerblue" />
+                        <p>Over 25 years of Industry Experience</p>
+                      </div>
+
+                      <div
+                        style={{
+                          border: "",
+                          display: "flex",
+                          gap: "0.75rem",
+                        }}
+                      >
+                        <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        <p>
+                          Certified & Professional Team with proven track record
+                        </p>
+                      </div>
+
+                      <div style={{ display: "flex", gap: "0.75rem" }}>
+                        <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        <p>
+                          Sustainable building practices adhering to safety and
+                          quality standards
+                        </p>
+                      </div>
+
+                      <div style={{ display: "flex", gap: "0.75rem" }}>
+                        <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        <p>
+                          Innovative solutions catering to unique requirements
+                        </p>
+                      </div>
+
+                      <div style={{ display: "flex", gap: "0.75rem" }}>
+                        <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        <p>On-time delivery & Handover of projects</p>
+                      </div>
+                    </div>
 
                     {/* <a href="#projects" style={{position:"absolute", alignSelf:"center", marginTop:"22rem", display:"flex", flexFlow:"column", alignItems:"center"}}>
                             <p style={{fontSize:"0.8rem", opacity:0.5}}>View Our Projects</p>
