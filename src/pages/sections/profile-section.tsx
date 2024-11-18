@@ -129,7 +129,10 @@ export default function ProfileSection() {
                           border: "",
                         }}
                       >
-                        <CircleCheck color="dodgerblue" />
+                        <div style={{ border: "" }}>
+                          <CircleCheck color="dodgerblue" />
+                        </div>
+
                         <p>Over 25 years of Industry Experience</p>
                       </div>
 
@@ -140,14 +143,20 @@ export default function ProfileSection() {
                           gap: "0.75rem",
                         }}
                       >
-                        <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        <div style={{ border: "" }}>
+                          <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        </div>
+
                         <p>
                           Certified & Professional Team with proven track record
                         </p>
                       </div>
 
                       <div style={{ display: "flex", gap: "0.75rem" }}>
-                        <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        <div style={{ border: "" }}>
+                          <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        </div>
+
                         <p>
                           Sustainable building practices adhering to safety and
                           quality standards
@@ -155,14 +164,19 @@ export default function ProfileSection() {
                       </div>
 
                       <div style={{ display: "flex", gap: "0.75rem" }}>
-                        <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        <div style={{ border: "" }}>
+                          <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        </div>
                         <p>
                           Innovative solutions catering to unique requirements
                         </p>
                       </div>
 
                       <div style={{ display: "flex", gap: "0.75rem" }}>
-                        <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        <div style={{ border: "" }}>
+                          <CircleCheck color="dodgerblue" width={"1.5rem"} />
+                        </div>
+
                         <p>On-time delivery & Handover of projects</p>
                       </div>
                     </div>
