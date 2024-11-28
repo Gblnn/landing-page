@@ -149,6 +149,20 @@ export default function OurTeam() {
                 name="Sreenath S Charuvil"
                 designation="MED Contracts manager"
               />
+
+              <TeamMember
+                name="Arjun V Nath"
+                designation="Projects Coodrinator"
+                mail="arjun@soharstar.com"
+              />
+
+              <TeamMember
+                name="Susha Nalin"
+                designation="Projects Manager"
+                mail="susha@soharstar.com"
+              />
+
+              <TeamMember name="" designation="" mail="" />
             </div>
 
             {/* <Project img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="Project 1" desc="Brief description of project 1"/>

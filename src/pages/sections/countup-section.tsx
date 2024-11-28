@@ -1,7 +1,9 @@
 import { Factory, UserCheck, Users } from "lucide-react";
 import CountUp from "react-countup";
+import { useNavigate } from "react-router-dom";
 
 export default function CountupSection() {
+  const usenavigate = useNavigate();
   return (
     <>
       <div
@@ -16,6 +18,7 @@ export default function CountupSection() {
         }}
       >
         <div
+          onClick={() => usenavigate("/clients")}
           style={{
             display: "flex",
             flexFlow: "column",
@@ -23,6 +26,7 @@ export default function CountupSection() {
             border: "",
             alignItems: "center",
             justifyContent: "center",
+            cursor: "pointer",
           }}
         >
           <UserCheck color="crimson" />
@@ -45,6 +49,7 @@ export default function CountupSection() {
         </div>
 
         <div
+          onClick={() => usenavigate("/projects")}
           style={{
             display: "flex",
             flexFlow: "column",
@@ -52,6 +57,7 @@ export default function CountupSection() {
             border: "",
             alignItems: "center",
             justifyContent: "center",
+            cursor: "pointer",
           }}
         >
           <Factory color="crimson" />

@@ -63,24 +63,24 @@ export default function News() {
             }}
           >
             <NewsBox
-              img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg"
-              title="News & Update 1"
-              desc="Brief description of update in very few words"
+              img="/swc.jpg"
+              title="Staff Welfare Commitee - Launch 2024"
+              desc="A dedicated initiative focused on enhancing the well-being our team. This committee will play a key role in fostering a positive, supportive work environment by addressing the needs, concerns, and aspirations of our employees. "
             />
             <NewsBox
-              img="/pxfuel.jpg"
-              title="News & Update 2"
-              desc="Brief description of update in very few words"
+              img="/ayoe.jpg"
+              title="Another Year of Excellence"
+              desc="As we look back on the past year, we are proud to celebrate the milestones that have defined our continued commitment to excellence. From innovative solutions to exceptional customer experiences, all made possible by our amazing team."
             />
             <NewsBox
-              img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg"
-              title="News & Update 3"
-              desc="Brief description of update in very few words"
+              img="/holo_touch.jpg"
+              title="SSU Accelerates Digital Adoption"
+              desc="With a strong focus on innovation, we are accelerating the adoption of cutting-edge technologies to enhance operational efficiency, improve customer experiences, and supercharge our team."
             />
             <NewsBox
-              img="https://motionarray.imgix.net/motion-array-1096692-auDdGLclkD-high_0009.jpg?w=660&q=60&fit=max&auto=format"
-              title="News & Update 4"
-              desc="Brief description of update in very few words"
+              img="/team.jpg"
+              title="Vale rainwater harvesting Project"
+              desc="We are excited to announce the launch of another impactful project in collaboration with our esteemed client, M/s Vale. This rainwater harvesting initiative marks a significant step toward building a more sustainable future together."
             />
           </div>
 
