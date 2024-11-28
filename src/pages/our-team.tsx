@@ -152,7 +152,7 @@ export default function OurTeam() {
 
               <TeamMember
                 name="Arjun V Nath"
-                designation="Projects Coodrinator"
+                designation="Projects Coordinator"
                 mail="arjun@soharstar.com"
               />
 
