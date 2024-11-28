@@ -29,13 +29,13 @@ export default function OnBoarding() {
 
         <ProfileSection />
 
+        <OurClientsSection />
+
         <FeaturedProjects />
 
         <WorkWithUs />
 
         <NewsAndUpdatesSection />
-
-        <OurClientsSection />
       </motion.div>
     </>
   );

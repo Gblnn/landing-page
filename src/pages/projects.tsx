@@ -111,6 +111,12 @@ export default function Projects() {
             /> */}
 
             <Project
+              img="/jindal2.jpg"
+              title="Vulcan Jindal"
+              desc="Vulcan Jindal Mechanical Works"
+            />
+
+            <Project
               img="/suh.jpg"
               title="Suhail Chemicals"
               desc="Civil, Mechanical and Electrical works for Suhail Chemicals"
