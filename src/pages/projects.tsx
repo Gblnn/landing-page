@@ -152,11 +152,11 @@ export default function Projects() {
               desc="Civil, MEP and Mechanical works for Sohar Advanced Chemicals."
             />
 
-            <Project
+            {/* <Project
               img="valecsr.jpg"
               title="Vale CSR - Liwa Muncipality"
               desc="Landscaping works for Liwa Muncipality."
-            />
+            /> */}
 
             <Project
               img="odcsm.jpg"
