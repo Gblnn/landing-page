@@ -86,6 +86,12 @@ export default function FeaturedProjects() {
             /> */}
 
             <Project
+              img="/jindal2.jpg"
+              title="Vulcan Jindal"
+              desc="Vulcan Jindal Mechanical Works"
+            />
+
+            <Project
               img="/suh.jpg"
               title="Suhail Chemicals"
               desc="Civil, Mechanical and Electrical works for Suhail Chemicals"
@@ -103,11 +109,11 @@ export default function FeaturedProjects() {
               desc="Landscaping works for Suhar Aviation Academy"
             /> */}
 
-            <Project
+            {/* <Project
               img="/liwaic.jpg"
               title="Liwa Innovation Center"
               desc="Landscaping works and parking facility for Liwa Innovation Center"
-            />
+            /> */}
 
             {/* <Project
               img="mhdsc.jpg"
