@@ -10,14 +10,14 @@
   --nav-color: rgba(50 50 50/65%);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light;
   }
   body {
     --nav-color: rgba(255 255 255/ 85%);
   }
-}
+} */
 
 .red {
   transition: 0.3s;
