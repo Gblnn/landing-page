@@ -130,6 +130,12 @@ export default function OurTeam() {
                 designation="Executive Director"
                 mail="aravind@soharstar.com"
               />
+
+              <TeamMember
+                name="Lekha Suresh"
+                designation="Finance Head"
+                mail="lekha@soharstar.com"
+              />
               <TeamMember
                 mail="mpgnair@soharstar.com"
                 name="M.P.G Nair"
@@ -140,29 +146,27 @@ export default function OurTeam() {
                 name="Rajesh CV"
                 designation="Head of Operations"
               />
-              <TeamMember
-                mail="avinash@soharstar.com"
-                name="Avinash Paithankar"
-                designation="QHSE Manager"
-              />
-              <TeamMember
-                name="Sreenath S Charuvil"
-                designation="MED Contracts manager"
-              />
 
               <TeamMember
                 name="Arjun V Nath"
                 designation="Projects Coordinator"
                 mail="arjun@soharstar.com"
               />
+              <TeamMember
+                mail="avinash@soharstar.com"
+                name="Avinash Paithankar"
+                designation="QHSE Manager"
+              />
 
+              <TeamMember
+                name="Sreenath S Charuvil"
+                designation="MED Contracts manager"
+              />
               <TeamMember
                 name="Susha Nalin"
                 designation="Projects Manager"
                 mail="susha@soharstar.com"
               />
-
-              <TeamMember name="" designation="" mail="" />
             </div>
 
             {/* <Project img="https://static6.depositphotos.com/1000292/649/i/450/depositphotos_6490033-stock-photo-water-recycling-on-sewage-treatment.jpg" title="Project 1" desc="Brief description of project 1"/>

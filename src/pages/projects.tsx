@@ -117,6 +117,12 @@ export default function Projects() {
             />
 
             <Project
+              img="odc_front.jpg"
+              title="Oman Dry Dock Company"
+              desc="Ship maintenance works for Oman Dry Dock Company"
+            />
+
+            <Project
               img="/suh.jpg"
               title="Suhail Chemicals"
               desc="Civil, Mechanical and Electrical works for Suhail Chemicals"
@@ -134,17 +140,17 @@ export default function Projects() {
               desc="Landscaping works for Suhar Aviation Academy"
             />
 
-            <Project
+            {/* <Project
               img="/liwaic.jpg"
               title="Liwa Innovation Center"
               desc="Landscaping works and parking facility for Liwa Innovation Center"
-            />
+            /> */}
 
-            <Project
+            {/* <Project
               img="mhdsc.jpg"
               title="MHD Service Center"
               desc="Civil, Electrical and MEP works for MHD service center."
-            />
+            /> */}
 
             <Project
               img="sac.jpg"
@@ -157,12 +163,6 @@ export default function Projects() {
               title="Vale CSR - Liwa Muncipality"
               desc="Landscaping works for Liwa Muncipality."
             /> */}
-
-            <Project
-              img="odcsm.jpg"
-              title="Oman Dry Dock Company"
-              desc="Ship maintenance works for Oman Dry Dock Company"
-            />
 
             {/* <Project
               img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg"

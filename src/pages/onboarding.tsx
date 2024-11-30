@@ -27,6 +27,8 @@ export default function OnBoarding() {
 
         <CountupSection />
 
+        <NewsAndUpdatesSection />
+
         <ProfileSection />
 
         <OurClientsSection />
@@ -34,8 +36,6 @@ export default function OnBoarding() {
         <FeaturedProjects />
 
         <WorkWithUs />
-
-        <NewsAndUpdatesSection />
       </motion.div>
     </>
   );

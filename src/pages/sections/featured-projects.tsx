@@ -92,6 +92,12 @@ export default function FeaturedProjects() {
             />
 
             <Project
+              img="odc_front.jpg"
+              title="Oman Dry Dock Company"
+              desc="Ship maintenance works for Oman Dry Dock Company"
+            />
+
+            <Project
               img="/suh.jpg"
               title="Suhail Chemicals"
               desc="Civil, Mechanical and Electrical works for Suhail Chemicals"
@@ -132,12 +138,6 @@ export default function FeaturedProjects() {
               title="Vale CSR - Liwa Muncipality"
               desc="Landscaping works for Liwa Muncipality."
             /> */}
-
-            <Project
-              img="odcsm.jpg"
-              title="Oman Dry Dock Company"
-              desc="Ship maintenance works for Oman Dry Dock Company"
-            />
           </div>
 
           <br />
