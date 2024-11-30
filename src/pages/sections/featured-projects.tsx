@@ -91,10 +91,16 @@ export default function FeaturedProjects() {
               desc="Ship maintenance works for Oman Dry Dock Company"
             />
 
-            <Project
+            {/* <Project
               img="/jindal2.jpg"
               title="Vulcan Jindal"
               desc="Vulcan Jindal Mechanical Works"
+            /> */}
+
+            <Project
+              img="mech-sanvira.jpg"
+              title="Sanvira"
+              desc="Mechanical Works at Sanvira"
             />
 
             <Project

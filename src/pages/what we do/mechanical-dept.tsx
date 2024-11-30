@@ -42,7 +42,7 @@ export default function MechanicalDept() {
               backgroundSize: "cover",
               width: "100%",
               backgroundRepeat: "no-repeat",
-              height: "18ch",
+              height: "28ch",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -54,9 +54,10 @@ export default function MechanicalDept() {
                 fontSize: "2rem",
                 fontWeight: "500",
                 textAlign: "center",
+                textShadow: "1px 1px 10px black",
               }}
             >
-              Mechanical
+              Mechanical Division
             </p>
           </div>
         </div>
