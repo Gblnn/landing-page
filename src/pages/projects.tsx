@@ -111,15 +111,21 @@ export default function Projects() {
             /> */}
 
             <Project
-              img="/jindal2.jpg"
-              title="Vulcan Jindal"
-              desc="Vulcan Jindal Mechanical Works"
-            />
-
-            <Project
               img="odc_front.jpg"
               title="Oman Dry Dock Company"
               desc="Ship maintenance works for Oman Dry Dock Company"
+            />
+
+            <Project
+              img="mech-sanvira.jpg"
+              title="Sanvira"
+              desc="Mechanical Works at Sanvira"
+            />
+
+            <Project
+              img="/jindal2.jpg"
+              title="Vulcan Jindal"
+              desc="Vulcan Jindal Mechanical Works"
             />
 
             <Project
@@ -129,15 +135,27 @@ export default function Projects() {
             />
 
             <Project
-              img="/ramez.jpg"
-              title="Ramez International"
-              desc="Civil, Mechanical and MEP works for Ramez International"
+              img="/hanoon.jpg"
+              title="Hanoon Edible Oil Refinery"
+              desc="Civil, Mechanical and Electrical works for Hanoon Oil Refinery"
+            />
+
+            <Project
+              img="/pedestrian-bridge.jpg"
+              title="Liwa Pedestrian Bridge"
+              desc="Pedestrian Over Bridge in Liwa"
             />
 
             <Project
               img="/aas.jpg"
               title="Aviation Academy Suhar"
               desc="Landscaping works for Suhar Aviation Academy"
+            />
+
+            <Project
+              img="/ramez.jpg"
+              title="Ramez International"
+              desc="Civil, Mechanical and MEP works for Ramez International"
             />
 
             {/* <Project
@@ -151,6 +169,12 @@ export default function Projects() {
               title="MHD Service Center"
               desc="Civil, Electrical and MEP works for MHD service center."
             /> */}
+
+            <Project
+              img="mobile-tower_upscayl.png"
+              title="Mobile Tower Erection Work"
+              desc="Mobile Tower Erection Work in Suhar"
+            />
 
             <Project
               img="sac.jpg"

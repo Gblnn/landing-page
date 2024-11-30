@@ -38,7 +38,7 @@ export default function MechanicalDept() {
               objectFit: "cover",
               borderRadius: "0.5rem",
               background:
-                "linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('pxfuel.jpg')",
+                "no-repeat center/100% url('mechanical-workshop_.png')",
               backgroundSize: "cover",
               width: "100%",
               backgroundRepeat: "no-repeat",
@@ -48,8 +48,15 @@ export default function MechanicalDept() {
               alignItems: "center",
             }}
           >
-            <p style={{ color: "white", fontSize: "2rem", fontWeight: "500" }}>
-              Mechanical Department
+            <p
+              style={{
+                color: "white",
+                fontSize: "2rem",
+                fontWeight: "500",
+                textAlign: "center",
+              }}
+            >
+              Mechanical
             </p>
           </div>
         </div>

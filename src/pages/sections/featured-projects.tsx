@@ -86,15 +86,15 @@ export default function FeaturedProjects() {
             /> */}
 
             <Project
-              img="/jindal2.jpg"
-              title="Vulcan Jindal"
-              desc="Vulcan Jindal Mechanical Works"
-            />
-
-            <Project
               img="odc_front.jpg"
               title="Oman Dry Dock Company"
               desc="Ship maintenance works for Oman Dry Dock Company"
+            />
+
+            <Project
+              img="/jindal2.jpg"
+              title="Vulcan Jindal"
+              desc="Vulcan Jindal Mechanical Works"
             />
 
             <Project
@@ -128,9 +128,9 @@ export default function FeaturedProjects() {
             /> */}
 
             <Project
-              img="sac.jpg"
-              title="Sohar Advanced Chemicals"
-              desc="Civil, MEP and Mechanical works for Sohar Advanced Chemicals."
+              img="/pedestrian-bridge.jpg"
+              title="Liwa Pedestrian Bridge"
+              desc="Pedestrian Over Bridge in Liwa"
             />
 
             {/* <Project
