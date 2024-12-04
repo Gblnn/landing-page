@@ -55,6 +55,7 @@ interface Props {
   titleinfo?: boolean;
   onTitleClick?: any;
   img?: string;
+  date?: string;
 }
 
 export default function DefaultDialog(props: Props) {
@@ -62,6 +63,7 @@ export default function DefaultDialog(props: Props) {
     <>
       <Dialog open={props.open}>
         <DialogContent
+          className="focus:outline-none"
           style={{
             background: props.dialogBackground,
             backgroundRepeat: "no-repeat",
@@ -82,18 +84,24 @@ export default function DefaultDialog(props: Props) {
             <button
               onClick={props.onCancel}
               style={{
+                height: "2rem",
+                width: "2rem",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
                 position: "absolute",
                 zIndex: "10",
                 right: 0,
                 margin: "1",
                 marginRight: "2.25rem",
                 marginTop: "1rem",
-                background: "rgba(200 200 200/ 50%)",
+                background: "rgba(250 250 250/ 100%)",
                 padding: "0.25rem",
                 borderRadius: "0.5rem",
+                boxShadow: "1px 1px 10px rgba(0 0 0/ 30%)",
               }}
             >
-              <X />
+              <X color="crimson" strokeWidth={"0.15rem"} width={"1.25rem"} />
             </button>
             {/* <img
               loading="lazy"
@@ -140,7 +148,7 @@ export default function DefaultDialog(props: Props) {
                 borderBottomRightRadius: "0.75rem",
               }}
             >
-              <br />
+              <div style={{ height: "0.75rem" }}></div>
               <p style={{ fontWeight: "600", fontSize: "1.1rem" }}>
                 {props.title}
               </p>
@@ -151,7 +159,7 @@ export default function DefaultDialog(props: Props) {
                   fontWeight: "600",
                 }}
               >
-                25th October 2024
+                {props.date}
               </p>
               <div style={{ height: "0.75rem" }}></div>
               <p style={{ fontSize: "0.8rem" }}>{props.desc}</p>

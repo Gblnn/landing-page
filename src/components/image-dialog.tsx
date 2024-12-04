@@ -7,6 +7,7 @@ interface Props {
   onCancel?: any;
   img?: string;
   desc?: string;
+  date?: string;
 }
 
 export default function ImageDialog(props: Props) {
@@ -17,6 +18,7 @@ export default function ImageDialog(props: Props) {
       dialogBackground={"rgba(0 0 0/0%)"}
       close
       desc={props.desc}
+      date={props.date}
       img={props.img}
       open={props.open}
       onCancel={props.onCancel}

@@ -75,6 +75,7 @@ export default function NewsAndUpdatesSection() {
                   setDialogTitle(item.title);
                   setDialogImg(item.img);
                   setDialogDesc(item.desc);
+                  setDialogDate(item.date);
                 }}
                 key={item.id}
                 img={item.img}
