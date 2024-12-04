@@ -33,6 +33,7 @@ export default function Project(props: Props) {
             className="project-img"
             src={props.img}
             style={{
+              overflowClipMargin: "unset",
               filter: "contrast(100%)",
               objectFit: "cover",
               borderRadius: "1rem",

@@ -5,6 +5,7 @@ interface Props {
   icon?: any;
   title?: string;
   desc?: string;
+  onClick?: any;
 }
 
 export default function NewsBox(props: Props) {
@@ -15,6 +16,7 @@ export default function NewsBox(props: Props) {
       transition={{ delay: 0 }}
     >
       <div
+        onClick={props.onClick}
         className="project"
         style={{
           border: "1px solid rgba(100 100 100/ 40%)",
@@ -31,6 +33,7 @@ export default function NewsBox(props: Props) {
           className=""
           src={props.img}
           style={{
+            overflowClipMargin: "unset",
             objectFit: "cover",
             borderRadius: "1rem",
             borderTopRightRadius: 0,

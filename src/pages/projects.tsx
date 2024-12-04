@@ -123,6 +123,12 @@ export default function Projects() {
             />
 
             <Project
+              img="water-treatment-2.jpg"
+              title="Toshiba Water Treatment Plant"
+              desc="Toshiba water treatment plant"
+            />
+
+            <Project
               img="/jindal2.jpg"
               title="Vulcan Jindal"
               desc="Vulcan Jindal Mechanical Works"
@@ -133,6 +139,14 @@ export default function Projects() {
               title="Suhail Chemicals"
               desc="Civil, Mechanical and Electrical works for Suhail Chemicals"
             />
+
+            <Project
+              img="/fish_front.jpg"
+              title="Qurayat Fish Processing Plant"
+              desc="Fish processing plant and feed store in Qurayat"
+            />
+
+            {/* civil and mechanical job for wire rolling in jindal */}
 
             <Project
               img="/hanoon.jpg"

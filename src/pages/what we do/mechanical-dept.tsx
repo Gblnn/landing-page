@@ -8,8 +8,9 @@ export default function MechanicalDept() {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.25 }}
     >
-      <div style={{ height: "" }}></div>
-      <div style={{ margin: "1rem" }}>
+      {/* <div style={{ height: "" }}></div> */}
+
+      <div style={{ margin: "1rem", position: "absolute", padding: "0.75rem" }}>
         <Back />
       </div>
 
@@ -37,12 +38,13 @@ export default function MechanicalDept() {
             style={{
               objectFit: "cover",
               borderRadius: "0.5rem",
+
               background:
-                "no-repeat center/100% url('mechanical-workshop_.png')",
+                " no-repeat center/100% url('mechanical-workshop_.png')",
               backgroundSize: "cover",
               width: "100%",
               backgroundRepeat: "no-repeat",
-              height: "28ch",
+              height: "30ch",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",

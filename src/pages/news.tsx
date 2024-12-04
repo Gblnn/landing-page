@@ -1,9 +1,12 @@
 import Back from "@/components/back";
+import ImageDialog from "@/components/image-dialog";
 import NewsBox from "@/components/news-box";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function News() {
   const usenavigate = useNavigate();
+  const [dialog, setDialog] = useState(false);
   return (
     <>
       <div
@@ -63,6 +66,7 @@ export default function News() {
             }}
           >
             <NewsBox
+              onClick={() => setDialog(true)}
               img="/swc.jpg"
               title="Staff Welfare Commitee - Launch 2024"
               desc="A dedicated initiative focused on enhancing the well-being our team. This committee will play a key role in fostering a positive, supportive work environment by addressing the needs, concerns, and aspirations of our employees. "
@@ -83,6 +87,8 @@ export default function News() {
               desc="We are excited to announce the launch of another impactful project in collaboration with our esteemed client, M/s Vale. This rainwater harvesting initiative marks a significant step toward building a more sustainable future together."
             />
           </div>
+
+          <ImageDialog open={dialog} onCancel={() => setDialog(false)} />
 
           {/* <br/><br/>
                 <div style={{display:"flex", width:"100%", justifyContent:"center"}}>
