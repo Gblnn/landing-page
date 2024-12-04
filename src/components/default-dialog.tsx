@@ -169,7 +169,7 @@ export default function DefaultDialog(props: Props) {
           <div
             style={{
               //   border: "solid red",
-              height: "42ch",
+              height: "38ch",
               display: "flex",
               justifyContent: "center",
             }}

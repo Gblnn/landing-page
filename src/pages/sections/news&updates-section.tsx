@@ -111,6 +111,7 @@ export default function NewsAndUpdatesSection() {
             img={dialogImg}
             desc={dialogDesc}
             open={dialog}
+            date={dialogDate}
             onCancel={() => setDialog(false)}
           />
 
