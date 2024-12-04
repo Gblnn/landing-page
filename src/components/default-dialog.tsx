@@ -4,6 +4,7 @@ import { X } from "lucide-react";
 
 import { Button } from "../components/ui/button";
 import { Dialog, DialogContent, DialogFooter } from "../components/ui/dialog";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 interface Props {
   open?: boolean;
@@ -53,6 +54,7 @@ interface Props {
   contact?: string;
   titleinfo?: boolean;
   onTitleClick?: any;
+  img?: string;
 }
 
 export default function DefaultDialog(props: Props) {
@@ -81,7 +83,7 @@ export default function DefaultDialog(props: Props) {
               onClick={props.onCancel}
               style={{
                 position: "absolute",
-
+                zIndex: "10",
                 right: 0,
                 margin: "1",
                 marginRight: "2.25rem",
@@ -93,7 +95,7 @@ export default function DefaultDialog(props: Props) {
             >
               <X />
             </button>
-            <img
+            {/* <img
               loading="lazy"
               src="/swc.jpg"
               style={{
@@ -102,11 +104,30 @@ export default function DefaultDialog(props: Props) {
                 alignItems: "center",
                 width: "100%",
                 height: "28ch",
-                background: "black",
+                background: "#1a1a1a",
                 objectFit: "cover",
                 overflowClipMargin: "unset",
                 borderRadius: "0.75rem",
               }}
+            /> */}
+
+            <LazyLoadImage
+              width={"100%"}
+              useIntersectionObserver
+              threshold={100}
+              effect="opacity"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+                height: "28ch",
+                background: "#1a1a1a",
+                objectFit: "cover",
+                overflowClipMargin: "unset",
+                borderRadius: "0.75rem",
+              }}
+              src={props.img}
             />
 
             <div
@@ -121,19 +142,19 @@ export default function DefaultDialog(props: Props) {
             >
               <br />
               <p style={{ fontWeight: "600", fontSize: "1.1rem" }}>
-                Staff Welfare Committee Launch - 2024
+                {props.title}
               </p>
-              <p style={{ fontSize: "0.8rem", opacity: 0.5 }}>
+              <p
+                style={{
+                  fontSize: "0.8rem",
+                  color: "indianred",
+                  fontWeight: "600",
+                }}
+              >
                 25th October 2024
               </p>
               <div style={{ height: "0.75rem" }}></div>
-              <p style={{ fontSize: "0.8rem" }}>
-                Staff welfare committee is a dedicated initiative focused on
-                enhancing the well-being of our team. This committee will play a
-                key role in fostering a positive, supportive work environment by
-                addressing the needs, concerns, and aspirations of our
-                employees.
-              </p>
+              <p style={{ fontSize: "0.8rem" }}>{props.desc}</p>
               <div style={{ height: "0.75rem" }}></div>
             </div>
           </div>
