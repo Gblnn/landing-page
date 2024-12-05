@@ -2,9 +2,15 @@ import { DialogDescription } from "@radix-ui/react-dialog";
 
 import { X } from "lucide-react";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Button } from "../components/ui/button";
 import { Dialog, DialogContent, DialogFooter } from "../components/ui/dialog";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+} from "./ui/carousel";
 
 interface Props {
   open?: boolean;
@@ -119,24 +125,58 @@ export default function DefaultDialog(props: Props) {
               }}
             /> */}
 
-            <LazyLoadImage
-              width={"100%"}
-              useIntersectionObserver
-              threshold={100}
-              effect="opacity"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                width: "100%",
-                height: "28ch",
-                background: "#1a1a1a",
-                objectFit: "cover",
-                overflowClipMargin: "unset",
-                borderRadius: "0.75rem",
-              }}
-              src={props.img}
-            />
+            <Carousel>
+              <CarouselContent>
+                <CarouselNext
+                  style={{ position: "fixed", right: "0.5rem" }}
+                ></CarouselNext>
+                {/* <CarouselPrevious
+                  style={{ position: "fixed", left: "1.5rem" }}
+                ></CarouselPrevious> */}
+
+                <CarouselItem className="hover:cursor-grab active:cursor-grabbing">
+                  <LazyLoadImage
+                    width={"100%"}
+                    useIntersectionObserver
+                    threshold={100}
+                    effect="opacity"
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      width: "100%",
+                      height: "28ch",
+                      background: "#1a1a1a",
+                      objectFit: "cover",
+                      overflowClipMargin: "unset",
+                      borderRadius: "0.75rem",
+                    }}
+                    src={props.img}
+                  />
+                </CarouselItem>
+
+                {/* <CarouselItem>
+                  <LazyLoadImage
+                    width={"100%"}
+                    useIntersectionObserver
+                    threshold={100}
+                    effect="opacity"
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      width: "100%",
+                      height: "28ch",
+                      background: "#1a1a1a",
+                      objectFit: "cover",
+                      overflowClipMargin: "unset",
+                      borderRadius: "0.75rem",
+                    }}
+                    src={props.img}
+                  />
+                </CarouselItem> */}
+              </CarouselContent>
+            </Carousel>
 
             <div
               style={{

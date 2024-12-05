@@ -13,6 +13,7 @@ import Projects from "./projects";
 import Values from "./values";
 import CivilEngineering from "./what we do/civil-engineering";
 import MechanicalDept from "./what we do/mechanical-dept";
+import PageNotFound from "./page-not-found";
 
 export default function Home() {
   // const usenavigate = useNavigate();
@@ -45,6 +46,7 @@ export default function Home() {
         <Route path="/news" element={<News />} />
         <Route path="/our-values" element={<Values />} />
         <Route path="/clients" element={<Clients />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
 
       {<Footer />}
