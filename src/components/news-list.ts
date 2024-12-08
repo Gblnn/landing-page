@@ -3,7 +3,7 @@ export const news = [
     id: 1,
     img: "/swc.jpg",
     images: [{}],
-    title: "Staff Welfare Committee Launch - 2024",
+    title: "Star Welfare Committee Launch - 2024",
     date: "25th October 2024",
     desc: "A dedicated initiative focused on enhancing the well-being of our team. This committee will play a key role in fostering a positive, supportive work environment by addressing the needs, concerns, and aspirations of our employees. ",
   },
