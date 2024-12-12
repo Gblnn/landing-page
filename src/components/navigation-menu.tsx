@@ -19,34 +19,45 @@ interface Props {
   fontsize?: string;
 }
 
-const components: { title: string; to: string; description: string }[] = [
+const components: {
+  id: string;
+  title: string;
+  to: string;
+  description: string;
+}[] = [
   {
+    id: "1",
     title: "Civil",
     to: "/civil-engineering",
     description: "Construction of non-commercial buildings and structures",
   },
   {
+    id: "2",
     title: "Mechanical",
     to: "/mechanical-dept",
     description:
       " High-quality installation, maintenance, and repair of industrial systems,",
   },
   {
+    id: "3",
     title: "Automobile",
     to: "",
     description: "Repair and maintainence of light and heavy vehicles",
   },
   {
+    id: "4",
     title: "MEP",
     to: "",
     description: "Mechanical, Electrical and Plumbing works.",
   },
   {
+    id: "5",
     title: "Electrical",
     to: "",
     description: "Electrical Works dealing with installation and maintainence.",
   },
   {
+    id: "6",
     title: "Landscaping",
     to: "",
     description: "Transforming Barren lands to beautiful landscapes",
@@ -124,7 +135,7 @@ export function Nav(props: Props) {
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
-                <Link to={component.to}>
+                <Link key={component.id} to={component.to}>
                   <ListItem key={component.title} title={component.title}>
                     {component.description}
                   </ListItem>

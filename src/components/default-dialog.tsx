@@ -62,6 +62,8 @@ interface Props {
   onTitleClick?: any;
   img?: string;
   date?: string;
+  list?: any;
+  id?: any;
 }
 
 export default function DefaultDialog(props: Props) {
@@ -134,49 +136,67 @@ export default function DefaultDialog(props: Props) {
                   style={{ position: "fixed", left: "1.5rem" }}
                 ></CarouselPrevious> */}
 
-                <CarouselItem className="hover:cursor-grab active:cursor-grabbing">
-                  <LazyLoadImage
-                    width={"100%"}
-                    useIntersectionObserver
-                    threshold={100}
-                    effect="opacity"
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      width: "100%",
-                      height: "28ch",
-                      background: "#1a1a1a",
-                      objectFit: "cover",
-                      overflowClipMargin: "unset",
-                      borderRadius: "0.75rem",
-                    }}
-                    src={props.img}
-                  />
-                </CarouselItem>
-
-                {/* <CarouselItem>
-                  <LazyLoadImage
-                    width={"100%"}
-                    useIntersectionObserver
-                    threshold={100}
-                    effect="opacity"
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      width: "100%",
-                      height: "28ch",
-                      background: "#1a1a1a",
-                      objectFit: "cover",
-                      overflowClipMargin: "unset",
-                      borderRadius: "0.75rem",
-                    }}
-                    src={props.img}
-                  />
-                </CarouselItem> */}
+                {props.list
+                  .filter((e: any) => {
+                    return e.id == props.id;
+                  })
+                  .map((e: any) =>
+                    e.images.map((i: any) => (
+                      <CarouselItem className="hover:cursor-grab active:cursor-grabbing">
+                        <LazyLoadImage
+                          width={"100%"}
+                          useIntersectionObserver
+                          threshold={100}
+                          effect="opacity"
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%",
+                            height: "28ch",
+                            background: "#1a1a1a",
+                            objectFit: "cover",
+                            overflowClipMargin: "unset",
+                            borderRadius: "0.75rem",
+                          }}
+                          src={i.img}
+                        />
+                      </CarouselItem>
+                    ))
+                  )}
               </CarouselContent>
             </Carousel>
+
+            <div
+              style={{
+                display: "flex",
+                gap: "0.25rem",
+                border: "",
+                justifyContent: "center",
+                alignItems: "center",
+                marginTop: "0.5rem",
+              }}
+            >
+              {props.list
+                .filter((e: any) => {
+                  return e.id == props.id;
+                })
+                .map((e: any) =>
+                  e.images.map((i: any) => (
+                    <div
+                      key={i.id}
+                      style={{
+                        opacity: "0.5",
+                        display: "flex",
+                        width: "0.35rem",
+                        height: "0.35rem",
+                        background: "rgba(100 100 100)",
+                        borderRadius: "50%",
+                      }}
+                    ></div>
+                  ))
+                )}
+            </div>
 
             <div
               style={{
@@ -192,15 +212,18 @@ export default function DefaultDialog(props: Props) {
               <p style={{ fontWeight: "600", fontSize: "1.1rem" }}>
                 {props.title}
               </p>
-              <p
-                style={{
-                  fontSize: "0.8rem",
-                  color: "indianred",
-                  fontWeight: "600",
-                }}
-              >
-                {props.date}
-              </p>
+              {props.date && (
+                <p
+                  style={{
+                    fontSize: "0.8rem",
+                    color: "indianred",
+                    fontWeight: "600",
+                  }}
+                >
+                  {props.date}
+                </p>
+              )}
+
               <div style={{ height: "0.75rem" }}></div>
               <p style={{ fontSize: "0.8rem" }}>{props.desc}</p>
               <div style={{ height: "0.75rem" }}></div>

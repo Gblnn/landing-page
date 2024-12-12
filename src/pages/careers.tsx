@@ -28,7 +28,6 @@ export default function Careers() {
         fetchedData.push({ id: doc.id, ...doc.data() });
       });
       setRecords(fetchedData);
-      console.log(records.length);
 
       setfetchingData(false);
     } catch (error) {

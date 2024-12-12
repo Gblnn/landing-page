@@ -8,11 +8,15 @@ interface Props {
   img?: string;
   desc?: string;
   date?: string;
+  list?: any;
+  id?: any;
 }
 
 export default function ImageDialog(props: Props) {
   return (
     <DefaultDialog
+      id={props.id}
+      list={props.list}
       title={props.title}
       dialogHeight={"20rem"}
       dialogBackground={"rgba(0 0 0/0%)"}

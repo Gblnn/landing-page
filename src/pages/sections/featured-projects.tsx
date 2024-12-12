@@ -1,11 +1,22 @@
-import Project from "@/components/project";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { projectlist } from "@/components/projects";
+import Project from "@/components/project";
+import { useEffect, useState } from "react";
+import ImageDialog from "@/components/image-dialog";
 
 export default function FeaturedProjects() {
   const usenavigate = useNavigate();
+  const [id, setId] = useState<any>("");
+  const [dialog, setDialog] = useState(false);
+  const [dialogTitle, setDialogTitle] = useState("");
+  const [dialogImg, setDialogImg] = useState("");
+  const [dialogDesc, setDialogDesc] = useState("");
+
+  useEffect(() => {}, []);
+
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <div
@@ -61,89 +72,25 @@ export default function FeaturedProjects() {
               gap: "2rem",
             }}
           >
-            {/* <Project
-              img=""
-              title="Project 1"
-              desc="Brief description of project 1"
-            />
-
-            <Project
-              img="/pxfuel.jpg"
-              title="Project 2"
-              desc="Brief description of project 2"
-            />
-
-            <Project
-              img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg"
-              title="Project 3"
-              desc="Brief description of project 3"
-            />
-
-            <Project
-              img="https://motionarray.imgix.net/motion-array-1096692-auDdGLclkD-high_0009.jpg?w=660&q=60&fit=max&auto=format"
-              title="Project 4"
-              desc="Brief description of project 4"
-            /> */}
-
-            <Project
-              img="odc_front.jpg"
-              title="Oman Dry Dock Company"
-              desc="Ship maintenance works for Oman Dry Dock Company"
-            />
-
-            {/* <Project
-              img="/jindal2.jpg"
-              title="Vulcan Jindal"
-              desc="Vulcan Jindal Mechanical Works"
-            /> */}
-
-            <Project
-              img="mech-sanvira.jpg"
-              title="Sanvira"
-              desc="Mechanical Works at Sanvira"
-            />
-
-            <Project
-              img="/suh.jpg"
-              title="Suhail Chemicals"
-              desc="Civil, Mechanical and Electrical works for Suhail Chemicals"
-            />
-
-            {/* <Project
-              img="/ramez.jpg"
-              title="Ramez International"
-              desc="Civil, Mechanical and MEP works for Ramez International"
-            /> */}
-
-            {/* <Project
-              img="/aas.jpg"
-              title="Aviation Academy Suhar"
-              desc="Landscaping works for Suhar Aviation Academy"
-            /> */}
-
-            {/* <Project
-              img="/liwaic.jpg"
-              title="Liwa Innovation Center"
-              desc="Landscaping works and parking facility for Liwa Innovation Center"
-            /> */}
-
-            {/* <Project
-              img="mhdsc.jpg"
-              title="MHD Service Center"
-              desc="Civil, Electrical and MEP works for MHD service center."
-            /> */}
-
-            <Project
-              img="/pedestrian-bridge.jpg"
-              title="Liwa Pedestrian Bridge"
-              desc="Pedestrian Over Bridge in Liwa"
-            />
-
-            {/* <Project
-              img="valecsr.jpg"
-              title="Vale CSR - Liwa Muncipality"
-              desc="Landscaping works for Liwa Muncipality."
-            /> */}
+            {projectlist
+              .filter((e: any) => {
+                return e.featured == true;
+              })
+              .map((project: any) => (
+                <Project
+                  onClick={() => {
+                    setDialog(true);
+                    setDialogTitle(project.title);
+                    setDialogImg(project.img);
+                    setDialogDesc(project.desc);
+                    setId(project.id);
+                  }}
+                  key={project.id}
+                  img={project.img}
+                  title={project.title}
+                  desc={project.desc}
+                />
+              ))}
           </div>
 
           <br />
@@ -172,6 +119,15 @@ export default function FeaturedProjects() {
           <br />
         </div>
       </div>
+      <ImageDialog
+        id={id}
+        list={projectlist}
+        title={dialogTitle}
+        img={dialogImg}
+        desc={dialogDesc}
+        open={dialog}
+        onCancel={() => setDialog(false)}
+      />
     </motion.div>
   );
 }

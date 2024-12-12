@@ -2,8 +2,17 @@ import Back from "@/components/back";
 import Project from "@/components/project";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
+import { projectlist } from "@/components/projects";
+import { useState } from "react";
+import ImageDialog from "@/components/image-dialog";
 
 export default function Projects() {
+  const [id, setId] = useState<any>("");
+  const [dialog, setDialog] = useState(false);
+  const [dialogTitle, setDialogTitle] = useState("");
+  const [dialogImg, setDialogImg] = useState("");
+  const [dialogDesc, setDialogDesc] = useState("");
+
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <div
@@ -104,115 +113,21 @@ export default function Projects() {
               gap: "2rem",
             }}
           >
-            {/* <Project
-              img="/mak.png"
-              title="MAK Sohar Warehouse facility"
-              desc="Ongoing project "
-            /> */}
-
-            <Project
-              img="odc_front.jpg"
-              title="Oman Dry Dock Company"
-              desc="Ship maintenance works for Oman Dry Dock Company"
-            />
-
-            <Project
-              img="mech-sanvira.jpg"
-              title="Sanvira"
-              desc="Mechanical Works at Sanvira"
-            />
-
-            <Project
-              img="water-treatment-2.jpg"
-              title="Toshiba Water Treatment Plant"
-              desc="Toshiba water treatment plant"
-            />
-
-            <Project
-              img="/jindal2.jpg"
-              title="Vulcan Jindal"
-              desc="Vulcan Jindal Mechanical Works"
-            />
-
-            <Project
-              img="/suh.jpg"
-              title="Suhail Chemicals"
-              desc="Civil, Mechanical and Electrical works for Suhail Chemicals"
-            />
-
-            <Project
-              img="/fish_front.jpg"
-              title="Qurayat Fish Processing Plant"
-              desc="Fish processing plant and feed store in Qurayat"
-            />
-
-            {/* civil and mechanical job for wire rolling in jindal */}
-
-            <Project
-              img="/hanoon.jpg"
-              title="Hanoon Edible Oil Refinery"
-              desc="Civil, Mechanical and Electrical works for Hanoon Oil Refinery"
-            />
-
-            <Project
-              img="/pedestrian-bridge.jpg"
-              title="Liwa Pedestrian Bridge"
-              desc="Pedestrian Over Bridge in Liwa"
-            />
-
-            <Project
-              img="/aas.jpg"
-              title="Aviation Academy Suhar"
-              desc="Landscaping works for Suhar Aviation Academy"
-            />
-
-            <Project
-              img="/ramez.jpg"
-              title="Ramez International"
-              desc="Civil, Mechanical and MEP works for Ramez International"
-            />
-
-            {/* <Project
-              img="/liwaic.jpg"
-              title="Liwa Innovation Center"
-              desc="Landscaping works and parking facility for Liwa Innovation Center"
-            /> */}
-
-            {/* <Project
-              img="mhdsc.jpg"
-              title="MHD Service Center"
-              desc="Civil, Electrical and MEP works for MHD service center."
-            /> */}
-
-            <Project
-              img="mobile-tower_upscayl.png"
-              title="Mobile Tower Erection Work"
-              desc="Mobile Tower Erection Work in Suhar"
-            />
-
-            <Project
-              img="sac.jpg"
-              title="Sohar Advanced Chemicals"
-              desc="Civil, MEP and Mechanical works for Sohar Advanced Chemicals."
-            />
-
-            {/* <Project
-              img="valecsr.jpg"
-              title="Vale CSR - Liwa Muncipality"
-              desc="Landscaping works for Liwa Muncipality."
-            /> */}
-
-            {/* <Project
-              img="https://st4.depositphotos.com/5797516/24306/i/450/depositphotos_243067188-stock-photo-landscape-oil-gas-refinery-manufacturing.jpg"
-              title="Project 3"
-              desc="Brief description of project 3"
-            /> */}
-
-            {/* <Project
-              img="https://motionarray.imgix.net/motion-array-1096692-auDdGLclkD-high_0009.jpg?w=660&q=60&fit=max&auto=format"
-              title="Project 4"
-              desc="Brief description of project 4"
-            /> */}
+            {projectlist.map((project: any) => (
+              <Project
+                onClick={() => {
+                  setDialog(true);
+                  setDialogTitle(project.title);
+                  setDialogImg(project.img);
+                  setDialogDesc(project.desc);
+                  setId(project.id);
+                }}
+                key={project.id}
+                title={project.title}
+                img={project.img}
+                desc={project.desc}
+              />
+            ))}
           </div>
 
           <br />
@@ -223,6 +138,15 @@ export default function Projects() {
 
           <br />
           <br />
+          <ImageDialog
+            id={id}
+            list={projectlist}
+            title={dialogTitle}
+            img={dialogImg}
+            desc={dialogDesc}
+            open={dialog}
+            onCancel={() => setDialog(false)}
+          />
         </div>
       </div>
     </motion.div>

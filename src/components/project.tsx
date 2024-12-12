@@ -5,6 +5,7 @@ interface Props {
   img?: string;
   title?: string;
   desc?: string;
+  onClick?: any;
 }
 
 export default function Project(props: Props) {
@@ -15,6 +16,7 @@ export default function Project(props: Props) {
       transition={{ delay: 0.15 }}
     >
       <div
+        onClick={props.onClick}
         className="project"
         style={{
           border: "2px solid rgba(100 100 100/ 25%)",

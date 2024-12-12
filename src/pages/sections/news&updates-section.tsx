@@ -7,6 +7,7 @@ import { news } from "../../components/news-list";
 
 export default function NewsAndUpdatesSection() {
   const usenavigate = useNavigate();
+  const [id, setId] = useState("");
   const [dialog, setDialog] = useState(false);
   const [dialogImg, setDialogImg] = useState("");
   const [dialogTitle, setDialogTitle] = useState("");
@@ -76,6 +77,7 @@ export default function NewsAndUpdatesSection() {
                   setDialogImg(item.img);
                   setDialogDesc(item.desc);
                   setDialogDate(item.date);
+                  setId(item.id);
                 }}
                 key={item.id}
                 img={item.img}
@@ -107,6 +109,8 @@ export default function NewsAndUpdatesSection() {
           </div>
 
           <ImageDialog
+            id={id}
+            list={news}
             title={dialogTitle}
             img={dialogImg}
             desc={dialogDesc}
