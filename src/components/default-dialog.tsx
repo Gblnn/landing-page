@@ -5,12 +5,7 @@ import { X } from "lucide-react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Button } from "../components/ui/button";
 import { Dialog, DialogContent, DialogFooter } from "../components/ui/dialog";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-} from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 
 interface Props {
   open?: boolean;
@@ -229,7 +224,7 @@ export default function DefaultDialog(props: Props) {
           <div
             style={{
               //   border: "solid red",
-              height: "38ch",
+              height: "40ch",
               display: "flex",
               justifyContent: "center",
             }}
