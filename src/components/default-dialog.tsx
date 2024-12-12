@@ -129,9 +129,6 @@ export default function DefaultDialog(props: Props) {
 
             <Carousel>
               <CarouselContent>
-                <CarouselNext
-                  style={{ position: "fixed", right: "0.5rem" }}
-                ></CarouselNext>
                 {/* <CarouselPrevious
                   style={{ position: "fixed", left: "1.5rem" }}
                 ></CarouselPrevious> */}
