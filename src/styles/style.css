@@ -19,6 +19,10 @@
   }
 } */
 
+.dialog-image {
+  height: 30ch;
+}
+
 .red {
   transition: 0.3s;
 }

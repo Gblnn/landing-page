@@ -34,9 +34,15 @@ export const projectlist = [
   },
   {
     id: 4,
-    images: [{ id: 1, img: "/pedestrian-bridge.jpg" }],
+    images: [
+      { id: 1, img: "/pedestrian-bridge-5.jpg" },
+      { id: 1, img: "/pedestrian-bridge.jpg" },
+      { id: 2, img: "/pedestrian-bridge-2.jpg" },
+      { id: 1, img: "/pedestrian-bridge-3.jpg" },
+      { id: 1, img: "/pedestrian-bridge-4.jpg" },
+    ],
     date: "25th October 2024",
-    img: "/pedestrian-bridge.jpg",
+    img: "/pedestrian-bridge-5.jpg",
     title: "Liwa Pedestrian Bridge",
     desc: "Pedestrian Over Bridge in Liwa",
     featured: true,
@@ -70,9 +76,13 @@ export const projectlist = [
   },
   {
     id: 8,
-    images: [{ id: 1, img: "/fish_front.jpg" }],
+    images: [
+      { id: 1, img: "/fish_interior.jpg" },
+      { id: 2, img: "/fish_interior-2.jpg" },
+      { id: 3, img: "/fish_front.jpg" },
+    ],
     date: "25th October 2024",
-    img: "/fish_front.jpg",
+    img: "/fish_interior.jpg",
     title: "Qurayat Fish Processing Plant",
     desc: "Fish processing plant and feed store in Qurayat",
     featured: false,
@@ -89,11 +99,24 @@ export const projectlist = [
   },
   {
     id: 10,
-    images: [{ id: 1, img: "/ramez.jpg" }],
+    images: [
+      { id: 1, img: "/ramez.jpg" },
+      { id: 2, img: "/ramez-2.jpg" },
+    ],
     date: "25th October 2024",
     img: "/ramez.jpg",
     title: "Ramez International",
     desc: "Civil, Mechanical and MEP works for Ramez International",
+    featured: false,
+  },
+
+  {
+    id: 14,
+    images: [{ id: 1, img: "/sohar_flour_mills-1.png" }],
+    date: "25th October 2024",
+    img: "sohar_flour_mills-1.png",
+    title: "Sohar Flour Mills",
+    desc: "CIVIL & STEEL STRUCTURE WORK FOR THE SHIP UNLOADER CONVEYOR",
     featured: false,
   },
   {
@@ -103,6 +126,19 @@ export const projectlist = [
     img: "mobile-tower_upscayl.png",
     title: "Mobile Tower Erection",
     desc: "Tower Erection Works",
+    featured: false,
+  },
+
+  {
+    id: 13,
+    images: [
+      { id: 1, img: "/intelligent-parking.jpg" },
+      { id: 2, img: "/intelligent-parking-2.jpg" },
+    ],
+    date: "25th October 2024",
+    img: "intelligent-parking.jpg",
+    title: "Intelligent Parking System",
+    desc: "Intelligent Parking System in Al Khuwair",
     featured: false,
   },
 

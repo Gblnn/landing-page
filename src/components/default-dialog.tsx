@@ -136,6 +136,7 @@ export default function DefaultDialog(props: Props) {
                     e.images.map((i: any) => (
                       <CarouselItem className="hover:cursor-grab active:cursor-grabbing">
                         <LazyLoadImage
+                          className="dialog-image"
                           width={"100%"}
                           useIntersectionObserver
                           threshold={100}
@@ -145,7 +146,7 @@ export default function DefaultDialog(props: Props) {
                             justifyContent: "center",
                             alignItems: "center",
                             width: "100%",
-                            height: "28ch",
+
                             background: "#1a1a1a",
                             objectFit: "cover",
                             overflowClipMargin: "unset",
@@ -217,14 +218,16 @@ export default function DefaultDialog(props: Props) {
               )}
 
               <div style={{ height: "0.75rem" }}></div>
-              <p style={{ fontSize: "0.8rem" }}>{props.desc}</p>
+              <p style={{ fontSize: "0.8rem", opacity: "0.75" }}>
+                {props.desc}
+              </p>
               <div style={{ height: "0.75rem" }}></div>
             </div>
           </div>
           <div
             style={{
               //   border: "solid red",
-              height: "40ch",
+              height: "42ch",
               display: "flex",
               justifyContent: "center",
             }}
