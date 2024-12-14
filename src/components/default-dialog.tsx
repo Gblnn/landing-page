@@ -1,4 +1,4 @@
-import { DialogDescription } from "@radix-ui/react-dialog";
+import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
 
 import { X } from "lucide-react";
 
@@ -76,6 +76,7 @@ export default function DefaultDialog(props: Props) {
           }}
           onOpenAutoFocus={(e) => e.preventDefault()}
         >
+          <DialogTitle></DialogTitle>
           <div
             style={{
               borderRadius: "0.75rem",
@@ -106,6 +107,7 @@ export default function DefaultDialog(props: Props) {
             >
               <X color="crimson" strokeWidth={"0.15rem"} width={"1.25rem"} />
             </button>
+
             {/* <img
               loading="lazy"
               src="/swc.jpg"
@@ -134,7 +136,10 @@ export default function DefaultDialog(props: Props) {
                   })
                   .map((e: any) =>
                     e.images.map((i: any) => (
-                      <CarouselItem className="hover:cursor-grab active:cursor-grabbing">
+                      <CarouselItem
+                        key={i.id}
+                        className="hover:cursor-grab active:cursor-grabbing"
+                      >
                         <LazyLoadImage
                           className="dialog-image"
                           width={"100%"}
