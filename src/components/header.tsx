@@ -18,7 +18,7 @@ export default function Header() {
           cursor: "pointer",
           border: "",
           height: "2rem",
-          background: "linear-gradient(90deg,  darkslateblue, crimson)",
+          background: "linear-gradient(90deg,  midnightblue, crimson)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -29,7 +29,7 @@ export default function Header() {
         {/* <Cog width={"1rem"} color="red" />
         <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p> */}
 
-        <Sparkle width={"1rem"} color="salmon" />
+        <Sparkles width={"1rem"} color="salmon" />
         <p style={{ fontSize: "0.8rem" }}>
           Merry Christmas
           <b style={{}}> 2024</b>
