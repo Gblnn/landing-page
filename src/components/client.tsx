@@ -27,6 +27,10 @@ export default function Client(props: Props) {
               width: "8ch",
             }}
           />
+          {/* <ExternalLink
+            className="hover:opacity-10"
+            style={{ position: "absolute" }}
+          /> */}
         </div>
       </a>
     </>

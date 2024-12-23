@@ -1,18 +1,24 @@
+import { Sparkles } from "lucide-react";
+import { useState } from "react";
+import ConfettiExplosion from "react-confetti-explosion";
 import { useNavigate } from "react-router-dom";
 import MobileNav from "./mobile-nav";
 import { Nav } from "./navigation-menu";
-import { Cog } from "lucide-react";
+import RopeLights from "./rope-lights";
 
 export default function Header() {
   const usenavigate = useNavigate();
+  const [explode, setExplode] = useState(false);
 
   return (
     <>
       <div
+        onClick={() => setExplode(!explode)}
         style={{
+          cursor: "pointer",
           border: "",
           height: "2rem",
-          background: "linear-gradient(90deg, midnightblue, darkslateblue)",
+          background: "linear-gradient(90deg, midnightblue, crimson)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -20,8 +26,14 @@ export default function Header() {
           color: "white",
         }}
       >
-        <Cog width={"1rem"} color="red" />
-        <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p>
+        {/* <Cog width={"1rem"} color="red" />
+        <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p> */}
+
+        <Sparkles width={"1rem"} color="salmon" />
+        <p style={{ fontSize: "0.8rem" }}>
+          Welcome New Year
+          <b style={{}}> 2025</b>
+        </p>
       </div>
       <div
         className="nav-bar"
@@ -79,6 +91,18 @@ export default function Header() {
           <Nav fontsize="1rem" />
         </div>
       </div>
+      <RopeLights />
+      <div
+        style={{
+          border: "",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        {explode && <ConfettiExplosion />}
+      </div>
+
       <div
         className="mobile-nav nav-bar"
         style={{

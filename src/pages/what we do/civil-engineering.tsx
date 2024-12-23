@@ -8,8 +8,9 @@ export default function CivilEngineering() {
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.25 }}
     >
-      <div style={{ height: "" }}></div>
-      <div style={{ margin: "1rem" }}>
+      {/* <div style={{ height: "" }}></div> */}
+
+      <div style={{ margin: "1rem", position: "absolute", padding: "0.75rem" }}>
         <Back />
       </div>
 
@@ -37,18 +38,26 @@ export default function CivilEngineering() {
             style={{
               objectFit: "cover",
               borderRadius: "0.5rem",
-              background:
-                "linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('pxfuel.jpg')",
+
+              background: " no-repeat center/100% url('pxfuel.jpg')",
               backgroundSize: "cover",
               width: "100%",
               backgroundRepeat: "no-repeat",
-              height: "18ch",
+              height: "30ch",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
             }}
           >
-            <p style={{ color: "white", fontSize: "2rem", fontWeight: "500" }}>
+            <p
+              style={{
+                color: "white",
+                fontSize: "2rem",
+                fontWeight: "500",
+                textAlign: "center",
+                textShadow: "1px 1px 10px black",
+              }}
+            >
               Civil Department
             </p>
           </div>

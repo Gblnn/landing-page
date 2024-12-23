@@ -143,9 +143,10 @@ export default function DefaultDialog(props: Props) {
                         <LazyLoadImage
                           className="dialog-image"
                           width={"100%"}
-                          useIntersectionObserver
-                          threshold={100}
-                          effect="opacity"
+                          threshold={1000}
+                          delayMethod="debounce"
+                          delayTime={1}
+                          effect="black-and-white"
                           style={{
                             display: "flex",
                             justifyContent: "center",

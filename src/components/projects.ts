@@ -116,7 +116,7 @@ export const projectlist = [
     date: "25th October 2024",
     img: "sohar_flour_mills-1.png",
     title: "Sohar Flour Mills",
-    desc: "CIVIL & STEEL STRUCTURE WORK FOR THE SHIP UNLOADER CONVEYOR",
+    desc: "Civil & Steel Structural Works for Ship Unloader Conveyor",
     featured: false,
   },
   {

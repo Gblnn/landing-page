@@ -19,50 +19,50 @@ interface Props {
   fontsize?: string;
 }
 
-const components: {
-  id: string;
-  title: string;
-  to: string;
-  description: string;
-}[] = [
-  {
-    id: "1",
-    title: "Civil",
-    to: "/civil-engineering",
-    description: "Construction of non-commercial buildings and structures",
-  },
-  {
-    id: "2",
-    title: "Mechanical",
-    to: "/mechanical-dept",
-    description:
-      " High-quality installation, maintenance, and repair of industrial systems,",
-  },
-  {
-    id: "3",
-    title: "Automobile",
-    to: "",
-    description: "Repair and maintainence of light and heavy vehicles",
-  },
-  {
-    id: "4",
-    title: "MEP",
-    to: "",
-    description: "Mechanical, Electrical and Plumbing works.",
-  },
-  {
-    id: "5",
-    title: "Electrical",
-    to: "",
-    description: "Electrical Works dealing with installation and maintainence.",
-  },
-  {
-    id: "6",
-    title: "Landscaping",
-    to: "",
-    description: "Transforming Barren lands to beautiful landscapes",
-  },
-];
+// const components: {
+//   id: string;
+//   title: string;
+//   to: string;
+//   description: string;
+// }[] = [
+//   {
+//     id: "1",
+//     title: "Civil",
+//     to: "/civil-engineering",
+//     description: "Construction of non-commercial buildings and structures",
+//   },
+//   {
+//     id: "2",
+//     title: "Mechanical",
+//     to: "/mechanical-dept",
+//     description:
+//       " High-quality installation, maintenance, and repair of industrial systems,",
+//   },
+//   {
+//     id: "3",
+//     title: "Automobile",
+//     to: "",
+//     description: "Repair and maintainence of light and heavy vehicles",
+//   },
+//   {
+//     id: "4",
+//     title: "MEP",
+//     to: "",
+//     description: "Mechanical, Electrical and Plumbing works.",
+//   },
+//   {
+//     id: "5",
+//     title: "Electrical",
+//     to: "",
+//     description: "Electrical Works dealing with installation and maintainence.",
+//   },
+//   {
+//     id: "6",
+//     title: "Landscaping",
+//     to: "",
+//     description: "Transforming Barren lands to beautiful landscapes",
+//   },
+// ];
 
 export function Nav(props: Props) {
   return (
@@ -126,7 +126,7 @@ export function Nav(props: Props) {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger
             style={{ fontSize: props.fontsize, background: "none" }}
           >
@@ -143,7 +143,7 @@ export function Nav(props: Props) {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <Link to="/projects">
             <NavigationMenuLink

@@ -11,11 +11,9 @@ import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
 import { ChevronDown, ChevronUp, Pin } from "lucide-react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function ServicesSection() {
   const [expand, setExpand] = useState(true);
-  const usenavigate = useNavigate();
 
   return (
     <>
@@ -91,7 +89,7 @@ export default function ServicesSection() {
                 >
                   <CarouselItem className="sm:basis-1/1 lg:basis-1/3">
                     <ServiceBox
-                      onClick={() => usenavigate("/civil-engineering")}
+                      // onClick={() => usenavigate("/civil-engineering")}
                       title="Civil Engineering"
                       desc="Translating architectural concepts into concrete realities."
                       icon={
@@ -205,7 +203,7 @@ export default function ServicesSection() {
                 }}
               >
                 <ServiceBox
-                  onClick={() => usenavigate("/civil-engineering")}
+                  // onClick={() => usenavigate("/civil-engineering")}
                   title="Civil Engineering"
                   desc="Translating architectural concepts into concrete realities."
                   icon={

@@ -1,5 +1,17 @@
 export const news = [
   {
+    id: 0,
+    img: "/mak-news-3.jpg",
+    images: [
+      { id: 1, img: "/mak-news-3.jpg" },
+      { id: 2, img: "/mak-news-4.jpg" },
+      { id: 3, img: "/mak-news-5.jpg" },
+    ],
+    title: "MAK Sohar Site Visit",
+    date: "8th December 2024",
+    desc: "The Minister of Economy of Oman visits the site of one of our esteemed clients, MAK Sohar. The meeting involved discussions regarding future expansions and collaborative opportunities to drive economic growth and development",
+  },
+  {
     id: 1,
     img: "/swc.jpg",
     images: [{ id: 1, img: "/swc.jpg" }],
@@ -15,14 +27,14 @@ export const news = [
     date: "25th October 2024",
     desc: "As we look back on the past year, we are proud to celebrate the milestones that have defined our continued commitment to excellence. From innovative solutions to exceptional customer experiences, all made possible by our amazing team.",
   },
-  {
-    id: 3,
-    img: ["/holo_touch.jpg"],
-    images: [{ id: 1, img: "/holo_touch.jpg" }],
-    title: "SSU Accelerates Digital Adoption",
-    date: "25th October 2024",
-    desc: "With a strong focus on innovation, we are accelerating the adoption of cutting-edge technologies to enhance operational efficiency, improve customer experiences, and supercharge our team.",
-  },
+  // {
+  //   id: 3,
+  //   img: ["/holo_touch.jpg"],
+  //   images: [{ id: 1, img: "/holo_touch.jpg" }],
+  //   title: "SSU Accelerates Digital Adoption",
+  //   date: "25th October 2024",
+  //   desc: "With a strong focus on innovation, we are accelerating the adoption of cutting-edge technologies to enhance operational efficiency, improve customer experiences, and supercharge our team.",
+  // },
   {
     id: 4,
     img: ["/team.jpg"],

@@ -4,9 +4,11 @@ import NewsBox from "@/components/news-box";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { news } from "@/components/news-list";
+import { ChevronRight } from "lucide-react";
 
 export default function News() {
   const usenavigate = useNavigate();
+  const [id, setId] = useState("");
   const [dialog, setDialog] = useState(false);
   const [dialogImg, setDialogImg] = useState("");
   const [dialogTitle, setDialogTitle] = useState("");
@@ -45,18 +47,19 @@ export default function News() {
               fontSize: "1.5rem",
               fontWeight: 500,
               display: "flex",
-              gap: "1rem",
+              gap: "0.5rem",
               alignItems: "center",
               marginLeft: "0.25rem",
               color: "white",
             }}
           >
             <Back />
-            Latest News{" "}
-            {/* <strong style={{ color: "crimson", fontWeight: "500" }}>
+            <p style={{ marginLeft: "0.35rem" }}>News</p>
+            <strong style={{ color: "crimson", fontWeight: "500" }}>
               &
             </strong>{" "}
-            Updates */}
+            Updates
+            <ChevronRight color="crimson" />
           </div>
 
           <div
@@ -70,6 +73,9 @@ export default function News() {
               flexWrap: "wrap",
             }}
           >
+
+
+            
             {news.map((item: any) => (
               <NewsBox
                 onClick={() => {
@@ -78,6 +84,7 @@ export default function News() {
                   setDialogImg(item.img);
                   setDialogDesc(item.desc);
                   setDialogDate(item.date);
+                  setId(item.id);
                 }}
                 key={item.id}
                 img={item.img}
@@ -88,6 +95,8 @@ export default function News() {
           </div>
 
           <ImageDialog
+            id={id}
+            list={news}
             title={dialogTitle}
             img={dialogImg}
             desc={dialogDesc}

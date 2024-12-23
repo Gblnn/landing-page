@@ -1,28 +1,10 @@
-import {
-  BellElectric,
-  Car,
-  DraftingCompass,
-  Earth,
-  Factory,
-  Handshake,
-  Lightbulb,
-  TreePine,
-  Users,
-  Wrench,
-  Zap,
-} from "lucide-react";
+import { Earth, Handshake, Users } from "lucide-react";
 
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
@@ -36,14 +18,14 @@ export function NavMenu(props: Props) {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>{props.trigger}</DropdownMenuTrigger>
       <DropdownMenuContent
-        className="w-56"
+        className=""
         style={{
           marginLeft: "0.5rem",
           marginBottom: "1.75rem",
-          width: "10rem",
+          width: "12rem",
         }}
       >
-        <DropdownMenuLabel>About Us</DropdownMenuLabel>
+        {/* <DropdownMenuLabel>About Us</DropdownMenuLabel>
         <DropdownMenuSeparator />
 
         <DropdownMenuGroup>
@@ -60,56 +42,56 @@ export function NavMenu(props: Props) {
                   width: "12rem",
                   marginBottom: "4.65rem",
                 }}
-              >
-                <DropdownMenuItem>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/onboarding"
-                    style={{ background: "linear-gradient(#002244, #800020)" }}
-                  >
-                    <img src="/sohar_star_logo.png" width={"35rem"} />
+              > */}
+        <DropdownMenuItem>
+          <a
+            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+            href="/"
+            style={{ background: "linear-gradient(#002244, #800020)" }}
+          >
+            <img src="/sohar_star_logo.png" width={"35rem"} />
 
-                    <div
-                      className="mb-2 mt-4 text-lg font-medium"
-                      style={{ color: "white" }}
-                    >
-                      Sohar Star United LLC
-                    </div>
-                    <p
-                      className="text-sm leading-tight text-muted-foreground"
-                      style={{ color: "white", opacity: "0.5" }}
-                    >
-                      A company focussed on quality & excellence
-                    </p>
-                  </a>
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
+            <div
+              className="mb-2 mt-4 text-lg font-medium"
+              style={{ color: "white" }}
+            >
+              Sohar Star United LLC
+            </div>
+            <p
+              className="text-sm leading-tight text-muted-foreground"
+              style={{ color: "white", opacity: "0.5" }}
+            >
+              A company focussed on quality & excellence
+            </p>
+          </a>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
 
-                <Link to="/our-team">
-                  <DropdownMenuItem>
-                    <Users color="dodgerblue" className="mr-2 h-4 w-4" />
-                    <span>Our Team</span>
-                  </DropdownMenuItem>
-                </Link>
+        <Link to="/our-team">
+          <DropdownMenuItem>
+            <Users color="dodgerblue" className="mr-2 h-4 w-4" />
+            <span>Our Team</span>
+          </DropdownMenuItem>
+        </Link>
 
-                <Link to="/our-mission">
-                  <DropdownMenuItem>
-                    <Earth color="dodgerblue" className="mr-2 h-4 w-4" />
-                    <span>Our Mission</span>
-                  </DropdownMenuItem>
-                </Link>
+        <Link to="/our-mission">
+          <DropdownMenuItem>
+            <Earth color="dodgerblue" className="mr-2 h-4 w-4" />
+            <span>Our Mission</span>
+          </DropdownMenuItem>
+        </Link>
 
-                <Link to="/our-values">
-                  <DropdownMenuItem>
-                    <Handshake color="dodgerblue" className="mr-2 h-4 w-4" />
-                    <span>Our Values & Culture</span>
-                  </DropdownMenuItem>
-                </Link>
-              </DropdownMenuSubContent>
-            </DropdownMenuPortal>
-          </DropdownMenuSub>
+        <Link to="/our-values">
+          <DropdownMenuItem>
+            <Handshake color="dodgerblue" className="mr-2 h-4 w-4" />
+            <span>Our Values & Culture</span>
+          </DropdownMenuItem>
+        </Link>
+        {/* </DropdownMenuSubContent>
+            </DropdownMenuPortal> */}
+        {/* </DropdownMenuSub> */}
 
-          <DropdownMenuSub>
+        {/* <DropdownMenuSub>
             <DropdownMenuSubTrigger>
               <DraftingCompass color="crimson" className="mr-2 h-4 w-4" />
               <span>What we do</span>
@@ -155,8 +137,8 @@ export function NavMenu(props: Props) {
                 </DropdownMenuItem>
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
-          </DropdownMenuSub>
-        </DropdownMenuGroup>
+          </DropdownMenuSub> */}
+        {/* </DropdownMenuGroup> */}
       </DropdownMenuContent>
     </DropdownMenu>
   );

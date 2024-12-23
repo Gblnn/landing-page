@@ -53,7 +53,7 @@ export default function Projects() {
           >
             <Back />
 
-            <p style={{ fontSize: "1.25rem" }}>All Projects</p>
+            <p style={{ fontSize: "1.25rem" }}>Projects</p>
 
             <ChevronRight color="crimson" />
 

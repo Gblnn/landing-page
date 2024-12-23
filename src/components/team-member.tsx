@@ -27,6 +27,7 @@ export default function TeamMember(props: Props) {
     >
       {props.src ? (
         <img
+          loading="lazy"
           style={{
             background: "",
             height: "20ch",
@@ -117,7 +118,7 @@ export default function TeamMember(props: Props) {
           <a href={"mailto:" + props.mail}>
             <button
               style={{
-                boxShadow: "1px 1px 8px rgba(0 0 0/ 75%)",
+                boxShadow: "1px 1px 8px rgba(0 0 0/ 40%)",
                 background: "midnightblue",
                 borderRadius: "0.5rem",
                 padding: "0.5rem",
