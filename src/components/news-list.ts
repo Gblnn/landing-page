@@ -32,7 +32,7 @@ export const news = [
     ],
     title: "Jindal Wire Rolling Mill Handover",
     date: "25th October 2024",
-    desc: "The Jindal Wire Rolling Mill project was successfully completed and handed over well ahead of the deadline. The project's success was celebrated with a gesture of appreciation from the client, with a special event to honor the achievement.",
+    desc: "The Jindal Wire Rolling Mill project was successfully completed and handed over on time. The project's success was celebrated with a gesture of appreciation from the client, with a special event to honor the achievement.",
   },
 
   {
