@@ -4,6 +4,7 @@ import { ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { news } from "../../components/news-list";
+import { Button } from "@/components/ui/button";
 
 export default function NewsAndUpdatesSection() {
   const usenavigate = useNavigate();
@@ -69,22 +70,27 @@ export default function NewsAndUpdatesSection() {
               flexWrap: "wrap",
             }}
           >
-            {news.map((item: any) => (
-              <NewsBox
-                onClick={() => {
-                  setDialog(true);
-                  setDialogTitle(item.title);
-                  setDialogImg(item.img);
-                  setDialogDesc(item.desc);
-                  setDialogDate(item.date);
-                  setId(item.id);
-                }}
-                key={item.id}
-                img={item.img}
-                title={item.title}
-                desc={item.desc}
-              />
-            ))}
+            {news
+              .filter((e: any) => {
+                return e.featured == true;
+              })
+              .map((item: any) => (
+                <NewsBox
+                  onClick={() => {
+                    setDialog(true);
+                    setDialogTitle(item.title);
+                    setDialogImg(item.img);
+                    setDialogDesc(item.desc);
+                    setDialogDate(item.date);
+                    setId(item.id);
+                  }}
+                  key={item.id}
+                  img={item.img}
+                  title={item.title}
+                  desc={item.desc}
+                />
+              ))}
+
             {/* <NewsBox
               onClick={() => setDialog(true)}
               img="/swc.jpg"
@@ -119,10 +125,27 @@ export default function NewsAndUpdatesSection() {
             onCancel={() => setDialog(false)}
           />
 
-          {/* <br/><br/>
-                <div style={{display:"flex", width:"100%", justifyContent:"center"}}>
-                <Button onClick={()=>usenavigate("/projects")} variant={"ghost"} style={{width:"32ch", display:"flex", gap:"0.5rem", alignItems:"center", alignSelf:"center", background:"rgba(100 100 100/ 10%)", boxShadow:"1px 1px 10px rgba(0 0 0/ 10%)"}}>See more Projects <ChevronRight width={"1rem"} color="crimson"/></Button>
-                </div> */}
+          <br />
+          <br />
+          <div
+            style={{ display: "flex", width: "100%", justifyContent: "center" }}
+          >
+            <Button
+              onClick={() => usenavigate("/news")}
+              variant={"ghost"}
+              style={{
+                width: "32ch",
+                display: "flex",
+                gap: "0.5rem",
+                alignItems: "center",
+                alignSelf: "center",
+                background: "rgba(100 100 100/ 10%)",
+                boxShadow: "1px 1px 10px rgba(0 0 0/ 10%)",
+              }}
+            >
+              See More <ChevronRight width={"1rem"} color="crimson" />
+            </Button>
+          </div>
 
           <br />
         </div>
