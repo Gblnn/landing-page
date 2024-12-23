@@ -1,4 +1,4 @@
-import { Sparkle, Sparkles, TreeDeciduous, TreePine } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { useState } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 import { useNavigate } from "react-router-dom";
