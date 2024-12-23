@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+import { Sparkle, Sparkles, TreeDeciduous, TreePine } from "lucide-react";
 import { useState } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 import { useNavigate } from "react-router-dom";
@@ -18,7 +18,7 @@ export default function Header() {
           cursor: "pointer",
           border: "",
           height: "2rem",
-          background: "linear-gradient(90deg, midnightblue, crimson)",
+          background: "linear-gradient(90deg,  darkslateblue, crimson)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -29,10 +29,10 @@ export default function Header() {
         {/* <Cog width={"1rem"} color="red" />
         <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p> */}
 
-        <Sparkles width={"1rem"} color="salmon" />
+        <Sparkle width={"1rem"} color="salmon" />
         <p style={{ fontSize: "0.8rem" }}>
-          Welcome New Year
-          <b style={{}}> 2025</b>
+          Merry Christmas
+          <b style={{}}> 2024</b>
         </p>
       </div>
       <div
