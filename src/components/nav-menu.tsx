@@ -22,7 +22,7 @@ export function NavMenu(props: Props) {
         style={{
           marginLeft: "0.5rem",
           marginBottom: "1.75rem",
-          width: "12rem",
+          width: "13.5rem",
         }}
       >
         {/* <DropdownMenuLabel>About Us</DropdownMenuLabel>
@@ -49,7 +49,7 @@ export function NavMenu(props: Props) {
             href="/"
             style={{ background: "linear-gradient(#002244, #800020)" }}
           >
-            <img src="/sohar_star_logo.png" width={"35rem"} />
+            <img src="/sohar_star_logo.png" width={"38rem"} />
 
             <div
               className="mb-2 mt-4 text-lg font-medium"
@@ -59,7 +59,7 @@ export function NavMenu(props: Props) {
             </div>
             <p
               className="text-sm leading-tight text-muted-foreground"
-              style={{ color: "white", opacity: "0.5" }}
+              style={{ color: "white", opacity: "0.5", fontSize: "0.8rem" }}
             >
               A company focussed on quality & excellence
             </p>

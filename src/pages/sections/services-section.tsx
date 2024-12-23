@@ -24,7 +24,6 @@ export default function ServicesSection() {
       >
         <div
           id="services"
-          className=""
           style={{
             display: "flex",
             height: "",
@@ -80,6 +79,7 @@ export default function ServicesSection() {
               >
                 <CarouselPrevious style={{}} />
                 <CarouselContent
+                  className="hover:cursor-grab active:cursor-grabbing"
                   style={{
                     gap: "0rem",
                     width: "auto",
