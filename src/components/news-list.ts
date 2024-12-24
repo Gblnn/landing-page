@@ -2,11 +2,11 @@ export const news = [
   {
     id: 0,
     featured: true,
-    img: "/mak-news-3.jpg",
+    img: "/mak-news-5.jpg",
     images: [
-      { id: 1, img: "/mak-news-3.jpg" },
-      { id: 2, img: "/mak-news-4.jpg" },
-      { id: 3, img: "/mak-news-5.jpg" },
+      { id: 1, img: "/mak-news-5.jpg" },
+      { id: 2, img: "/mak-news-3.jpg" },
+      { id: 3, img: "/mak-news-4.jpg" },
     ],
     title: "MAK Sohar Site Visit",
     date: "8th December 2024",
@@ -25,10 +25,10 @@ export const news = [
   {
     id: 2,
     featured: true,
-    img: "/wire_rolling_mill_3.jpg",
+    img: "/wire_rolling_mill_2.jpg",
     images: [
-      { id: 1, img: "/wire_rolling_mill_3.jpg" },
-      { id: 2, img: "/wire_rolling_mill_2.jpg" },
+      { id: 1, img: "/wire_rolling_mill_2.jpg" },
+      { id: 2, img: "/wire_rolling_mill_3.jpg" },
     ],
     title: "Jindal Wire Rolling Mill Handover",
     date: "25th October 2024",
