@@ -1,6 +1,7 @@
 export const news = [
   {
     id: 0,
+    objectFit: "-130px 0",
     featured: true,
     img: "/mak-news-5.jpg",
     images: [

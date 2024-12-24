@@ -76,6 +76,7 @@ export default function NewsAndUpdatesSection() {
               })
               .map((item: any) => (
                 <NewsBox
+                  objectFit={item.objectFit}
                   onClick={() => {
                     setDialog(true);
                     setDialogTitle(item.title);

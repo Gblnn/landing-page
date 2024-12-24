@@ -6,6 +6,7 @@ interface Props {
   title?: string;
   desc?: string;
   onClick?: any;
+  objectFit?: string;
 }
 
 export default function NewsBox(props: Props) {
@@ -41,6 +42,7 @@ export default function NewsBox(props: Props) {
             border: "",
             width: "10ch",
             height: "",
+            objectPosition: props.objectFit ? props.objectFit : "-65px 0",
           }}
         />
 
