@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Layers } from "lucide-react";
 
 interface Props {
   img?: string;
   title?: string;
   desc?: string;
   onClick?: any;
+  picCount?: number;
 }
 
 export default function Project(props: Props) {
@@ -73,6 +74,34 @@ export default function Project(props: Props) {
             }}
           ></div>
         )}
+
+        <div
+          style={{
+            height: "",
+            justifyContent: "center",
+            alignItems: "center",
+            border: "solid",
+            position: "absolute",
+            margin: "1rem",
+            borderRadius: "0.5rem",
+            background: "white",
+            display: "flex",
+            paddingRight: "0.5rem",
+            paddingLeft: "0.45rem",
+            gap: "0.45rem",
+            fontWeight: "600",
+            boxShadow: "1px 1px 10px rgba(0 0 0/ 20%)",
+          }}
+        >
+          <Layers
+            color="dodgerblue"
+            width={"0.85rem"}
+            strokeWidth={"0.15rem"}
+          />
+          <p style={{ color: "black", fontSize: "0.65rem" }}>
+            {props.picCount}
+          </p>
+        </div>
 
         <div
           className="project-label"

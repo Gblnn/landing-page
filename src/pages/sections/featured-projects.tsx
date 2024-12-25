@@ -89,6 +89,7 @@ export default function FeaturedProjects() {
                   img={project.img}
                   title={project.title}
                   desc={project.desc}
+                  picCount={project.images.length}
                 />
               ))}
           </div>
