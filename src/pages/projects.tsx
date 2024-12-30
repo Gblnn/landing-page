@@ -126,6 +126,7 @@ export default function Projects() {
                 title={project.title}
                 img={project.img}
                 desc={project.desc}
+                picCount={project.images.length}
               />
             ))}
           </div>
