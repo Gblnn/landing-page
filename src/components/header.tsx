@@ -31,8 +31,8 @@ export default function Header() {
 
         <Sparkles width={"1rem"} color="salmon" />
         <p style={{ fontSize: "0.8rem" }}>
-          Merry Christmas
-          <b style={{}}> 2024</b>
+          Welcome New Year
+          <b style={{}}> 2025</b>
         </p>
       </div>
       <div
