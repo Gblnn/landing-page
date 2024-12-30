@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+import { PartyPopper } from "lucide-react";
 import { useState } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 import { useNavigate } from "react-router-dom";
@@ -29,7 +29,7 @@ export default function Header() {
         {/* <Cog width={"1rem"} color="red" />
         <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p> */}
 
-        <Sparkles width={"1rem"} color="salmon" />
+        <PartyPopper width={"1rem"} color="salmon" />
         <p style={{ fontSize: "0.8rem" }}>
           Welcome New Year
           <b style={{}}> 2025</b>
