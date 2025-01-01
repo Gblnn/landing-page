@@ -4,7 +4,6 @@ import ConfettiExplosion from "react-confetti-explosion";
 import { useNavigate } from "react-router-dom";
 import MobileNav from "./mobile-nav";
 import { Nav } from "./navigation-menu";
-import RopeLights from "./rope-lights";
 
 export default function Header() {
   const usenavigate = useNavigate();
@@ -18,7 +17,7 @@ export default function Header() {
           cursor: "pointer",
           border: "",
           height: "2rem",
-          background: "linear-gradient(90deg,  midnightblue, crimson)",
+          background: "linear-gradient(90deg, darkslateblue,midnightblue)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -29,7 +28,7 @@ export default function Header() {
         {/* <Cog width={"1rem"} color="red" />
         <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p> */}
 
-        <PartyPopper width={"1rem"} color="salmon" />
+        <PartyPopper className="animate-pulse" width={"1rem"} color="salmon" />
         <p style={{ fontSize: "0.8rem" }}>
           Welcome New Year
           <b style={{}}> 2025</b>
@@ -91,7 +90,7 @@ export default function Header() {
           <Nav fontsize="1rem" />
         </div>
       </div>
-      <RopeLights />
+      {/* <RopeLights /> */}
       <div
         style={{
           border: "",
