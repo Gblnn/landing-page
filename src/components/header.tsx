@@ -1,4 +1,3 @@
-import { PartyPopper } from "lucide-react";
 import { useState } from "react";
 import ConfettiExplosion from "react-confetti-explosion";
 import { useNavigate } from "react-router-dom";
@@ -7,11 +6,11 @@ import { Nav } from "./navigation-menu";
 
 export default function Header() {
   const usenavigate = useNavigate();
-  const [explode, setExplode] = useState(false);
+  const [explode] = useState(false);
 
   return (
     <>
-      <div
+      {/* <div
         onClick={() => setExplode(!explode)}
         style={{
           cursor: "pointer",
@@ -25,15 +24,16 @@ export default function Header() {
           color: "white",
         }}
       >
-        {/* <Cog width={"1rem"} color="red" />
-        <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p> */}
+        <Cog width={"1rem"} color="red" />
+        <p style={{ fontSize: "0.8rem" }}>Site is under maintainence.</p>
 
         <PartyPopper className="animate-pulse" width={"1rem"} color="salmon" />
         <p style={{ fontSize: "0.8rem" }}>
           Welcome New Year
           <b style={{}}> 2025</b>
         </p>
-      </div>
+      </div> */}
+
       <div
         className="nav-bar"
         style={{
