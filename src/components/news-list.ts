@@ -47,6 +47,7 @@ export const news = [
   },
   {
     id: 4,
+    objectFit: "0",
     img: "/ayoe.jpg",
     images: [{ id: 1, img: "/ayoe.jpg" }],
     title: "Another Year of Excellence",
@@ -55,6 +56,7 @@ export const news = [
   },
   {
     id: 5,
+    objectFit: "-30px",
     img: ["/holo_touch.jpg"],
     images: [{ id: 1, img: "/holo_touch.jpg" }],
     title: "SSU Accelerates Digital Adoption",
