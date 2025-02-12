@@ -161,6 +161,7 @@ export default function OurTeam() {
               <TeamMember
                 name="Sreenath S Charuvil"
                 designation="MED Contracts manager"
+                mail="sreenath@soharstar.com"
               />
               <TeamMember
                 name="Susha Nalin"
