@@ -101,12 +101,16 @@ export default function Careers() {
                 justifyContent: "",
               }}
             >
-              <Work
-                date={moment().format("LL")}
-                designation="Project Manager"
-                experience="5"
-              />
-              <Work designation="Finance Manager" />
+              {records.map((record: any) => (
+                <Work
+                  date={record.date}
+                  designation={record.designation}
+                  mailto={record.mailto}
+                  desc={
+                    "A Mechanical Engineer experienced in planning, hands on experience in P6/MSP softwares. To handle multiple projects related to structural steel, technological structures, silos, tanks piping, etc"
+                  }
+                />
+              ))}
             </motion.div>
           ) : (
             <div

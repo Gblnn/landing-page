@@ -4,6 +4,8 @@ interface Props {
   date?: string;
   designation?: string;
   experience?: string;
+  desc?: string;
+  mailto?:string
 }
 
 export default function Work(props: Props) {
@@ -15,7 +17,7 @@ export default function Work(props: Props) {
           display: "flex",
           border: "2px solid rgba(100 100 100/ 20%)",
           width: "30ch",
-          height: "25ch",
+          height: "auto",
           borderRadius: "1.25rem",
           padding: "0.35rem",
         }}
@@ -64,6 +66,7 @@ export default function Work(props: Props) {
               border: "",
               margin: "1rem",
               flexFlow: "column",
+              gap: "0.75rem",
             }}
           >
             <p
@@ -72,11 +75,18 @@ export default function Work(props: Props) {
                 lineHeight: "0.5rem",
                 fontWeight: 800,
                 color: "crimson",
+                textTransform: "uppercase",
               }}
             >
               FULL TIME
             </p>
-            <p style={{ fontSize: "1.35rem", fontWeight: "400" }}>
+            <p
+              style={{
+                fontSize: "1.35rem",
+                fontWeight: "400",
+                lineHeight: "1.75rem",
+              }}
+            >
               {props.designation}
             </p>
             {props.experience && (
@@ -99,6 +109,8 @@ export default function Work(props: Props) {
               </p>
             )}
 
+            <p style={{ fontSize: "0.8rem", opacity: 0.75 }}>{props.desc}</p>
+
             <div
               style={{
                 display: "flex",
@@ -109,10 +121,12 @@ export default function Work(props: Props) {
                 alignItems: "center",
               }}
             >
-              <p style={{ fontSize: "1rem" }}>
+              {/* <p style={{ fontSize: "1rem" }}>
                 <b>OMR</b> 600/month
-              </p>
+              </p> */}
+              <a href={"mailto:"+props.mailto}>
               <button
+              
                 className="red"
                 style={{
                   background: "crimson",
@@ -126,6 +140,7 @@ export default function Work(props: Props) {
               >
                 Apply
               </button>
+              </a>
             </div>
           </div>
         </div>
