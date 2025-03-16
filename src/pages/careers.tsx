@@ -4,7 +4,6 @@ import { db } from "@/firebase";
 import { collection, getDocs, query } from "firebase/firestore";
 import { motion } from "framer-motion";
 import { ChevronRight, LoaderCircle } from "lucide-react";
-import moment from "moment";
 import { useEffect, useState } from "react";
 // import { Opening } from "@/components/opening";
 
