@@ -36,21 +36,19 @@ export default function Careers() {
   return (
     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
       <div
-        id="projects"
         className="page"
         style={{
-          border: "",
-          height: "",
-          paddingTop: "1.5rem",
+          minHeight: "90vh",
+          paddingTop: "1rem",
           background: "rgba(100 100 100/ 10%)",
         }}
       >
         <div
           style={{
-            margin: "1.5rem",
-            marginTop: "",
-            border: "",
+            padding: "1.5rem",
             width: "100%",
+            maxWidth: "1280px",
+            margin: "0 auto",
           }}
         >
           <h1
@@ -60,23 +58,21 @@ export default function Careers() {
               display: "flex",
               gap: "0.75rem",
               alignItems: "center",
+              marginBottom: "1.5rem",
             }}
           >
             <Back />
             Careers <ChevronRight color="crimson" />
           </h1>
 
-          <br />
-
           {fetchingData ? (
             <div
               style={{
                 width: "100%",
-                border: "",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                height: "36ch",
+                height: "50vh",
               }}
             >
               <LoaderCircle
@@ -90,71 +86,57 @@ export default function Careers() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
+              className="careers-grid"
               style={{
                 display: "flex",
-                border: "",
-                height: "",
-                padding: "",
                 flexWrap: "wrap",
-                gap: "1.25rem",
-                justifyContent: "",
+                gap: "2rem",
+                padding: "0.5rem",
               }}
             >
               {records.map((record: any) => (
                 <Work
+                  key={record.id}
                   date={record.date}
                   designation={record.designation}
                   mailto={record.mailto}
-                  desc={
-                    "A Mechanical Engineer experienced in planning, hands on experience in P6/MSP softwares. To handle multiple projects related to structural steel, technological structures, silos, tanks piping, etc"
-                  }
+                  desc={record.description}
                 />
               ))}
             </motion.div>
           ) : (
             <div
               style={{
-                // border: "solid rgba(100 100 100/ 20%)",
                 display: "flex",
                 height: "36ch",
                 justifyContent: "center",
                 alignItems: "center",
+                width: "100%",
                 opacity: "0.5",
               }}
             >
-              <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 <div
                   style={{
                     display: "flex",
                     flexFlow: "column",
                     justifyContent: "center",
                     alignItems: "center",
+                    textAlign: "center",
                   }}
                 >
-                  {/* <Inbox width={"3rem"} height={"3rem"} opacity={"0.5"} /> */}
-                  {/* <p>No Openings Found</p> */}
                   <p>No Openings Found</p>
-                  {/* <p style={{ fontSize: "0.6rem" }}>Please check back later</p> */}
                   <p style={{ fontSize: "0.6rem" }}>
                     Feel free to mail us your CV
                   </p>
-
-                  {/* <p
-                style={{
-                  padding: "1rem",
-                  // paddingLeft: "1rem",
-                  // paddingRight: "1rem",
-                  // border: "solid rgba(100 100 100/ 40%)",
-                  textAlign: "center",
-                  position: "absolute",
-                  bottom: 0,
-                  marginBottom: "6rem",
-                  fontSize: "0.7rem",
-                  borderRadius: "0.75rem",
-                }}
-              >
-                Feel free to mail us your CV and we will get back to you
-              </p> */}
                 </div>
               </motion.div>
             </div>
