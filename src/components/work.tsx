@@ -7,6 +7,7 @@ interface Props {
   experience?: string;
   desc?: string;
   mailto?: string;
+  actively_hiring?: boolean;
 }
 
 export default function Work(props: Props) {
@@ -89,16 +90,18 @@ export default function Work(props: Props) {
           alignItems: "center",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "0.5rem",
-          }}
-        >
-          <Zap width="1rem" color="crimson" />
-          <p style={{ fontSize: "0.85rem", opacity: 0.8 }}>Actively Hiring</p>
-        </div>
+        {props.actively_hiring && (
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "0.5rem",
+            }}
+          >
+            <Zap width="1rem" color="crimson" />
+            <p style={{ fontSize: "0.85rem", opacity: 0.8 }}>Actively Hiring</p>
+          </div>
+        )}
 
         <a href={`mailto:${props.mailto}`}>
           <motion.button

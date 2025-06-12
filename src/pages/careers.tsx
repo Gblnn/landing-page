@@ -102,6 +102,7 @@ export default function Careers() {
                   designation={record.jobTitle}
                   mailto={record.mailto}
                   desc={record.description}
+                  actively_hiring={record.activelyHiring}
                 />
               ))}
             </motion.div>
