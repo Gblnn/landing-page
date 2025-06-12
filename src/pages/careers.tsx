@@ -4,6 +4,7 @@ import { db } from "@/firebase";
 import { collection, getDocs, query } from "firebase/firestore";
 import { motion } from "framer-motion";
 import { ChevronRight, LoaderCircle } from "lucide-react";
+import moment from "moment";
 import { useEffect, useState } from "react";
 // import { Opening } from "@/components/opening";
 
@@ -97,8 +98,8 @@ export default function Careers() {
               {records.map((record: any) => (
                 <Work
                   key={record.id}
-                  date={record.date}
-                  designation={record.designation}
+                  date={moment(record.created_at.toDate()).format("LL")}
+                  designation={record.jobTitle}
                   mailto={record.mailto}
                   desc={record.description}
                 />

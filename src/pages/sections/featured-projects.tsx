@@ -112,7 +112,7 @@ export default function FeaturedProjects() {
                 boxShadow: "1px 1px 10px rgba(0 0 0/ 10%)",
               }}
             >
-              See All <ChevronRight width={"1rem"} color="crimson" />
+              See More <ChevronRight width={"1rem"} color="crimson" />
             </Button>
           </div>
 

@@ -374,12 +374,29 @@ export default function Footer() {
       >
         <div
           className="items-container"
-          style={{ display: "flex", border: "", justifyContent: "center" }}
+          style={{
+            display: "flex",
+            border: "",
+            justifyContent: "center",
+            gap: "0.5rem",
+          }}
         >
-          <p>
-            Copyrights Reserved {String(moment().year())} &copy;{" "}
-            <strong style={{ fontWeight: 500 }}> SOHAR STAR UNITED LLC </strong>
+          <p style={{}}>
+            Copyrights {String(moment().year())} &copy;{" "}
+            <strong style={{ fontWeight: 600 }}> SOHAR STAR UNITED LLC </strong>
           </p>
+          <p>|</p>
+          <a
+            target="_blank"
+            href="https://gblnn-portfolio.netlify.app"
+            style={{
+              fontSize: "0.8  rem",
+              fontWeight: "600",
+              color: "dodgerblue",
+            }}
+          >
+            @Gblnn
+          </a>
         </div>
       </div>
     </div>
