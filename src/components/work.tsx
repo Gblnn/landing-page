@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Zap } from "lucide-react";
+import { ChevronRight, Zap } from "lucide-react";
 
 interface Props {
   date?: string;
@@ -8,6 +8,7 @@ interface Props {
   desc?: string;
   mailto?: string;
   actively_hiring?: boolean;
+  onApply?: any;
 }
 
 export default function Work(props: Props) {
@@ -90,21 +91,26 @@ export default function Work(props: Props) {
           alignItems: "center",
         }}
       >
-        {props.actively_hiring && (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "0.5rem",
-            }}
-          >
-            <Zap width="1rem" color="crimson" />
-            <p style={{ fontSize: "0.85rem", opacity: 0.8 }}>Actively Hiring</p>
-          </div>
-        )}
+        <div>
+          {props.actively_hiring && (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+              }}
+            >
+              <Zap width="1rem" color="crimson" />
+              <p style={{ fontSize: "0.85rem", opacity: 0.8 }}>
+                Actively Hiring
+              </p>
+            </div>
+          )}
+        </div>
 
-        <a href={`mailto:${props.mailto}`}>
+        <a>
           <motion.button
+            onClick={props.onApply}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             style={{
@@ -120,8 +126,8 @@ export default function Work(props: Props) {
               boxShadow: "0 2px 4px rgba(0,0,0,0.2)",
             }}
           >
-            <Mail width="1rem" />
             Apply
+            <ChevronRight width={"1rem"} />
           </motion.button>
         </a>
       </div>

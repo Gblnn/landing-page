@@ -6,11 +6,14 @@ import { motion } from "framer-motion";
 import { ChevronRight, LoaderCircle } from "lucide-react";
 import moment from "moment";
 import { useEffect, useState } from "react";
+import JobApplicationDialog from "@/components/JobApplicationDialog";
 // import { Opening } from "@/components/opening";
 
 export default function Careers() {
   const [fetchingData, setfetchingData] = useState(false);
   const [records, setRecords] = useState([]);
+  const [applicationDialog, setApplicationDialog] = useState(false);
+  const [selectedJob, setSelectedJob] = useState<any>(null);
 
   useEffect(() => {
     fetchData();
@@ -103,6 +106,10 @@ export default function Careers() {
                   mailto={record.mailto}
                   desc={record.description}
                   actively_hiring={record.activelyHiring}
+                  onApply={() => {
+                    setSelectedJob(record);
+                    setApplicationDialog(true);
+                  }}
                 />
               ))}
             </motion.div>
@@ -145,6 +152,12 @@ export default function Careers() {
           )}
         </div>
       </div>
+      <JobApplicationDialog
+        open={applicationDialog}
+        onClose={() => setApplicationDialog(false)}
+        jobId={selectedJob?.id ?? null}
+        jobTitle={selectedJob?.jobTitle}
+      />
     </motion.div>
   );
 }
