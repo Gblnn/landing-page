@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import { db } from "@/firebase";
-import { X } from "lucide-react";
+import { CheckCircle, X } from "lucide-react";
 
 interface Props {
   open: boolean;
@@ -100,31 +100,35 @@ export default function JobApplicationDialog({
         >
           <X />
         </button>
-        <div style={{ textAlign: "center" }}>
-          <h2
-            style={{
-              marginBottom: "0.3rem",
-              fontSize: "1.1rem",
-              fontWeight: 600,
-              letterSpacing: "-0.5px",
-            }}
-          >
-            Apply for <span style={{ color: "crimson" }}>{jobTitle}</span>
-          </h2>
-          <p style={{ color: "#bfc9d1", fontSize: "0.85rem" }}>
-            Fill out the form below to apply for this position.
-          </p>
-        </div>
+        {success && (
+          <div style={{ textAlign: "center" }}>
+            <h2
+              style={{
+                marginBottom: "0.3rem",
+                fontSize: "1.1rem",
+                fontWeight: 600,
+                letterSpacing: "-0.5px",
+              }}
+            >
+              Apply for <span style={{ color: "crimson" }}>{jobTitle}</span>
+            </h2>
+            <p style={{ color: "#bfc9d1", fontSize: "0.85rem" }}>
+              Fill out the form below to apply for this position.
+            </p>
+          </div>
+        )}
+
         {success ? (
           <div style={{ textAlign: "center" }}>
             <p
               style={{
-                color: "#4ade80",
+                color: "lightgreen",
                 marginBottom: "1rem",
                 fontWeight: 500,
                 fontSize: "1rem",
               }}
             >
+              <CheckCircle color="lightgreen" />
               Application submitted successfully!
             </p>
 

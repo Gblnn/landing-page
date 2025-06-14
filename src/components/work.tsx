@@ -9,6 +9,7 @@ interface Props {
   mailto?: string;
   actively_hiring?: boolean;
   onApply?: any;
+  jobType?: any;
 }
 
 export default function Work(props: Props) {
@@ -26,6 +27,7 @@ export default function Work(props: Props) {
       className="work-card"
       style={{
         width: "32ch",
+        height: "32ch",
         borderRadius: "0.75rem",
         overflow: "hidden",
         border: "1px solid rgba(255,255,255,0.1)",
@@ -49,9 +51,10 @@ export default function Work(props: Props) {
               borderRadius: "1rem",
               width: "fit-content",
               marginBottom: "1rem",
+              textTransform: "uppercase",
             }}
           >
-            FULL TIME
+            {props.jobType}
           </p>
 
           <p
@@ -60,7 +63,7 @@ export default function Work(props: Props) {
               fontWeight: "500",
               color: "white",
               lineHeight: "1.3",
-              marginBottom: "0.75rem",
+              marginBottom: "0.5rem",
             }}
           >
             {props.designation}
@@ -75,6 +78,7 @@ export default function Work(props: Props) {
           style={{
             fontSize: "0.85rem",
             opacity: 0.7,
+            height: "3rem",
             lineHeight: "1.6",
           }}
         >
@@ -84,20 +88,23 @@ export default function Work(props: Props) {
 
       <div
         style={{
-          padding: "1.25rem 2rem",
+          padding: "1rem 1.5rem",
+          height: "",
           background: "rgba(0,0,0,0.2)",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          border: "",
         }}
       >
-        <div>
+        <div style={{ border: "" }}>
           {props.actively_hiring && (
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
                 gap: "0.5rem",
+                border: "",
               }}
             >
               <Zap width="1rem" color="crimson" />

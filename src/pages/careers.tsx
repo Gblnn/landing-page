@@ -110,6 +110,7 @@ export default function Careers() {
                     setSelectedJob(record);
                     setApplicationDialog(true);
                   }}
+                  jobType={record.jobType}
                 />
               ))}
             </motion.div>
