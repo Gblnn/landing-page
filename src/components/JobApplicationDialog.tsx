@@ -100,7 +100,7 @@ export default function JobApplicationDialog({
         >
           <X />
         </button>
-        {success && (
+        {!success && (
           <div style={{ textAlign: "center" }}>
             <h2
               style={{
@@ -120,17 +120,27 @@ export default function JobApplicationDialog({
 
         {success ? (
           <div style={{ textAlign: "center" }}>
-            <p
+            <div
               style={{
-                color: "lightgreen",
+                color: "white",
                 marginBottom: "1rem",
                 fontWeight: 500,
                 fontSize: "1rem",
+                display: "flex",
+                flexFlow: "column",
+                alignItems: "center",
+                border: "",
+                gap: "1rem",
               }}
             >
               <CheckCircle color="lightgreen" />
-              Application submitted successfully!
-            </p>
+              <div>
+                <p>Application submitted successfully!</p>
+                <p style={{ fontSize: "0.75rem", opacity: 0.75 }}>
+                  Thank you for your interest in joining our team.{" "}
+                </p>
+              </div>
+            </div>
 
             <button
               onClick={() => {
@@ -138,6 +148,7 @@ export default function JobApplicationDialog({
                 onClose();
               }}
               style={{
+                width: "100%",
                 background: "crimson",
                 color: "#fff",
                 border: "none",

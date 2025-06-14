@@ -27,7 +27,7 @@ export default function Work(props: Props) {
       className="work-card"
       style={{
         width: "32ch",
-        height: "32ch",
+        height: "30ch",
         borderRadius: "0.75rem",
         overflow: "hidden",
         border: "1px solid rgba(255,255,255,0.1)",
