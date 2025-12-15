@@ -153,8 +153,8 @@ export default function OurTeam() {
                 mail="arjun@soharstar.com"
               />
               <TeamMember
-                mail="avinash@soharstar.com"
-                name="Avinash Paithankar"
+                mail="niyaz@soharstar.com"
+                name="Dr. Niyaz Khan"
                 designation="QHSE Manager"
               />
 
